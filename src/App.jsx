@@ -12,6 +12,8 @@ import {
   RefreshCw,
   AlertCircle,
   Loader2,
+  CheckCircle2,
+  Info,
 } from "lucide-react";
 import {
   WAIT_TA,
@@ -33,12 +35,18 @@ function BigButton({ onClick, className, children, disabled }) {
       type="button"
       disabled={disabled}
       onClick={onClick}
-      className={`min-h-[72px] w-full rounded-3xl px-5 py-4 text-xl font-bold leading-snug shadow-md disabled:opacity-50 ${className}`}
+      className={`min-h-[64px] w-full rounded-2xl px-4 py-3 text-xl font-bold leading-snug shadow-md transition active:scale-95 disabled:opacity-50 ${className}`}
     >
       {children}
     </button>
   );
 }
+
+const Shell = ({ children, className = "" }) => (
+  <div className="min-h-svh bg-gradient-to-b from-amber-50 via-orange-50 to-orange-100">
+    <main className={`mx-auto w-full px-4 text-stone-900 ${className}`}>{children}</main>
+  </div>
+);
 
 export default function App() {
   const [screen, setScreen] = useState("splash");
@@ -49,6 +57,7 @@ export default function App() {
   const [say, setSay] = useState("");
   const [options, setOptions] = useState([]);
   const [result, setResult] = useState(null);
+  const [qNum, setQNum] = useState(0);
   const messagesRef = useRef([]);
   const fallbackAnswers = useRef({});
   const fallbackIndex = useRef(0);
@@ -75,6 +84,7 @@ export default function App() {
     fallbackAnswers.current = {};
     fallbackIndex.current = 0;
     setResult(null);
+    setQNum(1);
     setScreen("talk");
     const first = fallback.steps[0];
     setOptions(first.options);
@@ -101,6 +111,7 @@ export default function App() {
         setScreen("result");
         await speakNow(parsed.say_ta);
       } else {
+        setQNum((n) => n + 1);
         setScreen("talk");
         await speakNow(parsed.say_ta);
       }
@@ -117,6 +128,7 @@ export default function App() {
     setOffline(false);
     setError("");
     setResult(null);
+    setQNum(0);
     setScreen("talk");
     messagesRef.current = [{ role: "system", content: buildSystemPrompt() }];
     await sendToAi("வணக்கம். பிஎம் மாத்ரு வந்தனா யோஜனா பற்றி எளிய தமிழில் உதவுங்கள். ஒவ்வொன்றாகக் கேளுங்கள்.");
@@ -132,6 +144,7 @@ export default function App() {
     setSay("");
     setOptions([]);
     setResult(null);
+    setQNum(0);
     messagesRef.current = [];
     fallbackAnswers.current = {};
     fallbackIndex.current = 0;
@@ -151,6 +164,7 @@ export default function App() {
       return;
     }
     fallbackIndex.current = next;
+    setQNum(next + 1);
     const q = fallback.steps[next];
     setOptions(q.options);
     await speakNow(q.say);
@@ -196,40 +210,86 @@ export default function App() {
     }
   }
 
+  /* ---------------- SPLASH ---------------- */
   if (screen === "splash") {
     return (
-      <main className="flex min-h-svh items-stretch bg-amber-50 p-4">
-        <button
-          type="button"
-          onClick={startTalk}
-          className="flex min-h-[88vh] w-full flex-col items-center justify-center gap-8 rounded-[2.5rem] bg-orange-800 px-6 text-amber-50 shadow-xl"
-        >
-          <Volume2 className="h-28 w-28" strokeWidth={1.75} />
-          <span className="text-4xl font-black leading-tight">பேசத் தொடங்கு</span>
-          <span className="text-xl font-semibold opacity-90">சகி · அரசு உதவி</span>
-        </button>
-      </main>
+      <Shell className="flex min-h-svh max-w-2xl flex-col items-center justify-between py-10 text-center md:justify-center md:gap-12">
+        <div>
+          <p className="mx-auto inline-block rounded-full bg-orange-100 px-4 py-1 text-sm font-bold text-orange-900">
+            பிரதம மந்திரி மாத்ரு வந்தனா யோஜனா
+          </p>
+          <h1 className="mt-5 text-6xl font-black text-orange-900 md:text-8xl">சகி</h1>
+          <p className="mt-3 text-xl font-semibold leading-relaxed text-stone-700">
+            உங்கள் மொழியில், உங்கள் குரலில்
+            <br />
+            அரசு உதவி அறிந்துகொள்ளுங்கள்
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center gap-6">
+          <button
+            type="button"
+            onClick={startTalk}
+            aria-label="பேசத் தொடங்கு"
+            className="mic-pulse flex h-56 w-56 items-center justify-center rounded-full bg-gradient-to-br from-orange-600 to-orange-900 text-amber-50 shadow-2xl ring-8 ring-orange-200 transition active:scale-95"
+          >
+            <Volume2 className="h-24 w-24" strokeWidth={1.75} />
+          </button>
+          <span className="text-3xl font-black text-orange-900">பேசத் தொடங்கு</span>
+          <span className="text-base font-medium text-stone-600">இந்தப் பொத்தானை ஒரு முறை அழுத்துங்கள்</span>
+        </div>
+
+        <p className="text-sm text-stone-500">எழுத வேண்டாம் · ஆங்கிலம் வேண்டாம் · பேசினால் போதும்</p>
+      </Shell>
     );
   }
 
+  /* ---------------- RESULT ---------------- */
   if (screen === "result" && result) {
+    const docs = Array.isArray(result.documents) ? result.documents : [];
     return (
-      <main className="mx-auto min-h-svh max-w-lg bg-amber-50 px-4 py-6 text-stone-900">
-        <h1 className="mb-4 text-center text-3xl font-black">
-          {result.eligible ? "உதவி கிடைக்கலாம்" : "உறுதி செய்யவும்"}
-        </h1>
-        <div className="space-y-4">
-          <ResultCard
-            icon={Baby}
-            title="பண உதவி"
-            body={result.benefit}
-            ok={result.eligible}
-          />
-          <ResultCard icon={FileText} title="ஆவணங்கள்" body={result.documents.join(" · ")} />
-          <ResultCard icon={MapPin} title="எங்கே போவது" body={result.where_to_go} />
-          <ResultCard icon={ListChecks} title="அடுத்த படி" body={result.next_step} />
+      <Shell className="max-w-4xl py-6 md:py-10">
+        <div
+          className={`mb-5 flex items-center gap-4 rounded-3xl p-5 text-white shadow-lg ${
+            result.eligible ? "bg-green-700" : "bg-amber-600"
+          }`}
+        >
+          {result.eligible ? (
+            <CheckCircle2 className="h-14 w-14 shrink-0" />
+          ) : (
+            <Info className="h-14 w-14 shrink-0" />
+          )}
+          <h1 className="text-3xl font-black leading-tight">
+            {result.eligible ? "உங்களுக்கு உதவி கிடைக்கலாம்" : "அங்கன்வாடியில் உறுதி செய்யவும்"}
+          </h1>
         </div>
-        <div className="mt-6 space-y-3">
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <ResultCard icon={Baby} title="பண உதவி" ok={result.eligible}>
+            <p className="text-lg font-medium leading-snug">{result.benefit}</p>
+          </ResultCard>
+
+          <ResultCard icon={FileText} title="எடுத்துச் செல்ல வேண்டியவை">
+            <ul className="space-y-2">
+              {docs.map((d, i) => (
+                <li key={i} className="flex items-start gap-2 text-lg font-medium leading-snug">
+                  <Check className="mt-1 h-5 w-5 shrink-0 text-green-700" />
+                  <span>{d}</span>
+                </li>
+              ))}
+            </ul>
+          </ResultCard>
+
+          <ResultCard icon={MapPin} title="எங்கே போவது">
+            <p className="text-lg font-medium leading-snug">{result.where_to_go}</p>
+          </ResultCard>
+
+          <ResultCard icon={ListChecks} title="அடுத்த படி">
+            <p className="text-lg font-medium leading-snug">{result.next_step}</p>
+          </ResultCard>
+        </div>
+
+        <div className="mx-auto mt-6 max-w-xl space-y-3">
           <BigButton
             onClick={() => speakNow(say)}
             className="flex items-center justify-center gap-3 bg-orange-800 text-amber-50"
@@ -243,100 +303,114 @@ export default function App() {
             <RefreshCw className="h-8 w-8" /> முதலில் இருந்து
           </BigButton>
         </div>
-      </main>
+      </Shell>
     );
   }
 
+  /* ---------------- QUESTION ---------------- */
+  const extra = options.filter((o) => o !== "ஆம்" && o !== "இல்லை");
+
   return (
-    <main className="mx-auto flex h-svh max-w-lg flex-col overflow-hidden bg-amber-50 px-4 py-5 text-stone-900">
-      <p className="mb-3 shrink-0 text-center text-lg font-bold text-orange-900">சகி</p>
-      <section className="min-h-0 flex-1 overflow-y-auto rounded-3xl bg-white p-5 text-2xl font-semibold leading-relaxed shadow-sm">
-        {loading ? WAIT_TA : say || WAIT_TA}
+    <Shell className="flex min-h-svh max-w-2xl flex-col py-5 md:py-8">
+      <header className="mb-3 flex items-center justify-between">
+        <span className="text-2xl font-black text-orange-900">சகி</span>
+        {qNum > 0 ? (
+          <span className="rounded-full bg-orange-100 px-4 py-1 text-base font-bold text-orange-900">
+            கேள்வி {qNum}
+          </span>
+        ) : null}
+      </header>
+
+      <section className="flex flex-1 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-6 text-center shadow-md">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-100 text-orange-800">
+          {loading ? <Loader2 className="h-9 w-9 animate-spin" /> : <Volume2 className="h-9 w-9" />}
+        </div>
+        <p className="text-2xl font-bold leading-relaxed text-stone-900 md:text-4xl">
+          {loading ? WAIT_TA : say || WAIT_TA}
+        </p>
       </section>
 
       {error ? (
-        <p className="mt-3 flex shrink-0 items-center gap-2 text-lg font-semibold text-rose-800">
+        <p className="mt-3 flex items-center gap-2 rounded-2xl bg-rose-50 p-3 text-lg font-semibold text-rose-800">
           <AlertCircle className="h-6 w-6 shrink-0" />
           {error}
         </p>
       ) : null}
 
-      <div className="mt-4 shrink-0">
+      <div className="mt-4 space-y-3">
         <div className="grid grid-cols-2 gap-3">
+          <BigButton
+            onClick={() => onChoice("ஆம்")}
+            disabled={loading}
+            className="flex min-h-[84px] items-center justify-center gap-2 bg-green-700 text-2xl text-white"
+          >
+            <Check className="h-10 w-10" /> ஆம்
+          </BigButton>
+          <BigButton
+            onClick={() => onChoice("இல்லை")}
+            disabled={loading}
+            className="flex min-h-[84px] items-center justify-center gap-2 bg-rose-800 text-2xl text-white"
+          >
+            <X className="h-10 w-10" /> இல்லை
+          </BigButton>
+        </div>
+
+        {extra.map((o) => (
+          <BigButton
+            key={o}
+            onClick={() => onChoice(o)}
+            disabled={loading}
+            className="bg-orange-100 text-orange-950"
+          >
+            {o}
+          </BigButton>
+        ))}
+
         <button
           type="button"
           onClick={onMic}
           disabled={loading}
-          className={`col-span-2 flex min-h-[96px] items-center justify-center gap-3 rounded-full bg-orange-700 text-2xl font-black text-amber-50 ${
+          className={`flex min-h-[80px] w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-orange-600 to-orange-800 text-2xl font-black text-amber-50 shadow-lg transition active:scale-95 disabled:opacity-50 ${
             listening ? "mic-pulse" : ""
           }`}
         >
-          {loading ? <Loader2 className="h-10 w-10" /> : <Mic className="h-12 w-12" />}
-          {listening ? "கேட்கிறேன்" : "பேசு"}
+          <Mic className="h-10 w-10" />
+          {listening ? "கேட்கிறேன்..." : "பேசி பதில் சொல்லுங்கள்"}
         </button>
-        <BigButton
-          onClick={() => speakNow(say)}
-          disabled={!say || loading}
-          className="flex items-center justify-center gap-2 bg-amber-200 text-stone-900"
-        >
-          <RotateCcw className="h-8 w-8" /> மீண்டும்
-        </BigButton>
-        <BigButton
-          onClick={startOver}
-          className="flex items-center justify-center gap-2 bg-stone-200 text-stone-900"
-        >
-          <RefreshCw className="h-8 w-8" /> தொடக்கம்
-        </BigButton>
-        <BigButton
-          onClick={() => onChoice("ஆம்")}
-          disabled={loading}
-          className="flex items-center justify-center gap-2 bg-green-700 text-white"
-        >
-          <Check className="h-10 w-10" /> ஆம்
-        </BigButton>
-        <BigButton
-          onClick={() => onChoice("இல்லை")}
-          disabled={loading}
-          className="flex items-center justify-center gap-2 bg-rose-800 text-white"
-        >
-          <X className="h-10 w-10" /> இல்லை
-        </BigButton>
-      </div>
 
-      {options.filter((o) => o !== "ஆம்" && o !== "இல்லை").length ? (
-        <div className="mt-3 space-y-3">
-          {options
-            .filter((o) => o !== "ஆம்" && o !== "இல்லை")
-            .map((o) => (
-              <BigButton
-                key={o}
-                onClick={() => onChoice(o)}
-                disabled={loading}
-                className="bg-orange-100 text-orange-950"
-              >
-                {o}
-              </BigButton>
-            ))}
+        <div className="grid grid-cols-2 gap-3">
+          <BigButton
+            onClick={() => speakNow(say)}
+            disabled={!say || loading}
+            className="flex min-h-[56px] items-center justify-center gap-2 bg-amber-200 text-lg text-stone-900"
+          >
+            <RotateCcw className="h-6 w-6" /> மீண்டும்
+          </BigButton>
+          <BigButton
+            onClick={startOver}
+            className="flex min-h-[56px] items-center justify-center gap-2 bg-stone-200 text-lg text-stone-900"
+          >
+            <RefreshCw className="h-6 w-6" /> தொடக்கம்
+          </BigButton>
         </div>
-      ) : null}
       </div>
-    </main>
+    </Shell>
   );
 }
 
-function ResultCard({ icon: Icon, title, body, ok }) {
+function ResultCard({ icon: Icon, title, ok, children }) {
   return (
     <article className="flex gap-4 rounded-3xl bg-white p-4 shadow-sm">
       <div
-        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl ${
+        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${
           ok === false ? "bg-rose-100 text-rose-800" : "bg-orange-100 text-orange-800"
         }`}
       >
-        <Icon className="h-9 w-9" />
+        <Icon className="h-8 w-8" />
       </div>
-      <div>
-        <h2 className="text-lg font-bold text-orange-950">{title}</h2>
-        <p className="text-lg font-medium leading-snug">{body}</p>
+      <div className="min-w-0 flex-1">
+        <h2 className="mb-1 text-xl font-black text-orange-950">{title}</h2>
+        {children}
       </div>
     </article>
   );
