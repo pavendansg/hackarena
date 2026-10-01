@@ -4,7 +4,17 @@ import {
   ArrowLeft, ShieldCheck, Loader2, MapPin, ListChecks, Wallet, UserCheck, Info,
   FileText, ExternalLink, Sparkles, Heart, Landmark, Square, ChevronRight,
 } from "lucide-react";
-import { callAi, parseAiJson, listenTamil, canListen, speakTamil, stopSpeak } from "./sakhi.js";
+import {
+  callAi,
+  parseAiJson,
+  listenTamil,
+  canListen,
+  speakText,
+  speakQuestionOnly,
+  speakSequence,
+  schemeSpeechItems,
+  stopSpeak,
+} from "./sakhi.js";
 
 /* ---------- compat exports for App.jsx ---------- */
 export const infoText = (s) => s?.title || "";
@@ -28,7 +38,7 @@ const T = {
     empty: "பொருந்தும் திட்டம் இல்லை. கீழே உள்ள எல்லாத் திட்டங்களையும் பாருங்கள்.",
     micFail: "குரல் கிடைக்கவில்லை. Chrome அல்லது Edge-இல் மைக் அனுமதி கொடுங்கள், அல்லது எழுதுங்கள்.",
     noMic: "இந்த உலாவியில் குரல் வசதி இல்லை. Chrome அல்லது Edge பயன்படுத்துங்கள், அல்லது எழுதுங்கள்.",
-    trust1: "சகி உங்கள் Aadhaar எண் அல்லது OTP-ஐ கேட்காது.",
+    trust1: "மகளிர் துணை உங்கள் Aadhaar எண் அல்லது OTP-ஐ கேட்காது.",
     trust2: "தகவல்கள் அரசு ஆதாரங்களில் இருந்து பெறப்பட்டவை. இறுதி தகுதியை அரசு அதிகாரப்பூர்வமாக சரிபார்க்க வேண்டும்.",
     docsUnknown: "ஆவணப் பட்டியலை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
     startOver: "முதலில் இருந்து", q: "கேள்வி",
@@ -57,7 +67,7 @@ const T = {
     empty: "No matching scheme. See all schemes below.",
     micFail: "Could not hear you. Allow the mic in Chrome or Edge, or type instead.",
     noMic: "Voice is not supported in this browser. Use Chrome or Edge, or type.",
-    trust1: "Sakhi will never ask for your Aadhaar number or OTP.",
+    trust1: "Magalir Thunai will never ask for your Aadhaar number or OTP.",
     trust2: "Information is based on government sources. Final eligibility must be verified through the official government process.",
     docsUnknown: "Confirm the document list at the office.",
     startOver: "Start over", q: "Question",
@@ -161,18 +171,16 @@ function matchSchemes(q) {
     .map((x) => x.s);
 }
 
+/* ---------- speech (all through speak.js) ---------- */
+
+// general text (summaries, results)
 function sayText(text, lang) {
-  stopSpeak();
-  if (lang === "en") {
-    try {
-      window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = "en-IN";
-      window.speechSynthesis.speak(u);
-    } catch { /* ignore */ }
-    return Promise.resolve();
-  }
-  return speakTamil(text);
+  return speakText(text, lang);
+}
+
+// find-my-scheme: speak ONLY the question, in the "question" voice
+function sayQuestion(text, lang) {
+  return speakQuestionOnly(text, lang);
 }
 
 function listenIn(lang) {
@@ -191,8 +199,18 @@ function listenIn(lang) {
   });
 }
 
-const speakSummary = (s, l, t) =>
-  `${s[l].title}. ${s[l].benefit} ${s[l].who} ${s[l].where} ${l === "ta" ? CHECK_TA : CHECK_EN}`;
+// scheme "Listen": question then answer for every section, built from the
+// same data (s[l]) that is rendered on screen
+const speakSummary = (s, l, t) => {
+  const d = s[l];
+  return speakSequence(
+    schemeSpeechItems(
+      { ...d, docs: d.docs?.length ? d.docs : t.docsUnknown },
+      l
+    ),
+    l
+  );
+};
 
 /* ---------- small components ---------- */
 function Card({ s, l, t, onOpen, compact }) {
@@ -255,6 +273,9 @@ export function Home({ onStart }) {
     return () => window.removeEventListener("popstate", h);
   }, []);
 
+  // stop any speech when the component unmounts
+  useEffect(() => () => stopSpeak(), []);
+
   const go = (v) => {
     stopSpeak();
     window.history.pushState(v, "");
@@ -298,7 +319,7 @@ export function Home({ onStart }) {
             {
               role: "system",
               content:
-                "You are Sakhi. Use ONLY these verified facts: " + JSON.stringify(facts) +
+                "You are Magalir Thunai. Use ONLY these verified facts: " + JSON.stringify(facts) +
                 `. Reply in very simple spoken ${l === "ta" ? "Tamil" : "English"}, max 2 short sentences, say which schemes may suit her and that final eligibility must be confirmed at the office. Never invent amounts. Return JSON only: {"say_ta": string, "options": [], "stage": "ask", "result": null}`,
             },
             { role: "user", content: query },
@@ -337,7 +358,7 @@ export function Home({ onStart }) {
     const k = t.fq[fi].k;
     const next = { ...fa, [k]: idx };
     setFa(next);
-    if (fi + 1 < t.fq.length) { setFi(fi + 1); sayText(t.fq[fi + 1].t, l); return; }
+    if (fi + 1 < t.fq.length) { setFi(fi + 1); sayQuestion(t.fq[fi + 1].t, l); return; }
     const ids = new Set();
     if (next.studying === 0) ids.add("pudhumai");
     if (next.pregnant === 0) ids.add("pmmvy");
@@ -354,14 +375,14 @@ export function Home({ onStart }) {
     sayText(t.maybe, l);
   }
 
-  const startFind = () => { setFi(0); setFa({}); go({ name: "find" }); sayText(t.fq[0].t, l); };
+  const startFind = () => { setFi(0); setFa({}); go({ name: "find" }); sayQuestion(t.fq[0].t, l); };
 
   /* ---------- pieces ---------- */
   const Header = (
     <header className="sticky top-0 z-10 border-b border-orange-100 bg-amber-50/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <button onClick={() => { stopSpeak(); setList(null); go({ name: "home" }); }} className="flex items-center gap-2 text-2xl font-black text-orange-900">
-          <Flower2 className="h-7 w-7 text-orange-600" /> {l === "ta" ? "சகி" : "Sakhi"}
+          <Flower2 className="h-7 w-7 text-orange-600" /> {l === "ta" ? "மகளிர் துணை" : "Magalir Thunai"}
         </button>
         <div className="flex overflow-hidden rounded-full bg-white text-sm font-extrabold shadow-sm ring-1 ring-orange-200">
           {["ta", "en"].map((x) => (
@@ -379,8 +400,12 @@ export function Home({ onStart }) {
   );
 
   const BackBtn = (
-    <button onClick={back} className="mb-4 flex items-center gap-2 text-base font-extrabold text-orange-900">
-      <ArrowLeft className="h-5 w-5" /> {t.back}
+    <button
+      type="button"
+      onClick={back}
+      className="mb-4 inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-orange-200 bg-orange-50 px-4 text-base font-extrabold text-orange-900 transition hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+    >
+      <ArrowLeft className="h-5 w-5" aria-hidden="true" /> {t.back}
     </button>
   );
 
@@ -551,7 +576,7 @@ export function Home({ onStart }) {
               <button key={o} onClick={() => answer(o, i)} className="min-h-[60px] rounded-2xl bg-orange-800 text-lg font-extrabold text-white transition hover:bg-orange-900 active:scale-95">{o}</button>
             ))}
           </div>
-          <button onClick={() => sayText(f.t, l)} className="mt-4 flex items-center gap-2 text-sm font-extrabold text-orange-900"><Volume2 className="h-4 w-4" /> {t.again}</button>
+          <button onClick={() => sayQuestion(f.t, l)} className="mt-4 flex items-center gap-2 text-sm font-extrabold text-orange-900"><Volume2 className="h-4 w-4" /> {t.again}</button>
         </div>
       </section>
     );
@@ -582,7 +607,7 @@ export function Home({ onStart }) {
           <Block icon={MapPin} title={t.where}>{d.where}</Block>
           <Block icon={ListChecks} title={t.next}>{d.next}</Block>
           <div className="grid gap-3 sm:grid-cols-2">
-            <button onClick={() => sayText(speakSummary(s, l, t), l)} className="flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-orange-800 text-base font-extrabold text-white">
+            <button onClick={() => speakSummary(s, l, t)} className="flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-orange-800 text-base font-extrabold text-white">
               <Volume2 className="h-5 w-5" /> {t.listen}
             </button>
             {s.voice ? (
@@ -600,7 +625,13 @@ export function Home({ onStart }) {
               <ExternalLink className="h-5 w-5" /> {t.official}
             </a>
           )}
-          <button onClick={() => stopSpeak()} className="flex items-center gap-1 text-xs font-bold text-stone-500"><Square className="h-3 w-3" /> {t.stop}</button>
+          <button
+            type="button"
+            onClick={() => stopSpeak()}
+            className="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border-2 border-red-900/30 bg-white px-4 text-base font-extrabold text-red-900 transition hover:bg-red-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <Square className="h-4 w-4" fill="currentColor" aria-hidden="true" /> {t.stop}
+          </button>
         </div>
       </section>
     );
