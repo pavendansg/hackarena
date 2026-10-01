@@ -1,4 +1,5 @@
 import scheme from "./data/schemes.json";
+import { speakTa, stopSpeaking } from "./speak.js";
 
 export const WAIT_TA = "ஒரு நிமிடம்";
 export const ERROR_TA =
@@ -117,32 +118,23 @@ export function unlockAudio() {
   } catch {
     /* ignore */
   }
-}
-
-export function speakTamil(text) {
-  return new Promise((resolve) => {
-    if (!text || !window.speechSynthesis) {
-      resolve();
-      return;
-    }
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "ta-IN";
-    const voice = pickTamilVoice();
-    if (voice) u.voice = voice;
-    u.rate = 0.9;
-    u.onend = () => resolve();
-    u.onerror = () => resolve();
-    window.speechSynthesis.speak(u);
-  });
-}
-
-export function stopSpeak() {
   try {
-    window.speechSynthesis.cancel();
+    const a = new Audio(
+      "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="
+    );
+    a.volume = 0;
+    a.play().catch(() => {});
   } catch {
     /* ignore */
   }
+}
+
+export function speakTamil(text) {
+  return speakTa(text);
+}
+
+export function stopSpeak() {
+  stopSpeaking();
 }
 
 export function canListen() {
