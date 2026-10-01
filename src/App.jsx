@@ -28,6 +28,7 @@ import {
   listenTamil,
   fallback,
 } from "./sakhi.js";
+import { Home, InfoScreen, infoText } from "./home.jsx";
 
 function BigButton({ onClick, className, children, disabled }) {
   return (
@@ -58,6 +59,7 @@ export default function App() {
   const [options, setOptions] = useState([]);
   const [result, setResult] = useState(null);
   const [qNum, setQNum] = useState(0);
+  const [info, setInfo] = useState(null);
   const messagesRef = useRef([]);
   const fallbackAnswers = useRef({});
   const fallbackIndex = useRef(0);
@@ -132,6 +134,13 @@ export default function App() {
     setScreen("talk");
     messagesRef.current = [{ role: "system", content: buildSystemPrompt() }];
     await sendToAi("வணக்கம். பிஎம் மாத்ரு வந்தனா யோஜனா பற்றி எளிய தமிழில் உதவுங்கள். ஒவ்வொன்றாகக் கேளுங்கள்.");
+  }
+
+  function openInfo(s) {
+    unlockAudio();
+    setInfo(s);
+    setScreen("info");
+    speakTamil(infoText(s));
   }
 
   function startOver() {
@@ -210,37 +219,22 @@ export default function App() {
     }
   }
 
-  /* ---------------- SPLASH ---------------- */
+  /* ---------------- HOME ---------------- */
   if (screen === "splash") {
+    return <Home onStart={startTalk} onInfo={openInfo} />;
+  }
+
+  /* ---------------- SCHEME INFO ---------------- */
+  if (screen === "info") {
     return (
-      <Shell className="flex min-h-svh max-w-2xl flex-col items-center justify-between py-10 text-center md:justify-center md:gap-12">
-        <div>
-          <p className="mx-auto inline-block rounded-full bg-orange-100 px-4 py-1 text-sm font-bold text-orange-900">
-            பிரதம மந்திரி மாத்ரு வந்தனா யோஜனா
-          </p>
-          <h1 className="mt-5 text-6xl font-black text-orange-900 md:text-8xl">சகி</h1>
-          <p className="mt-3 text-xl font-semibold leading-relaxed text-stone-700">
-            உங்கள் மொழியில், உங்கள் குரலில்
-            <br />
-            அரசு உதவி அறிந்துகொள்ளுங்கள்
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center gap-6">
-          <button
-            type="button"
-            onClick={startTalk}
-            aria-label="பேசத் தொடங்கு"
-            className="mic-pulse flex h-56 w-56 items-center justify-center rounded-full bg-gradient-to-br from-orange-600 to-orange-900 text-amber-50 shadow-2xl ring-8 ring-orange-200 transition active:scale-95"
-          >
-            <Volume2 className="h-24 w-24" strokeWidth={1.75} />
-          </button>
-          <span className="text-3xl font-black text-orange-900">பேசத் தொடங்கு</span>
-          <span className="text-base font-medium text-stone-600">இந்தப் பொத்தானை ஒரு முறை அழுத்துங்கள்</span>
-        </div>
-
-        <p className="text-sm text-stone-500">எழுத வேண்டாம் · ஆங்கிலம் வேண்டாம் · பேசினால் போதும்</p>
-      </Shell>
+      <InfoScreen
+        s={info}
+        onBack={() => {
+          stopSpeak();
+          setScreen("splash");
+        }}
+        onListen={() => speakTamil(infoText(info))}
+      />
     );
   }
 
