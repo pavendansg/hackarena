@@ -1,11 +1,14 @@
 /* -------------------------------------------------------
-   Unified speech output — Magalir Thunai (மகளிர் துணை)
+   Speech output — Magalir Thunai
+   Languages: Tamil (ta), Hindi (hi), Telugu (te), English (en)
 
-   Tamil  : real Tamil browser voice (ta-*) ONLY, otherwise /api/tts.
-            Never an English voice.
-   English: en-IN, then en-GB / en-US / en.
-   Question and answer are separate utterances/clips so
-   they can use different voices.
+   ta / hi / te : a REAL browser voice for that language only,
+                  otherwise the /api/tts fallback.
+                  Never an English voice for Indian-language text.
+   en           : en-IN, then en-GB / en-US / en.
+
+   Question and answer are separate utterances/clips so they
+   can use different voices.
 ------------------------------------------------------- */
 
 let token = 0;
@@ -15,8 +18,13 @@ let pending = null;
 const synth =
   typeof window !== "undefined" ? window.speechSynthesis : null;
 
-const TA_RE = /[\u0B80-\u0BFF]/;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const NATIVE = {
+  ta: { re: /[\u0B80-\u0BFF]/, voice: /^ta(-|$)/, bcp: "ta-in", rupee: "ரூபாய் " },
+  hi: { re: /[\u0900-\u097F]/, voice: /^hi(-|$)/, bcp: "hi-in", rupee: "रुपये " },
+  te: { re: /[\u0C00-\u0C7F]/, voice: /^te(-|$)/, bcp: "te-in", rupee: "రూపాయలు " },
+};
 
 /* ---------- text helpers ---------- */
 
@@ -40,17 +48,28 @@ function chunk(text, max = 180) {
   return out;
 }
 
-function normalizeTa(t) {
-  return String(t)
-    .replace(/(?:₹|\bRs\.?)\s?/gi, "ரூபாய் ")
-    .replace(/(\d),(?=\d{3}\b)/g, "$1");
+function resolveLang(text, lang) {
+  if (lang === "en") return "en";
+  if (lang && NATIVE[lang] && NATIVE[lang].re.test(text)) return lang;
+  for (const k of Object.keys(NATIVE)) {
+    if (NATIVE[k].re.test(text)) return k;
+  }
+  return "en";
 }
 
-function normalizeEn(t) {
-  return String(t).replace(
-    /(?:₹|\bRs\.?)\s?([\d,]+)/gi,
-    (m, n) => `${n.replace(/,/g, "")} rupees`
-  );
+function normalize(text, target) {
+  const s = String(text);
+
+  if (target === "en") {
+    return s.replace(
+      /(?:₹|\bRs\.?)\s?([\d,]+)/gi,
+      (m, n) => `${n.replace(/,/g, "")} rupees`
+    );
+  }
+
+  return s
+    .replace(/(?:₹|\bRs\.?)\s?/gi, NATIVE[target].rupee)
+    .replace(/(\d),(?=\d{3}\b)/g, "$1");
 }
 
 /* ---------- voices ---------- */
@@ -82,15 +101,19 @@ function loadVoices() {
 
 const norm = (v) => (v.lang || "").replace("_", "-").toLowerCase();
 
-/* Only genuine Tamil voices. Never falls back to a non-Tamil voice. */
-function pickTamil(voices) {
-  const pool = voices
-    .filter((v) => /^ta(-|$)/.test(norm(v)))
-    .sort((a, b) => (norm(b) === "ta-in") - (norm(a) === "ta-in"));
-
+function twoVoices(pool) {
   const question = pool[0] || null;
   const answer = pool.find((v) => v.name !== question?.name) || question;
   return { question, answer };
+}
+
+/* Only genuine voices of that language. Never a non-matching voice. */
+function pickNative(voices, target) {
+  const cfg = NATIVE[target];
+  const pool = voices
+    .filter((v) => cfg.voice.test(norm(v)))
+    .sort((a, b) => (norm(b) === cfg.bcp) - (norm(a) === cfg.bcp));
+  return twoVoices(pool);
 }
 
 function pickEnglish(voices) {
@@ -106,9 +129,7 @@ function pickEnglish(voices) {
     .filter((v) => rank(v) < 99)
     .sort((a, b) => rank(a) - rank(b));
 
-  const question = pool[0] || null;
-  const answer = pool.find((v) => v.name !== question?.name) || question;
-  return { question, answer };
+  return twoVoices(pool);
 }
 
 /* ---------- low-level players ---------- */
@@ -176,13 +197,13 @@ async function say(text, role, my, lang) {
   text = String(text || "").trim();
   if (!text) return;
 
-  const ta = lang === "en" ? false : TA_RE.test(text);
-  const clean = ta ? normalizeTa(text) : normalizeEn(text);
+  const target = resolveLang(text, lang);
+  const clean = normalize(text, target);
 
   const voices = synth ? await loadVoices() : [];
   if (my !== token) return;
 
-  const picked = ta ? pickTamil(voices) : pickEnglish(voices);
+  const picked = target === "en" ? pickEnglish(voices) : pickNative(voices, target);
   const voice = role === "q" ? picked.question : picked.answer;
   const distinct =
     picked.question && picked.answer && picked.question.name !== picked.answer.name;
@@ -190,7 +211,7 @@ async function say(text, role, my, lang) {
   const opts = {
     pitch: role === "q" && !distinct ? 1.12 : 1,
     rate: role === "q" ? 0.95 : 0.9,
-    lang: ta ? "ta-IN" : "en-IN",
+    lang: target === "en" ? "en-IN" : NATIVE[target].bcp.replace(/-in$/, "-IN"),
   };
 
   for (const c of chunk(clean)) {
@@ -198,10 +219,10 @@ async function say(text, role, my, lang) {
 
     if (voice) {
       await speakBrowser(c, voice, opts);
-    } else if (ta) {
-      // No real Tamil browser voice: server TTS, never an English voice.
+    } else if (target !== "en") {
+      // No real browser voice for this language: server TTS, never an English voice.
       await playUrl(
-        `/api/tts?tl=ta&q=${encodeURIComponent(c)}`,
+        `/api/tts?tl=${target}&q=${encodeURIComponent(c)}`,
         role === "q" ? 1.05 : 1
       );
     } else if (synth) {
@@ -273,6 +294,22 @@ const SPEECH_Q = {
     docs: "What documents are required?",
     where: "Where should I go?",
     next: "What should I do next?",
+  },
+  hi: {
+    what: "यह योजना क्या है?",
+    benefit: "क्या मदद मिलेगी?",
+    who: "यह किसके लिए है?",
+    docs: "कौन से दस्तावेज़ चाहिए?",
+    where: "कहाँ जाना है?",
+    next: "आगे क्या करना है?",
+  },
+  te: {
+    what: "ఈ పథకం ఏమిటి?",
+    benefit: "ఏ సహాయం లభిస్తుంది?",
+    who: "ఎవరికి ఈ పథకం?",
+    docs: "ఏ పత్రాలు కావాలి?",
+    where: "ఎక్కడికి వెళ్లాలి?",
+    next: "తర్వాత ఏమి చేయాలి?",
   },
 };
 
