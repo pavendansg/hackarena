@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {
   Volume2, Mic, Search, Baby, GraduationCap, Flower2, Accessibility, Users, PiggyBank,
   ArrowLeft, ShieldCheck, Loader2, MapPin, ListChecks, Wallet, UserCheck, Info,
-  FileText, ExternalLink, Sparkles, Heart, Landmark, Square, ChevronRight,
+  FileText, ExternalLink, Sparkles, Heart, Landmark, Square, ChevronRight, Bus, Scissors,
 } from "lucide-react";
 import {
   callAi,
@@ -41,6 +41,19 @@ const T = {
     trust1: "மகளிர் துணை உங்கள் Aadhaar எண் அல்லது OTP-ஐ கேட்காது.",
     trust2: "தகவல்கள் அரசு ஆதாரங்களில் இருந்து பெறப்பட்டவை. இறுதி தகுதியை அரசு அதிகாரப்பூர்வமாக சரிபார்க்க வேண்டும்.",
     docsUnknown: "ஆவணப் பட்டியலை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+    count1: "திட்டம்",
+    stActive: "செயல்பாட்டில் உள்ளது", stChange: "மாற்றம் நடக்கிறது",
+    notOfficial: "இது அரசு இணையதளம் அல்ல. இது ஒரு உதவிக் கருவி மட்டுமே.",
+    helpLink: "உதவி & அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    aboutTitle: "எங்களைப் பற்றி",
+    aboutText: "மகளிர் துணை, மகளிருக்கான அரசு திட்டங்களை எளிய தமிழில், குரல் மூலம் தெரிந்துகொள்ள உதவுகிறது. இது அரசு இணையதளம் அல்ல.",
+    faqTitle: "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    faq: [
+      { q: "இந்த திட்டங்களுக்கு யார் தகுதியானவர்கள்?", a: "ஒவ்வொரு திட்டத்துக்கும் விதிகள் வேறுபடும். திட்டத்தைத் திறந்து “யாருக்கு?” பகுதியைப் பாருங்கள். இறுதி தகுதியை அலுவலகத்தில் உறுதி செய்யுங்கள்." },
+      { q: "எந்த ஆவணங்கள் தேவை?", a: "திட்டத்தின் பக்கத்தில் ஆவணப் பட்டியல் இருந்தால் அங்கே பாருங்கள். இல்லையெனில் இ-சேவை மையத்தில் கேளுங்கள்." },
+      { q: "கட்டணம் உண்டா?", a: "கட்டணம் குறித்து அலுவலகத்தில் உறுதி செய்யுங்கள். உதவுவதாகக் கூறி யாராவது பணம் கேட்டால் கவனமாக இருங்கள்." },
+      { q: "ஆன்லைனில் விண்ணப்பிக்கலாமா?", a: "சில திட்டங்களுக்கு ஆன்லைன் வசதி இருக்கலாம். திட்டத்தின் பக்கத்தில் அதிகாரப்பூர்வ தகவல் பொத்தான் இருந்தால் அதைப் பயன்படுத்துங்கள், அல்லது இ-சேவை மையத்தில் கேளுங்கள்." },
+    ],
     startOver: "முதலில் இருந்து", q: "கேள்வி",
     ex: ["பெண்களுக்கு என்ன உதவி கிடைக்கும்?", "நான் கல்லூரியில் படிக்கிறேன்", "நான் கர்ப்பமாக இருக்கிறேன்"],
     yes: "ஆம்", no: "இல்லை",
@@ -70,6 +83,19 @@ const T = {
     trust1: "Magalir Thunai will never ask for your Aadhaar number or OTP.",
     trust2: "Information is based on government sources. Final eligibility must be verified through the official government process.",
     docsUnknown: "Confirm the document list at the office.",
+    count1: "scheme",
+    stActive: "Active", stChange: "Changes in progress",
+    notOfficial: "This is not an official government website. It is only a help tool.",
+    helpLink: "Help & FAQ",
+    aboutTitle: "About us",
+    aboutText: "Magalir Thunai helps women learn about government schemes in simple Tamil, by voice. It is not an official government website.",
+    faqTitle: "Frequently asked questions",
+    faq: [
+      { q: "Who is eligible for these schemes?", a: "Rules differ for each scheme. Open a scheme and read the \"Who may qualify?\" section. Confirm final eligibility at the office." },
+      { q: "Which documents are needed?", a: "If the scheme page has a document list, check it there. Otherwise ask at the e-Sevai centre." },
+      { q: "Is there a fee?", a: "Confirm any fee at the office. Be careful if someone asks for money to help you apply." },
+      { q: "Can I apply online?", a: "Some schemes may allow online applications. Use the official information button on the scheme page if there is one, or ask at the e-Sevai centre." },
+    ],
     startOver: "Start over", q: "Question",
     ex: ["What help is available for women?", "I am a college student", "I am pregnant"],
     yes: "Yes", no: "No",
@@ -100,13 +126,13 @@ const AMT_EN = "Monthly pension. Confirm the amount at the office.";
 
 const S = [
   {
-    id: "kmut", icon: Flower2, cats: ["women", "money"], url: "https://www.tnesevai.tn.gov.in/",
+    id: "kmut", icon: Flower2, cats: ["women", "money"], url: "https://www.tnesevai.tn.gov.in/", status: "change",
     kw: ["பெண்", "மகளிர்", "மாதம்", "பணம்", "உரிமை", "தலைவி", "women", "woman", "monthly", "money", "financial", "cash", "help", "urimai"],
     ta: { title: "கலைஞர் மகளிர் உரிமைத் தொகை", desc: "தமிழ்நாடு அரசின் மாதாந்திர நிதி உதவித் திட்டம்.", benefit: "மாதம் 1,000 ரூபாய் வங்கிக் கணக்கில்.", who: "தகுதியுள்ள குடும்பங்களின் பெண் தலைவிகளுக்கு.", where: OFFICE_TA, next: "தகுதி விதிகள் மாறியிருக்கலாம். இப்போதைய விதிகளை அலுவலகத்தில் கேளுங்கள்.", docs: null },
     en: { title: "Kalaignar Magalir Urimai Thittam", desc: "Tamil Nadu government's monthly financial assistance for women.", benefit: "Rs 1,000 per month to the bank account.", who: "Women heads of eligible families.", where: OFFICE_EN, next: "Rules may have changed. Ask for the current rules at the office.", docs: null },
   },
   {
-    id: "pudhumai", icon: GraduationCap, cats: ["women", "edu", "money"], url: "https://www.tnesevai.tn.gov.in/",
+    id: "pudhumai", icon: GraduationCap, cats: ["women", "edu", "money"], url: "https://www.tnesevai.tn.gov.in/", status: "active",
     kw: ["கல்லூரி", "படிக்க", "படிப்பு", "மாணவி", "கல்வி", "புதுமை", "college", "student", "study", "studying", "education", "pudhumai"],
     ta: { title: "புதுமைப் பெண் திட்டம்", desc: "உயர்கல்வி படிக்கும் மாணவிகளுக்கான உதவித்தொகை.", benefit: "மாதம் 1,000 ரூபாய்.", who: "அரசுப் பள்ளியில் 6 முதல் 12 வரை படித்து, உயர்கல்வியில் சேர்ந்த மாணவிகளுக்கு.", where: "உங்கள் கல்லூரி அலுவலகம்.", next: "கல்லூரி அலுவலகத்தில் விண்ணப்ப முறையைக் கேளுங்கள்.", docs: null },
     en: { title: "Pudhumai Penn Scheme", desc: "Monthly support for girls pursuing higher education.", benefit: "Rs 1,000 per month.", who: "Girls who studied Classes 6 to 12 in government schools and joined higher education.", where: "Your college office.", next: "Ask your college office how to apply.", docs: null },
@@ -153,11 +179,36 @@ const S = [
     ta: { title: "செல்வமகள் சேமிப்புத் திட்டம்", desc: "பெண் குழந்தையின் எதிர்காலத்துக்கான மத்திய அரசு சேமிப்புத் திட்டம்.", benefit: "பெண் குழந்தையின் பெயரில் சிறு சேமிப்புக் கணக்கு.", who: "பெண் குழந்தையின் பெற்றோர் அல்லது பாதுகாவலருக்கு.", where: "அஞ்சலகம் அல்லது வங்கி.", next: "வட்டி விகிதம், விதிகளை அங்கே கேளுங்கள்.", docs: null },
     en: { title: "Sukanya Samriddhi Scheme", desc: "Central government savings scheme for a girl child's future.", benefit: "A small savings account in the girl child's name.", who: "Parents or guardians of a girl child.", where: "Post office or bank.", next: "Ask about interest rates and rules there.", docs: null },
   },
+  {
+    id: "vidiyal", icon: Bus, cats: ["women", "money"], url: null, status: "change",
+    kw: ["பேருந்து", "பஸ்", "பயணம்", "இலவசப் பயணம்", "விடியல்", "bus", "travel", "free travel", "vidiyal"],
+    ta: { title: "விடியல் பயணம் (இலவசப் பேருந்துப் பயணம்)", desc: "அரசு சாதாரணக் கட்டண நகரப் பேருந்துகளில் பெண்கள் கட்டணம் இல்லாமல் பயணம் செய்யலாம்.", benefit: "சாதாரணக் கட்டண நகரப் பேருந்துகளில் இலவசப் பயணம்.", who: "அரசு சாதாரணக் கட்டண நகரப் பேருந்துகளில் பயணம் செய்யும் பெண்களுக்கு. விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.", where: OFFICE_TA, next: CHECK_TA, docs: null },
+    en: { title: "Vidiyal Payanam (Free Bus Travel)", desc: "Women can travel without paying a fare in ordinary-fare city buses run by the government.", benefit: "Free travel in ordinary-fare city buses.", who: "Women travelling in government ordinary-fare city buses. Confirm the rules at the office.", where: OFFICE_EN, next: CHECK_EN, docs: null },
+  },
+  {
+    id: "muthulakshmi", icon: Baby, cats: ["women", "preg", "money"], url: null, status: "active",
+    kw: ["கர்ப்ப", "பிரசவ", "மகப்பேறு", "முத்துலட்சுமி", "ஊட்டச்சத்து", "pregnant", "pregnancy", "maternity", "delivery", "muthulakshmi", "nutrition"],
+    ta: { title: "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்", desc: "கர்ப்பிணிகளுக்கு பிரசவத்துக்கு முன்னும் பின்னும் தவணைகளில் உதவி கிடைக்கும். இதில் ஊட்டச்சத்துப் பெட்டகமும் அடங்கும்.", benefit: "18,000 ரூபாய் தவணைகளில், ஊட்டச்சத்துப் பெட்டகம் உட்பட.", who: "கர்ப்பிணிகளுக்கு. தகுதி விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.", where: OFFICE_TA, next: CHECK_TA, docs: null },
+    en: { title: "Dr. Muthulakshmi Reddy Maternity Assistance Scheme", desc: "Pregnant women receive assistance in instalments before and after delivery. It also includes a nutrition kit.", benefit: "Rs 18,000 in instalments, including a nutrition kit.", who: "Pregnant women. Confirm the eligibility rules at the office.", where: OFFICE_EN, next: CHECK_EN, docs: null },
+  },
+  {
+    id: "cmgirl", icon: PiggyBank, cats: ["women", "edu", "money"], url: null, status: "active",
+    kw: ["பெண் குழந்தை", "முதலமைச்சர்", "வைப்புத் தொகை", "பாதுகாப்பு", "girl child", "daughter", "deposit", "chief minister", "protection"],
+    ta: { title: "முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம்", desc: "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை செலுத்தும். 18 வயதில் தொகை கிடைக்கும்; படிப்புக்கு உதவும்.", benefit: "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை. 18 வயதில் கிடைக்கும்.", who: "பெண் குழந்தைகளுக்கு. தகுதி விதிகளை அலுவலகத்தில் கேளுங்கள்.", where: OFFICE_TA, next: CHECK_TA, docs: null },
+    en: { title: "Chief Minister's Girl Child Protection Scheme", desc: "The government makes a deposit in the girl child's name. The amount is received at age 18 and helps with education.", benefit: "A government deposit in the girl child's name, received at age 18.", who: "Girl children. Ask about the eligibility rules at the office.", where: OFFICE_EN, next: CHECK_EN, docs: null },
+  },
+  {
+    id: "sewing", icon: Scissors, cats: ["women", "money", "disab"], url: null, status: "active",
+    kw: ["தையல்", "இயந்திரம்", "சுயதொழில்", "விதவை", "மாற்றுத்திறன", "sewing", "machine", "self employment", "widow", "disabled", "satyavani", "sathyavani"],
+    ta: { title: "சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்", desc: "விதவைகள், ஆதரவற்ற மனைவியர், மாற்றுத்திறனாளி பெண்களுக்கு சுயதொழிலுக்காக இலவச தையல் இயந்திரம் கிடைக்கும்.", benefit: "சுயதொழிலுக்கு இலவச தையல் இயந்திரம்.", who: "விதவைகள், ஆதரவற்ற மனைவியர், மாற்றுத்திறனாளி பெண்களுக்கு. தகுதி விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.", where: OFFICE_TA, next: CHECK_TA, docs: null },
+    en: { title: "Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme", desc: "Widows, destitute wives and differently-abled women can get a free sewing machine for self-employment.", benefit: "A free sewing machine for self-employment.", who: "Widows, destitute wives and differently-abled women. Confirm the eligibility rules at the office.", where: OFFICE_EN, next: CHECK_EN, docs: null },
+  },
 ];
 
 /* ---------- helpers ---------- */
 const catName = (c, l) => c[l];
 const getS = (id) => S.find((x) => x.id === id);
+const countLabel = (n, t) => `${n} ${n === 1 ? t.count1 : t.count}`;
 
 function matchSchemes(q) {
   const t = q.toLowerCase().trim();
@@ -230,6 +281,11 @@ function Card({ s, l, t, onOpen, compact }) {
       <p className="flex items-start gap-1.5 text-sm font-bold text-green-800">
         <Wallet className="mt-0.5 h-4 w-4 shrink-0" /> {d.benefit}
       </p>
+      {s.status && (
+        <span className={`inline-flex w-fit rounded-full px-2.5 py-0.5 text-xs font-bold ${s.status === "change" ? "bg-amber-100 text-amber-900" : "bg-green-100 text-green-800"}`}>
+          {s.status === "change" ? t.stChange : t.stActive}
+        </span>
+      )}
       <button
         onClick={() => onOpen(s)}
         className="mt-auto flex min-h-[44px] items-center justify-center gap-1 rounded-xl bg-orange-800 text-sm font-extrabold text-white transition hover:bg-orange-900"
@@ -436,6 +492,14 @@ export function Home({ onStart }) {
         <ShieldCheck className="h-4 w-4" /> {t.trust1}
       </p>
       <p className="text-xs text-stone-500">{t.trust2}</p>
+      <p className="text-xs font-semibold text-stone-600">{t.notOfficial}</p>
+      <button
+        type="button"
+        onClick={() => go({ name: "help" })}
+        className="mx-auto inline-flex min-h-[44px] items-center px-3 text-sm font-extrabold text-orange-800 underline decoration-orange-300"
+      >
+        {t.helpLink}
+      </button>
       <p className="text-xs text-stone-400">SDG 4 · SDG 5 · SDG 10 · PromptWars × HackArena 2026</p>
     </footer>
   );
@@ -487,7 +551,7 @@ export function Home({ onStart }) {
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-800"><c.icon className="h-6 w-6" /></span>
                 <span className="text-sm font-extrabold leading-tight text-orange-950">{catName(c, l)}</span>
-                <span className="text-xs font-semibold text-stone-500">{S.filter((s) => s.cats.includes(c.id)).length} {t.count}</span>
+                <span className="text-xs font-semibold text-stone-500">{countLabel(S.filter((s) => s.cats.includes(c.id)).length, t)}</span>
               </button>
             ))}
           </div>
@@ -526,7 +590,7 @@ export function Home({ onStart }) {
       <section className="mx-auto max-w-6xl px-4 py-6">
         {BackBtn}
         <h1 className="mb-1 text-2xl font-black text-orange-950">{t.all}</h1>
-        <p className="mb-3 text-sm font-semibold text-stone-500">{items.length} {t.count}</p>
+        <p className="mb-3 text-sm font-semibold text-stone-500">{countLabel(items.length, t)}</p>
         <div className="mb-3">{SearchBox}</div>
         <div className="mb-4 flex flex-wrap gap-2">
           {[{ id: "all", ta: t.allChip, en: t.allChip }, ...CATS].map((c) => (
@@ -577,6 +641,34 @@ export function Home({ onStart }) {
             ))}
           </div>
           <button onClick={() => sayQuestion(f.t, l)} className="mt-4 flex items-center gap-2 text-sm font-extrabold text-orange-900"><Volume2 className="h-4 w-4" /> {t.again}</button>
+        </div>
+      </section>
+    );
+  }
+
+  if (nav.name === "help") {
+    body = (
+      <section className="mx-auto max-w-2xl px-4 py-6">
+        {BackBtn}
+        <div className="space-y-4 rounded-3xl bg-white p-5 shadow-md ring-1 ring-orange-100">
+          <h1 className="text-2xl font-black text-orange-950">{t.aboutTitle}</h1>
+          <p className="text-base font-semibold leading-relaxed text-stone-800">{t.aboutText}</p>
+          <button
+            type="button"
+            onClick={() => sayText(t.aboutText, l)}
+            className="inline-flex min-h-[48px] items-center gap-2 rounded-xl bg-orange-100 px-4 text-base font-extrabold text-orange-900"
+          >
+            <Volume2 className="h-5 w-5" /> {t.listen}
+          </button>
+          <h2 className="pt-2 text-xl font-black text-orange-950">{t.faqTitle}</h2>
+          <div className="space-y-2">
+            {t.faq.map((f) => (
+              <details key={f.q} className="rounded-xl bg-orange-50 p-4">
+                <summary className="cursor-pointer text-base font-extrabold text-orange-900">{f.q}</summary>
+                <p className="mt-2 text-base font-semibold leading-relaxed text-stone-800">{f.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     );
