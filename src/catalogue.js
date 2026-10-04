@@ -90,7 +90,7 @@
   /* ---------- schemes ---------- */
   const RAW = [
     {
-      id: "kmut", icon: Flower2, cats: ["women", "money"], status: "change", url: "https://www.tnesevai.tn.gov.in/",
+      id: "kmut", map: "e-Sevai centre near me", icon: Flower2, cats: ["women", "money"], status: "change", url: "https://www.tnesevai.tn.gov.in/",
       docs: ["ration", "aadhaar", "bankLinked", "mobile"],
       kw: ["பெண்", "மகளிர்", "மாதம்", "பணம்", "உரிமை", "தலைவி", "women", "woman", "monthly", "money", "financial", "cash", "help", "urimai", "महिला", "हर महीने", "पैसे", "अधिकार", "मुखिया", "మహిళ", "నెలకు", "డబ్బు", "హక్కు"],
       ta: { title: "கலைஞர் மகளிர் உரிமைத் தொகை", desc: "தமிழ்நாடு அரசின் மாதாந்திர நிதி உதவித் திட்டம்.", benefit: "மாதம் 1,000 ரூபாய் வங்கிக் கணக்கில்.", who: "தகுதியுள்ள குடும்பங்களின் பெண் தலைவிகளுக்கு.", where: OFFICE.ta, next: "இந்தத் திட்டத்தில் மாற்றங்கள் நடந்து வருகின்றன. இப்போதைய தொகை 1,000 ரூபாய். சமீபத்திய விதிகளை அலுவலகத்தில் கேளுங்கள்." },
@@ -108,7 +108,7 @@
       te: { title: "పుదుమై పెణ్ పథకం", desc: "ఉన్నత విద్య చదువుతున్న విద్యార్థినులకు నెలవారీ సహాయం.", benefit: "ప్రతి నెల 1,000 రూపాయలు.", who: "6 నుండి 12వ తరగతి వరకు ప్రభుత్వ పాఠశాలలో చదివి ఉన్నత విద్యలో చేరిన విద్యార్థినులకు.", where: "మీ కళాశాల కార్యాలయం.", next: "దరఖాస్తు విధానం గురించి కళాశాల కార్యాలయంలో అడగండి." },
     },
     {
-      id: "pmmvy", icon: Baby, cats: ["women", "preg", "money"], voice: true, url: "https://spniwcd.wcd.gov.in/pradhan-mantri-matru-vandana-yojna/faqs",
+      id: "pmmvy", map: "Anganwadi centre near me", icon: Baby, cats: ["women", "preg", "money"], voice: true, url: "https://spniwcd.wcd.gov.in/pradhan-mantri-matru-vandana-yojna/faqs",
       docs: ["aadhaar", "bankPost", "mobile", "motherChild"],
       kw: ["கர்ப்ப", "குழந்தை", "பிரசவ", "மகப்பேறு", "தாய்", "மாத்ரு", "pregnant", "pregnancy", "baby", "child", "maternity", "mother", "delivery", "गर्भ", "बच्चा", "प्रसव", "मातृ", "माँ", "గర్భ", "బిడ్డ", "ప్రసవ", "తల్లి"],
       ta: { title: "மாத்ரு வந்தனா யோஜனா (PMMVY)", desc: "கர்ப்பிணி மற்றும் பாலூட்டும் தாய்மார்களுக்கான மத்திய அரசு உதவி.", benefit: "முதல் குழந்தைக்கு 5,000 ரூபாய் இரண்டு தவணையில்.", who: "குரலில் உங்கள் தகுதியை சரிபார்க்கலாம்.", where: "அருகிலுள்ள அங்கன்வாடி நிலையம்.", next: "குரல் சரிபார்ப்பைத் தொடங்குங்கள்." },
@@ -117,7 +117,7 @@
       te: { title: "మాతృ వందన యోజన (PMMVY)", desc: "గర్భిణీలు మరియు పాలిచ్చే తల్లులకు కేంద్ర ప్రభుత్వ సహాయం.", benefit: "మొదటి బిడ్డకు రెండు విడతల్లో 5,000 రూపాయలు.", who: "గర్భిణీలు లేదా కొత్త తల్లులకు. అర్హత నియమాలను అంగన్‌వాడీలో అడగండి.", where: "సమీపంలోని అంగన్‌వాడీ కేంద్రం.", next: "దరఖాస్తు గురించి సమీప అంగన్‌వాడీలో అడగండి." },
     },
     {
-      id: "widow", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
+      id: "widow", map: "e-Sevai centre near me", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
       docs: ["ration", "aadhaar", "deathCert", "widowCert"],
       kw: ["விதவை", "கணவர் இறந்த", "கணவன் இறந்த", "ஓய்வூதியம்", "பென்ஷன்", "widow", "husband died", "pension", "विधवा", "पति की मृत्यु", "पेंशन", "వితంతు", "భర్త మరణ", "పింఛను"],
       ...std(
@@ -126,7 +126,7 @@
       ),
     },
     {
-      id: "deserted", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
+      id: "deserted", map: "e-Sevai centre near me", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
       docs: ["ration", "aadhaar", "desertCert"],
       kw: ["கைவிடப்பட்ட", "விவாகரத்து", "ஓய்வூதியம்", "பென்ஷன்", "deserted", "divorce", "divorced", "pension", "परित्यक्ता", "तलाक", "पेंशन", "విడిచిపెట్ట", "విడాకులు", "పింఛను"],
       ...std(
@@ -135,7 +135,7 @@
       ),
     },
     {
-      id: "unmarried", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
+      id: "unmarried", map: "e-Sevai centre near me", icon: Users, cats: ["women", "pension", "money"], url: "https://cra.tn.gov.in/",
       docs: ["ration", "aadhaar"],
       kw: ["திருமணமாகாத", "ஓய்வூதியம்", "பென்ஷன்", "unmarried", "single", "pension", "अविवाहित", "पेंशन", "పెళ్లికాని", "పింఛను"],
       ...std(
@@ -144,7 +144,7 @@
       ),
     },
     {
-      id: "oldage", icon: Landmark, cats: ["pension", "money"], url: "https://cra.tn.gov.in/",
+      id: "oldage", map: "e-Sevai centre near me", icon: Landmark, cats: ["pension", "money"], url: "https://cra.tn.gov.in/",
       docs: ["ration", "aadhaar"],
       kw: ["முதியோர்", "வயதான", "மூத்த", "ஓய்வூதியம்", "பென்ஷன்", "old age", "elderly", "senior", "pension", "बुज़ुर्ग", "वृद्ध", "पेंशन", "వృద్ధ", "పింఛను"],
       ...std(
@@ -153,7 +153,7 @@
       ),
     },
     {
-      id: "disab", icon: Accessibility, cats: ["disab", "pension", "money"], url: "https://cra.tn.gov.in/",
+      id: "disab", map: "e-Sevai centre near me", icon: Accessibility, cats: ["disab", "pension", "money"], url: "https://cra.tn.gov.in/",
       docs: ["udid", "ration", "aadhaar"],
       kw: ["மாற்றுத்திறன", "ஊனம்", "ஓய்வூதியம்", "disabled", "disability", "differently", "pension", "दिव्यांग", "विकलांग", "पेंशन", "దివ్యాంగ", "వైకల్య", "పింఛను"],
       ta: { title: "மாற்றுத்திறனாளி ஓய்வூதியம்", desc: "மாற்றுத்திறனாளிகளுக்கான சமூகப் பாதுகாப்புத் திட்டம்.", benefit: AMT.ta, who: "தகுதியுள்ள மாற்றுத்திறனாளிகளுக்கு.", where: OFFICE.ta, next: CHECK.ta },
@@ -162,7 +162,7 @@
       te: { title: "దివ్యాంగుల పింఛను", desc: "దివ్యాంగుల కోసం సామాజిక భద్రతా పథకం.", benefit: AMT.te, who: "అర్హులైన దివ్యాంగులకు.", where: OFFICE.te, next: CHECK.te },
     },
     {
-      id: "ssy", icon: PiggyBank, cats: ["women", "money"], url: null,
+      id: "ssy", map: "post office near me", icon: PiggyBank, cats: ["women", "money"], url: null,
       docs: ["birthGirl", "idGuardian", "addrGuardian", "photos"],
       kw: ["பெண் குழந்தை", "சேமிப்பு", "செல்வமகள்", "மகள்", "girl child", "daughter", "savings", "sukanya", "बेटी", "बचत", "सुकन्या", "ఆడపిల్ల", "పొదుపు", "సుకన్య", "కూతురు"],
       ta: { title: "செல்வமகள் சேமிப்புத் திட்டம்", desc: "பெண் குழந்தையின் எதிர்காலத்துக்கான மத்திய அரசு சேமிப்புத் திட்டம்.", benefit: "பெண் குழந்தையின் பெயரில் சிறு சேமிப்புக் கணக்கு.", who: "பெண் குழந்தையின் பெற்றோர் அல்லது பாதுகாவலருக்கு.", where: "அஞ்சலகம் அல்லது வங்கி.", next: "வட்டி விகிதம், விதிகளை அங்கே கேளுங்கள்." },
@@ -181,7 +181,7 @@
       te: { title: "వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం)", desc: "మహిళలు మరియు ట్రాన్స్‌జెండర్ వ్యక్తులు ఎంపిక చేసిన ప్రభుత్వ బస్సుల్లో ఉచితంగా ప్రయాణించవచ్చు.", benefit: "ప్రభుత్వ బస్సుల్లో ఉచిత ప్రయాణం. ఆదాయ పరిమితి లేదు.", who: "తమిళనాడు మహిళలకు. ఆదాయ షరతు లేదు. ఏ బస్సులు వర్తిస్తాయో రవాణా కార్యాలయంలో నిర్ధారించుకోండి.", where: "అర్హత గల ప్రభుత్వ (రాష్ట్ర రవాణా) బస్సులు.", next: "ఆన్‌లైన్ నమోదు అవసరం లేదు. అర్హత గల ప్రభుత్వ బస్సు ఎక్కి, కండక్టర్‌ను ఉచిత టికెట్ అడగండి." },
     },
     {
-      id: "muthulakshmi", icon: Baby, cats: ["women", "preg", "money"], status: "active", url: null,
+      id: "muthulakshmi", map: "government primary health centre near me", icon: Baby, cats: ["women", "preg", "money"], status: "active", url: null,
       docs: ["picme", "otherAsked"],
       kw: ["கர்ப்ப", "பிரசவ", "மகப்பேறு", "முத்துலட்சுமி", "ஊட்டச்சத்து", "pregnant", "pregnancy", "maternity", "delivery", "muthulakshmi", "nutrition", "picme", "गर्भ", "प्रसव", "पोषण", "గర్భ", "ప్రసవ", "పోషక"],
       ta: { title: "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்", desc: "கர்ப்பிணிகளுக்கு பிரசவத்துக்கு முன்னும் பின்னும் தவணைகளில் உதவி கிடைக்கும். இதில் ஊட்டச்சத்துப் பெட்டகமும் அடங்கும்.", benefit: "மொத்தம் 18,000 ரூபாய்: 14,000 ரூபாய் பணம் தவணைகளில், மற்றும் 4,000 ரூபாய் மதிப்புள்ள இரண்டு ஊட்டச்சத்துப் பெட்டகங்கள்.", who: "தமிழ்நாட்டுக் கர்ப்பிணிகளுக்கு. தகுதி விதிகளை சுகாதார நிலையத்தில் உறுதி செய்யுங்கள்.", where: "PICME இணையதளம், அருகிலுள்ள அரசு சுகாதார நிலையம் அல்லது கிராம சுகாதார செவிலியர்.", next: "கர்ப்பத்தை முன்கூட்டியே, 12 வாரங்களுக்குள் பதிவு செய்வது நல்லது. விவரங்களை சுகாதார நிலையத்தில் கேளுங்கள்." },
@@ -190,7 +190,7 @@
       te: { title: "డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం", desc: "గర్భిణీలకు ప్రసవానికి ముందు మరియు తర్వాత విడతల్లో సహాయం లభిస్తుంది. ఇందులో పోషకాహార కిట్లు కూడా ఉంటాయి.", benefit: "మొత్తం 18,000 రూపాయలు: 14,000 రూపాయలు విడతల్లో నగదు, 4,000 రూపాయల విలువైన రెండు పోషకాహార కిట్లు.", who: "తమిళనాడు గర్భిణీలకు. అర్హత నియమాలను ఆరోగ్య కేంద్రంలో నిర్ధారించుకోండి.", where: "PICME వెబ్‌సైట్, సమీపంలోని ప్రభుత్వ ఆరోగ్య కేంద్రం లేదా గ్రామ ఆరోగ్య నర్సు.", next: "గర్భధారణ నమోదును త్వరగా చేయించుకోండి, 12 వారాల్లోపు చేస్తే మంచిది. వివరాలను ఆరోగ్య కేంద్రంలో అడగండి." },
     },
     {
-      id: "cmgirl", icon: PiggyBank, cats: ["women", "edu", "money"], status: "active", url: null,
+      id: "cmgirl", map: "e-Sevai centre near me", icon: PiggyBank, cats: ["women", "edu", "money"], status: "active", url: null,
       docs: ["birthGirl", "parentAge", "income", "community", "nativity", "sterilization", "noMale"],
       kw: ["பெண் குழந்தை", "முதலமைச்சர்", "வைப்புத் தொகை", "பாதுகாப்பு", "girl child", "daughter", "deposit", "chief minister", "protection", "बेटी", "बालिका", "जमा", "ఆడపిల్ల", "డిపాజిట్", "రక్షణ"],
       ta: { title: "முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம்", desc: "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை செலுத்தும். 18 வயதில் தொகை கிடைக்கும்; படிப்புக்கு உதவும்.", benefit: "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை: ஒரு பெண் குழந்தைக்கு 50,000 ரூபாய், இரண்டு பெண் குழந்தைகளுக்கு தலா 25,000 ரூபாய். 18 வயதில் கிடைக்கும்.", who: "ஆண் குழந்தை இல்லாத, ஒன்று அல்லது இரண்டு பெண் குழந்தைகள் உள்ள குடும்பங்களுக்கு. ஆண்டு வருமான வரம்பு உண்டு. விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.", where: OFFICE.ta, next: "குழந்தை பிறந்த பிறகு விண்ணப்பிக்க காலக்கெடு உண்டு. கடைசி தேதியை அலுவலகத்தில் கேளுங்கள்." },
@@ -199,7 +199,7 @@
       te: { title: "ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం", desc: "ప్రభుత్వం ఆడపిల్ల పేరుపై డిపాజిట్ చేస్తుంది. 18 ఏళ్లకు మొత్తం లభిస్తుంది; చదువుకు సహాయపడుతుంది.", benefit: "ఆడపిల్ల పేరుపై ప్రభుత్వ ఫిక్స్‌డ్ డిపాజిట్: ఒక ఆడపిల్లకు 50,000 రూపాయలు, ఇద్దరు ఆడపిల్లలకు ఒక్కొక్కరికి 25,000 రూపాయలు. 18 ఏళ్లకు లభిస్తుంది.", who: "మగపిల్లవాడు లేని, ఒకరు లేదా ఇద్దరు ఆడపిల్లలు ఉన్న కుటుంబాలకు. వార్షిక ఆదాయ పరిమితి ఉంది. నియమాలను కార్యాలయంలో నిర్ధారించుకోండి.", where: OFFICE.te, next: "బిడ్డ పుట్టిన తర్వాత దరఖాస్తుకు సమయ పరిమితి ఉంటుంది. చివరి తేదీని కార్యాలయంలో అడగండి." },
     },
     {
-      id: "sewing", icon: Scissors, cats: ["women", "money", "disab"], status: "active", url: null,
+      id: "sewing", map: "e-Sevai centre near me", icon: Scissors, cats: ["women", "money", "disab"], status: "active", url: null,
       docs: ["familyIncome", "ageProof", "categoryCert"],
       kw: ["தையல்", "இயந்திரம்", "சுயதொழில்", "விதவை", "மாற்றுத்திறன", "sewing", "machine", "self employment", "widow", "disabled", "satyavani", "sathyavani", "सिलाई", "मशीन", "स्वरोज़गार", "కుట్టు", "యంత్రం", "స్వయం ఉపాధి"],
       ta: { title: "சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்", desc: "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு சுயதொழிலுக்காக இலவச தையல் இயந்திரம் கிடைக்கும்.", benefit: "சுயதொழிலுக்கு இலவச தையல் இயந்திரம்.", who: "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.", where: OFFICE.ta, next: CHECK.ta },

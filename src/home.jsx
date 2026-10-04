@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Volume2, Mic, Search, ArrowLeft, ShieldCheck, Loader2, MapPin, ListChecks, Wallet,
   UserCheck, Info, FileText, ExternalLink, Sparkles, Square, ChevronRight, ChevronDown,
-  Flower2, Globe, Check, Languages,
+  Flower2, Globe, Check, Languages, Share2,
 } from "lucide-react";
 import {
   callAi,
@@ -26,6 +26,42 @@ export function InfoScreen() { return null; }
 const catName = (c, l) => c[l];
 const countLabel = (n, t) => `${n} ${n === 1 ? t.count1 : t.count}`;
 const altLang = (l) => (l === "en" ? "ta" : "en");
+
+// ?lang=hi&scheme=kmut — lets a shared link open the right scheme in the right language
+function readUrl() {
+  try {
+    const p = new URLSearchParams(window.location.search);
+    const lang = p.get("lang");
+    const scheme = p.get("scheme");
+    return {
+      lang: LANGS.some((x) => x.id === lang) ? lang : null,
+      scheme: scheme && getS(scheme) ? scheme : null,
+    };
+  } catch {
+    return { lang: null, scheme: null };
+  }
+}
+
+// WhatsApp message: title, benefit, documents, a reminder to confirm, and a link
+function whatsappUrl(s, l, t) {
+  const d = s[l];
+  const lines = [`*${d.title}*`, d.benefit, ""];
+  if (d.docs?.length) {
+    lines.push(`${t.docs}:`);
+    d.docs.forEach((x) => lines.push(`• ${x}`));
+    lines.push("", t.docsNote);
+  }
+  lines.push(
+    t.notOfficial,
+    "",
+    `${BRAND[l]}: ${window.location.origin}/?scheme=${s.id}&lang=${l}`
+  );
+  return `https://wa.me/?text=${encodeURIComponent(lines.join("\n"))}`;
+}
+
+// Google Maps search for the nearest office / centre
+const mapsUrl = (s) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.map)}`;
 
 // general text (summaries, results)
 function sayText(text, lang) {
@@ -123,14 +159,25 @@ const Block = ({ icon: Icon, title, children }) => (
 
 /* ---------- main ---------- */
 export function Home({ onStart }) {
+  const urlInit = useRef(null);
+  if (urlInit.current === null) urlInit.current = readUrl();
+  const initRef = useRef(false);
+
   const [l, setL] = useState(() => {
+    if (urlInit.current.lang) return urlInit.current.lang;
     try {
       const v = localStorage.getItem("sakhi_lang");
       return LANGS.some((x) => x.id === v) ? v : "ta";
     } catch { return "ta"; }
   });
+  const [firstVisit, setFirstVisit] = useState(() => {
+    if (urlInit.current.lang) return false;
+    try { return localStorage.getItem("sakhi_lang") === null; } catch { return false; }
+  });
   const t = T[l];
-  const [nav, setNav] = useState({ name: "home" });
+  const [nav, setNav] = useState(() =>
+    urlInit.current.scheme ? { name: "scheme", id: urlInit.current.scheme } : { name: "home" }
+  );
   const [q, setQ] = useState("");
   const [list, setList] = useState(null);
   const [summary, setSummary] = useState("");
@@ -164,7 +211,13 @@ export function Home({ onStart }) {
   useEffect(() => { document.documentElement.lang = l; }, [l]);
 
   useEffect(() => {
-    window.history.replaceState({ name: "home" }, "");
+    if (!initRef.current) {
+      initRef.current = true;
+      window.history.replaceState({ name: "home" }, "", window.location.pathname);
+      if (urlInit.current.scheme) {
+        window.history.pushState({ name: "scheme", id: urlInit.current.scheme }, "");
+      }
+    }
     const h = (e) => { stopAll(); setNav(e.state || { name: "home" }); };
     window.addEventListener("popstate", h);
     return () => window.removeEventListener("popstate", h);
@@ -348,10 +401,111 @@ export function Home({ onStart }) {
     <button
       type="button"
       onClick={back}
-      className="mb-4 inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-orange-200 bg-orange-50 px-4 text-base font-extrabold text-orange-900 transition hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+      className="inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-orange-200 bg-orange-50 px-4 text-base font-extrabold text-orange-900 transition hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
     >
       <ArrowLeft className="h-5 w-5" aria-hidden="true" /> {t.back}
     </button>
+  );
+
+  const allItems = () =>
+    S.filter((s) => filter === "all" || s.cats.includes(filter)).filter((s) => {
+      const k = q.toLowerCase().trim();
+      return !k || s[l].title.toLowerCase().includes(k) || s[l].desc.toLowerCase().includes(k) || matchSchemes(k).includes(s);
+    });
+
+  // what "Listen to this page" reads: heading (question voice) + content (answer voice)
+  const pageItems = () => {
+    const names = (arr) => arr.map((x) => x[l].title).join(". ");
+    if (nav.name === "home") {
+      return [
+        { q: t.hero, a: t.sub },
+        { q: t.cats, a: CATS.map((c) => c[l]).join(", ") },
+        { q: t.popular, a: names([getS("kmut"), getS("payanam"), getS("pudhumai")]) },
+      ];
+    }
+    if (nav.name === "category") {
+      const c = CATS.find((x) => x.id === nav.id);
+      return [{ q: c[l], a: names(S.filter((x) => x.cats.includes(c.id))) }];
+    }
+    if (nav.name === "all") return [{ q: t.all, a: names(allItems()) }];
+    if (nav.name === "results") {
+      return [
+        { q: t.results, a: busy ? "" : summary },
+        { q: "", a: names(list || S) },
+      ];
+    }
+    if (nav.name === "find") return [{ q: t.fq[fi].t, a: t.fq[fi].o.join(", ") }];
+    if (nav.name === "help") {
+      return [
+        { q: t.aboutTitle, a: t.aboutText },
+        ...t.faq.map((f) => ({ q: f.q, a: f.a })),
+        { q: t.privTitle, a: t.priv.join(" ") },
+      ];
+    }
+    return [];
+  };
+
+  const PageListen =
+    nav.name === "scheme" ? null : (
+      <button
+        type="button"
+        onClick={() => (speaking ? stopAll() : speakNow(() => speakSequence(pageItems(), l)))}
+        className="inline-flex min-h-[48px] items-center gap-2 rounded-xl bg-orange-100 px-4 text-base font-extrabold text-orange-900 transition hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+      >
+        {speaking ? (
+          <Square className="h-4 w-4" fill="currentColor" aria-hidden="true" />
+        ) : (
+          <Volume2 className="h-5 w-5" aria-hidden="true" />
+        )}
+        {speaking ? t.stop : t.listenPage}
+      </button>
+    );
+
+  const TopRow = (
+    <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+      {BackBtn}
+      {PageListen}
+    </div>
+  );
+
+  const pickLang = (x) => {
+    switchLang(x);
+    setFirstVisit(false);
+    speakNow(() => sayText(T[x].welcome, x));
+  };
+
+  // first visit: big, simple language choice (no dropdown to find)
+  const Picker = (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Choose your language"
+      className="fixed inset-0 z-50 overflow-y-auto bg-gradient-to-b from-amber-50 via-orange-50 to-orange-100"
+    >
+      <div className="mx-auto flex min-h-full max-w-md flex-col items-center justify-center gap-5 px-5 py-8 text-center">
+        <Flower2 className="h-12 w-12 text-orange-600" aria-hidden="true" />
+        <h1 className="text-3xl font-black text-orange-900">மகளிர் துணை</h1>
+        <p className="-mt-3 text-sm font-bold text-stone-600">Magalir Thunai</p>
+        <div className="space-y-1 text-lg font-extrabold leading-snug text-orange-950">
+          <p>உங்கள் மொழியைத் தேர்ந்தெடுங்கள்</p>
+          <p>Choose your language</p>
+          <p>अपनी भाषा चुनें</p>
+          <p>మీ భాషను ఎంచుకోండి</p>
+        </div>
+        <div className="grid w-full grid-cols-2 gap-3">
+          {LANGS.map((x) => (
+            <button
+              key={x.id}
+              type="button"
+              onClick={() => pickLang(x.id)}
+              className="min-h-[72px] rounded-2xl bg-white text-2xl font-black text-orange-900 shadow-md ring-2 ring-orange-200 transition hover:bg-orange-50 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-orange-500"
+            >
+              {x.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 
   const SearchBox = (
@@ -414,6 +568,7 @@ export function Home({ onStart }) {
               </span>
             ))}
           </div>
+          <div className="mt-3 flex justify-center">{PageListen}</div>
           <div className="mt-4 flex flex-col items-center gap-1">
             <button
               onClick={onMic}
@@ -470,7 +625,7 @@ export function Home({ onStart }) {
     const c = CATS.find((x) => x.id === nav.id);
     body = (
       <section className="mx-auto max-w-6xl px-4 py-6">
-        {BackBtn}
+        {TopRow}
         <h1 className="mb-4 text-2xl font-black text-orange-950">{catName(c, l)}</h1>
         <Grid items={S.filter((s) => s.cats.includes(c.id))} />
       </section>
@@ -478,13 +633,10 @@ export function Home({ onStart }) {
   }
 
   if (nav.name === "all") {
-    const items = S.filter((s) => filter === "all" || s.cats.includes(filter)).filter((s) => {
-      const k = q.toLowerCase().trim();
-      return !k || s[l].title.toLowerCase().includes(k) || s[l].desc.toLowerCase().includes(k) || matchSchemes(k).includes(s);
-    });
+    const items = allItems();
     body = (
       <section className="mx-auto max-w-6xl px-4 py-6">
-        {BackBtn}
+        {TopRow}
         <h1 className="mb-1 text-2xl font-black text-orange-950">{t.all}</h1>
         <p className="mb-3 text-sm font-semibold text-stone-500">{countLabel(items.length, t)}</p>
         <div className="mb-3">{SearchBox}</div>
@@ -508,7 +660,7 @@ export function Home({ onStart }) {
     const items = list || S;
     body = (
       <section className="mx-auto max-w-6xl px-4 py-6">
-        {BackBtn}
+        {TopRow}
         <div className="mb-4 flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-orange-100">
           {busy ? <Loader2 className="mt-1 h-5 w-5 animate-spin text-orange-700" /> : <Volume2 className="mt-1 h-5 w-5 text-orange-700" />}
           <p className="flex-1 text-base font-bold leading-snug">{busy ? t.wait : summary}</p>
@@ -527,7 +679,7 @@ export function Home({ onStart }) {
     const f = t.fq[fi];
     body = (
       <section className="mx-auto max-w-xl px-4 py-6">
-        {BackBtn}
+        {TopRow}
         <p className="mb-2 text-sm font-extrabold text-orange-700">{t.q} {fi + 1} / {t.fq.length}</p>
         <div className="mb-4 h-2 overflow-hidden rounded-full bg-orange-100">
           <div
@@ -551,7 +703,7 @@ export function Home({ onStart }) {
   if (nav.name === "help") {
     body = (
       <section className="mx-auto max-w-2xl px-4 py-6">
-        {BackBtn}
+        {TopRow}
         <div className="space-y-4 rounded-3xl bg-white p-5 shadow-md ring-1 ring-orange-100">
           <h1 className="text-2xl font-black text-orange-950">{t.aboutTitle}</h1>
           <p className="text-base font-semibold leading-relaxed text-stone-800">{t.aboutText}</p>
@@ -571,6 +723,17 @@ export function Home({ onStart }) {
               </details>
             ))}
           </div>
+          <h2 className="flex items-center gap-2 pt-2 text-xl font-black text-orange-950">
+            <ShieldCheck className="h-5 w-5" aria-hidden="true" /> {t.privTitle}
+          </h2>
+          <ul className="space-y-2">
+            {t.priv.map((x) => (
+              <li key={x} className="flex items-start gap-2 rounded-xl bg-orange-50 p-3 text-base font-semibold leading-relaxed text-stone-800">
+                <Check className="mt-1 h-4 w-4 shrink-0 text-green-700" aria-hidden="true" />
+                <span>{x}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     );
@@ -581,7 +744,7 @@ export function Home({ onStart }) {
     const d = s[l];
     body = (
       <section className="mx-auto max-w-2xl px-4 py-6">
-        {BackBtn}
+        <div className="mb-4">{BackBtn}</div>
         <div className="space-y-3 rounded-3xl bg-white p-5 shadow-md ring-1 ring-orange-100">
           <div className="flex items-center gap-4">
             <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-rose-700 text-white"><s.icon className="h-9 w-9" aria-hidden="true" /></div>
@@ -621,7 +784,19 @@ export function Home({ onStart }) {
             ) : t.docsUnknown}
           </Block>
 
-          <Block icon={MapPin} title={t.where}>{d.where}</Block>
+          <Block icon={MapPin} title={t.where}>
+            <p>{d.where}</p>
+            {s.map && (
+              <a
+                href={mapsUrl(s)}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-orange-300 bg-white px-4 text-base font-extrabold text-orange-900 transition hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+              >
+                <MapPin className="h-5 w-5" aria-hidden="true" /> {t.nearMap}
+              </a>
+            )}
+          </Block>
           <Block icon={ListChecks} title={t.next}>{d.next}</Block>
 
           <div className="grid gap-3 sm:grid-cols-2">
@@ -652,13 +827,23 @@ export function Home({ onStart }) {
               <ExternalLink className="h-5 w-5" aria-hidden="true" /> {t.official}
             </a>
           )}
-          <button
-            type="button"
-            onClick={stopAll}
-            className="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border-2 border-red-900/30 bg-white px-4 text-base font-extrabold text-red-900 transition hover:bg-red-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
-          >
-            <Square className="h-4 w-4" fill="currentColor" aria-hidden="true" /> {t.stop}
-          </button>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <a
+              href={whatsappUrl(s, l, t)}
+              target="_blank"
+              rel="noreferrer"
+              className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl border-2 border-green-700/40 bg-white px-4 text-base font-extrabold text-green-800 transition hover:bg-green-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+            >
+              <Share2 className="h-4 w-4" aria-hidden="true" /> {t.shareWa}
+            </a>
+            <button
+              type="button"
+              onClick={stopAll}
+              className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl border-2 border-red-900/30 bg-white px-4 text-base font-extrabold text-red-900 transition hover:bg-red-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+            >
+              <Square className="h-4 w-4" fill="currentColor" aria-hidden="true" /> {t.stop}
+            </button>
+          </div>
         </div>
       </section>
     );
@@ -669,6 +854,7 @@ export function Home({ onStart }) {
       {Header}
       {body}
       {Footer}
+      {firstVisit && Picker}
     </div>
   );
 }
