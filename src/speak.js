@@ -9,6 +9,11 @@
 
    Question and answer are separate utterances/clips so they
    can use different voices.
+
+   Order for every piece of speech:
+     1. pre-recorded clip   (public/audio, made by scripts/generate_audio.py)
+     2. real browser voice  (ta / hi / te / en)
+     3. /api/tts fallback   (Tamil, Hindi, Telugu only)
 ------------------------------------------------------- */
 
 let token = 0;
@@ -25,6 +30,66 @@ const NATIVE = {
   hi: { re: /[\u0900-\u097F]/, voice: /^hi(-|$)/, bcp: "hi-in", rupee: "रुपये " },
   te: { re: /[\u0C00-\u0C7F]/, voice: /^te(-|$)/, bcp: "te-in", rupee: "రూపాయలు " },
 };
+
+/* ---------- pre-recorded clips ----------
+   public/audio/manifest.json lists the clips that exist. A clip is found by
+   a hash of the exact text, so text that changed (or was never recorded)
+   simply falls back to live speech. */
+
+// 53-bit string hash (cyrb53): gives the same result in the browser and Node
+function hash53(str) {
+  let h1 = 0xdeadbeef;
+  let h2 = 0x41c6ce57;
+  for (let i = 0; i < str.length; i++) {
+    const ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+}
+
+/* "ta/q-1abc2d": language / role (q = heading, a = content) / text hash */
+export function clipKey(target, role, text) {
+  return `${target}/${role}-${hash53(String(text).trim())}`;
+}
+
+const EMPTY_MANIFEST = { v: 0, clips: {} };
+let manifestPromise = null;
+
+function loadManifest() {
+  if (typeof fetch === "undefined") return Promise.resolve(EMPTY_MANIFEST);
+  if (!manifestPromise) {
+    manifestPromise = fetch("/audio/manifest.json", { cache: "no-cache" }).then(
+      (r) =>
+        r.ok
+          ? r
+              .json()
+              .then((m) => (m && typeof m.clips === "object" ? m : EMPTY_MANIFEST))
+              .catch(() => EMPTY_MANIFEST) // e.g. the SPA rewrite returned index.html
+          : EMPTY_MANIFEST,
+      () => {
+        manifestPromise = null; // network blip: try again next time
+        return EMPTY_MANIFEST;
+      }
+    );
+  }
+  return manifestPromise;
+}
+
+const clipUrl = (m, key) => `/audio/clips/${key}.mp3?v=${m.v || 0}`;
+
+/* start downloading a clip we are about to need (best effort) */
+function warm(text, role, lang) {
+  text = String(text || "").trim();
+  if (!text || typeof fetch === "undefined") return;
+  const target = resolveLang(text, lang);
+  loadManifest().then((m) => {
+    const key = clipKey(target, role, text);
+    if (m.clips[key]) fetch(clipUrl(m, key)).catch(() => {});
+  });
+}
 
 /* ---------- text helpers ---------- */
 
@@ -156,21 +221,39 @@ function playUrl(url, rate = 1) {
     if (!audioEl) audioEl = new Audio();
     const a = audioEl;
 
-    const done = () => {
+    // resolves true only if the clip played to the end
+    const done = (ok) => {
       a.onended = null;
       a.onerror = null;
       pending = null;
-      resolve();
+      resolve(ok === true);
     };
 
     pending = done;
-    a.onended = done;
-    a.onerror = done;
+    a.onended = () => done(true);
+    a.onerror = () => done(false);
     a.src = url;
     a.defaultPlaybackRate = rate;
     a.playbackRate = rate;
-    a.play().catch(done);
+    a.play().catch(() => done(false));
   });
+}
+
+/* Some browsers (iOS Safari) only allow audio that starts inside a tap.
+   Playing a silent clip on the tap "unlocks" the shared audio element. */
+const SILENT_WAV =
+  "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
+let primed = false;
+
+function primeAudio() {
+  if (primed || typeof Audio === "undefined") return;
+  primed = true;
+  try {
+    if (!audioEl) audioEl = new Audio();
+    audioEl.src = SILENT_WAV;
+    const p = audioEl.play();
+    if (p && p.catch) p.catch(() => {});
+  } catch {}
 }
 
 /* ---------- stop ---------- */
@@ -198,6 +281,18 @@ async function say(text, role, my, lang) {
   if (!text) return;
 
   const target = resolveLang(text, lang);
+
+  // 1. pre-recorded clip (best quality, needs no browser voice)
+  const manifest = await loadManifest();
+  if (my !== token) return;
+  const key = clipKey(target, role, text);
+  if (manifest.clips[key]) {
+    const ok = await playUrl(clipUrl(manifest, key), 1);
+    if (my !== token) return;
+    if (ok) return;
+    // the clip could not be loaded or played: fall back to live speech
+  }
+
   const clean = normalize(text, target);
 
   const voices = synth ? await loadVoices() : [];
@@ -232,8 +327,15 @@ async function say(text, role, my, lang) {
 }
 
 async function run(items, my, lang) {
-  for (const { q, a } of items) {
+  for (let i = 0; i < items.length; i++) {
+    const { q, a } = items[i];
     if (my !== token) return;
+
+    warm(a, "a", lang);
+    if (items[i + 1]) {
+      warm(items[i + 1].q, "q", lang);
+      warm(items[i + 1].a, "a", lang);
+    }
 
     if (q) {
       await say(q, "q", my, lang);
@@ -253,6 +355,7 @@ async function run(items, my, lang) {
 /* items: [{ q, a }] — spoken one after another; stops any earlier speech. */
 export function speakSequence(items, lang) {
   stopSpeaking();
+  primeAudio();
   return run(items, token, lang);
 }
 
@@ -266,6 +369,7 @@ export const speakQuestion = speakQuestionOnly;
 
 export function speakText(text, lang) {
   stopSpeaking();
+  primeAudio();
   return say(text, "a", token, lang);
 }
 
@@ -335,6 +439,9 @@ export function schemeSpeechItems(data, lang) {
     .map(([k, v]) => ({ q: Q[k], a: toText(v) }))
     .filter((x) => x.a);
 }
+
+/* used by scripts/audio-texts.mjs so recorded text matches spoken text exactly */
+export { normalize as normalizeForSpeech, resolveLang };
 
 /* ---------- debug: run voiceDebug() in the browser console ---------- */
 

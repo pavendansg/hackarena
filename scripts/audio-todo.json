@@ -1,0 +1,2935 @@
+[
+ {
+  "key": "en/a-10nqmppednc",
+  "lang": "en",
+  "role": "a",
+  "text": "School certificate (TC) showing you studied Classes 6 to 12 in a government school. Aadhaar card. Bank passbook linked to Aadhaar, in your name. College admission proof or bonafide certificate",
+  "tts": "School certificate (TC) showing you studied Classes 6 to 12 in a government school. Aadhaar card. Bank passbook linked to Aadhaar, in your name. College admission proof or bonafide certificate"
+ },
+ {
+  "key": "en/a-13no516xrnd",
+  "lang": "en",
+  "role": "a",
+  "text": "Some schemes may allow online applications. Use the official information button on the scheme page if there is one, or ask at the e-Sevai centre.",
+  "tts": "Some schemes may allow online applications. Use the official information button on the scheme page if there is one, or ask at the e-Sevai centre."
+ },
+ {
+  "key": "en/a-169y9d8zwn8",
+  "lang": "en",
+  "role": "a",
+  "text": "Start the voice eligibility check.",
+  "tts": "Start the voice eligibility check."
+ },
+ {
+  "key": "en/a-17sa8a7wb8w",
+  "lang": "en",
+  "role": "a",
+  "text": "Family income certificate. Age proof. Certificate for your category (widow, deserted wife or disability), if asked",
+  "tts": "Family income certificate. Age proof. Certificate for your category (widow, deserted wife or disability), if asked"
+ },
+ {
+  "key": "en/a-18u99xpvdb5",
+  "lang": "en",
+  "role": "a",
+  "text": "Ask about interest rates and rules there.",
+  "tts": "Ask about interest rates and rules there."
+ },
+ {
+  "key": "en/a-19gisitfc81",
+  "lang": "en",
+  "role": "a",
+  "text": "Elderly people in need. Ask about age and income rules at the office.",
+  "tts": "Elderly people in need. Ask about age and income rules at the office."
+ },
+ {
+  "key": "en/a-1afooh0a897",
+  "lang": "en",
+  "role": "a",
+  "text": "Disability identity card (UDID) or disability certificate. Family ration card. Aadhaar card",
+  "tts": "Disability identity card (UDID) or disability certificate. Family ration card. Aadhaar card"
+ },
+ {
+  "key": "en/a-1aqfysf4acq",
+  "lang": "en",
+  "role": "a",
+  "text": "Money, Education, Pension, Medical",
+  "tts": "Money, Education, Pension, Medical"
+ },
+ {
+  "key": "en/a-1btpdv5be9r",
+  "lang": "en",
+  "role": "a",
+  "text": "Magalir Thunai helps women learn about government schemes in simple language, by voice. It is not an official government website.",
+  "tts": "Magalir Thunai helps women learn about government schemes in simple language, by voice. It is not an official government website."
+ },
+ {
+  "key": "en/a-1h2nlfb7frz",
+  "lang": "en",
+  "role": "a",
+  "text": "Family ration card. Aadhaar card. Certificate of desertion or legal separation",
+  "tts": "Family ration card. Aadhaar card. Certificate of desertion or legal separation"
+ },
+ {
+  "key": "en/a-1hiiklgms8g",
+  "lang": "en",
+  "role": "a",
+  "text": "Your college office.",
+  "tts": "Your college office."
+ },
+ {
+  "key": "en/a-1htx32uk15x",
+  "lang": "en",
+  "role": "a",
+  "text": "Confirm any fee at the office. Be careful if someone asks for money to help you apply.",
+  "tts": "Confirm any fee at the office. Be careful if someone asks for money to help you apply."
+ },
+ {
+  "key": "en/a-1i8d6k7sl57",
+  "lang": "en",
+  "role": "a",
+  "text": "Differently-Abled Pension. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme",
+  "tts": "Differently-Abled Pension. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme"
+ },
+ {
+  "key": "en/a-1jr75slmi34",
+  "lang": "en",
+  "role": "a",
+  "text": "Rs 5,000 in two instalments for the first child.",
+  "tts": "5000 rupees in two instalments for the first child."
+ },
+ {
+  "key": "en/a-1ktczr1bvn1",
+  "lang": "en",
+  "role": "a",
+  "text": "Central government savings scheme for a girl child's future.",
+  "tts": "Central government savings scheme for a girl child's future."
+ },
+ {
+  "key": "en/a-1l2i97hghv1",
+  "lang": "en",
+  "role": "a",
+  "text": "Aadhaar card. Bank or post office account linked to Aadhaar. Mobile number. Mother-child protection card",
+  "tts": "Aadhaar card. Bank or post office account linked to Aadhaar. Mobile number. Mother-child protection card"
+ },
+ {
+  "key": "en/a-1mjvlqibov9",
+  "lang": "en",
+  "role": "a",
+  "text": "Pregnant women receive assistance in instalments before and after delivery. It also includes nutrition kits.",
+  "tts": "Pregnant women receive assistance in instalments before and after delivery. It also includes nutrition kits."
+ },
+ {
+  "key": "en/a-1rdvkhk9jzt",
+  "lang": "en",
+  "role": "a",
+  "text": "The scheme is being changed. The current amount is Rs 1,000. Ask for the latest rules at the office.",
+  "tts": "The scheme is being changed. The current amount is 1000 rupees. Ask for the latest rules at the office."
+ },
+ {
+  "key": "en/a-1t1rplvkdhp",
+  "lang": "en",
+  "role": "a",
+  "text": "Widows, deserted wives, women from poor families and differently-abled persons. Confirm the age and income rules at the office.",
+  "tts": "Widows, deserted wives, women from poor families and differently-abled persons. Confirm the age and income rules at the office."
+ },
+ {
+  "key": "en/a-1t5ixqtcjqc",
+  "lang": "en",
+  "role": "a",
+  "text": "18–25, 26–40, 41–59, 60+",
+  "tts": "18–25, 26–40, 41–59, 60+"
+ },
+ {
+  "key": "en/a-1uqtfebqqhs",
+  "lang": "en",
+  "role": "a",
+  "text": "Never say or type your Aadhaar number, OTP, password or bank PIN. This app will never ask for them. When you use voice, your browser's voice service (for example Google in Chrome) may process your audio. Your question may be sent to an AI service to suggest schemes. Do not include personal details. You do not need to log in or create an account. Your language choice is saved on this device. Opening the map or WhatsApp takes you to those services, which have their own privacy rules.",
+  "tts": "Never say or type your Aadhaar number, OTP, password or bank PIN. This app will never ask for them. When you use voice, your browser's voice service (for example Google in Chrome) may process your audio. Your question may be sent to an AI service to suggest schemes. Do not include personal details. You do not need to log in or create an account. Your language choice is saved on this device. Opening the map or WhatsApp takes you to those services, which have their own privacy rules."
+ },
+ {
+  "key": "en/a-1v2f1dwdrov",
+  "lang": "en",
+  "role": "a",
+  "text": "PICME / RCH ID (the 12-digit number from pregnancy registration). Any other documents the office or health centre asks for",
+  "tts": "PICME / RCH ID (the 12-digit number from pregnancy registration). Any other documents the office or health centre asks for"
+ },
+ {
+  "key": "en/a-1vj4n99001d",
+  "lang": "en",
+  "role": "a",
+  "text": "Tamil Nadu government's monthly financial assistance for women.",
+  "tts": "Tamil Nadu government's monthly financial assistance for women."
+ },
+ {
+  "key": "en/a-1w63ef0k1ox",
+  "lang": "en",
+  "role": "a",
+  "text": "A government fixed deposit in the girl child's name: Rs 50,000 for one girl child, or Rs 25,000 each for two girls. Paid when she turns 18.",
+  "tts": "A government fixed deposit in the girl child's name: 50000 rupees for one girl child, or 25000 rupees each for two girls. Paid when she turns 18."
+ },
+ {
+  "key": "en/a-1xin1x81amg",
+  "lang": "en",
+  "role": "a",
+  "text": "No matching scheme. See all schemes below.",
+  "tts": "No matching scheme. See all schemes below."
+ },
+ {
+  "key": "en/a-1yl6utaxb6y",
+  "lang": "en",
+  "role": "a",
+  "text": "Rs 1,000 per month.",
+  "tts": "1000 rupees per month."
+ },
+ {
+  "key": "en/a-1z0ayvg9i8x",
+  "lang": "en",
+  "role": "a",
+  "text": "Birth certificate of the girl child. Age proof of the parents (birth or school certificate). Income certificate. Community certificate. Nativity certificate. Sterilisation certificate. Certificate that the family has no male child",
+  "tts": "Birth certificate of the girl child. Age proof of the parents (birth or school certificate). Income certificate. Community certificate. Nativity certificate. Sterilisation certificate. Certificate that the family has no male child"
+ },
+ {
+  "key": "en/a-23fstmzbhik",
+  "lang": "en",
+  "role": "a",
+  "text": "No online registration is needed. Board an eligible government bus and ask the conductor for a free ticket.",
+  "tts": "No online registration is needed. Board an eligible government bus and ask the conductor for a free ticket."
+ },
+ {
+  "key": "en/a-24qa8bwpstn",
+  "lang": "en",
+  "role": "a",
+  "text": "Social security scheme for persons with disabilities.",
+  "tts": "Social security scheme for persons with disabilities."
+ },
+ {
+  "key": "en/a-26705y74vck",
+  "lang": "en",
+  "role": "a",
+  "text": "Speak or type your question in your language.",
+  "tts": "Speak or type your question in your language."
+ },
+ {
+  "key": "en/a-26l62achqlx",
+  "lang": "en",
+  "role": "a",
+  "text": "Women of Tamil Nadu. There is no income condition. Confirm which buses are covered at the transport office.",
+  "tts": "Women of Tamil Nadu. There is no income condition. Confirm which buses are covered at the transport office."
+ },
+ {
+  "key": "en/a-28bt7wr32dn",
+  "lang": "en",
+  "role": "a",
+  "text": "Kalaignar Magalir Urimai Thittam. Pudhumai Penn Scheme. PM Matru Vandana Yojana (PMMVY). Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Sukanya Samriddhi Scheme. Vettri Payanam (earlier Vidiyal Payanam). Dr. Muthulakshmi Reddy Maternity Assistance Scheme. Chief Minister's Girl Child Protection Scheme. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme",
+  "tts": "Kalaignar Magalir Urimai Thittam. Pudhumai Penn Scheme. PM Matru Vandana Yojana (PMMVY). Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Sukanya Samriddhi Scheme. Vettri Payanam (earlier Vidiyal Payanam). Dr. Muthulakshmi Reddy Maternity Assistance Scheme. Chief Minister's Girl Child Protection Scheme. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme"
+ },
+ {
+  "key": "en/a-28wpychd3cp",
+  "lang": "en",
+  "role": "a",
+  "text": "Register your pregnancy early, ideally within 12 weeks. Ask the health centre for details.",
+  "tts": "Register your pregnancy early, ideally within 12 weeks. Ask the health centre for details."
+ },
+ {
+  "key": "en/a-29av5h7kzu9",
+  "lang": "en",
+  "role": "a",
+  "text": "Rs 1,000 per month to the bank account.",
+  "tts": "1000 rupees per month to the bank account."
+ },
+ {
+  "key": "en/a-29l9p7dm4qw",
+  "lang": "en",
+  "role": "a",
+  "text": "Tamil Nadu social security scheme.",
+  "tts": "Tamil Nadu social security scheme."
+ },
+ {
+  "key": "en/a-2a72m38lzb2",
+  "lang": "en",
+  "role": "a",
+  "text": "Destitute widows. Ask about age and income rules at the office.",
+  "tts": "Destitute widows. Ask about age and income rules at the office."
+ },
+ {
+  "key": "en/a-2b235t1v5yy",
+  "lang": "en",
+  "role": "a",
+  "text": "Free travel on government buses. No income limit.",
+  "tts": "Free travel on government buses. No income limit."
+ },
+ {
+  "key": "en/a-2ckkdd21849",
+  "lang": "en",
+  "role": "a",
+  "text": "Monthly pension. Confirm the amount at the office.",
+  "tts": "Monthly pension. Confirm the amount at the office."
+ },
+ {
+  "key": "en/a-2d29zqxeof5",
+  "lang": "en",
+  "role": "a",
+  "text": "Aadhaar card or another ID, in case the conductor asks",
+  "tts": "Aadhaar card or another ID, in case the conductor asks"
+ },
+ {
+  "key": "en/a-2fany9k512q",
+  "lang": "en",
+  "role": "a",
+  "text": "The government makes a deposit in the girl child's name. The amount is received at age 18 and helps with education.",
+  "tts": "The government makes a deposit in the girl child's name. The amount is received at age 18 and helps with education."
+ },
+ {
+  "key": "en/a-2fbky24fi6y",
+  "lang": "en",
+  "role": "a",
+  "text": "Based on what you shared, this scheme may suit you. Please verify official eligibility.",
+  "tts": "Based on what you shared, this scheme may suit you. Please verify official eligibility."
+ },
+ {
+  "key": "en/a-2gga5lsy16v",
+  "lang": "en",
+  "role": "a",
+  "text": "A small savings account in the girl child's name.",
+  "tts": "A small savings account in the girl child's name."
+ },
+ {
+  "key": "en/a-2gikwcw8xem",
+  "lang": "en",
+  "role": "a",
+  "text": "Confirm final eligibility at the government office.",
+  "tts": "Confirm final eligibility at the government office."
+ },
+ {
+  "key": "en/a-2swkx2ahi5",
+  "lang": "en",
+  "role": "a",
+  "text": "Eligible government (state transport) buses.",
+  "tts": "Eligible government (state transport) buses."
+ },
+ {
+  "key": "en/a-4c90mfn09d",
+  "lang": "en",
+  "role": "a",
+  "text": "There is a time limit to apply after the child's birth. Ask about the deadline at the office.",
+  "tts": "There is a time limit to apply after the child's birth. Ask about the deadline at the office."
+ },
+ {
+  "key": "en/a-4gepo1gtv5",
+  "lang": "en",
+  "role": "a",
+  "text": "e-Sevai centre or the nearest government office.",
+  "tts": "e-Sevai centre or the nearest government office."
+ },
+ {
+  "key": "en/a-75zktisag4",
+  "lang": "en",
+  "role": "a",
+  "text": "Parents or guardians of a girl child.",
+  "tts": "Parents or guardians of a girl child."
+ },
+ {
+  "key": "en/a-7aeme4ysqa",
+  "lang": "en",
+  "role": "a",
+  "text": "Yes, No",
+  "tts": "Yes, No"
+ },
+ {
+  "key": "en/a-9xzlbpir56",
+  "lang": "en",
+  "role": "a",
+  "text": "You can check your eligibility by voice.",
+  "tts": "You can check your eligibility by voice."
+ },
+ {
+  "key": "en/a-a9sq6i9nul",
+  "lang": "en",
+  "role": "a",
+  "text": "Women, Education, Pregnancy & Children, Financial Assistance, Pension, Disability",
+  "tts": "Women, Education, Pregnancy & Children, Financial Assistance, Pension, Disability"
+ },
+ {
+  "key": "en/a-apqpurjudy",
+  "lang": "en",
+  "role": "a",
+  "text": "Eligible differently-abled persons.",
+  "tts": "Eligible differently-abled persons."
+ },
+ {
+  "key": "en/a-b8btfm8h6g",
+  "lang": "en",
+  "role": "a",
+  "text": "Kalaignar Magalir Urimai Thittam. Pudhumai Penn Scheme. PM Matru Vandana Yojana (PMMVY). Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Old Age Pension. Differently-Abled Pension. Sukanya Samriddhi Scheme. Vettri Payanam (earlier Vidiyal Payanam). Dr. Muthulakshmi Reddy Maternity Assistance Scheme. Chief Minister's Girl Child Protection Scheme. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme",
+  "tts": "Kalaignar Magalir Urimai Thittam. Pudhumai Penn Scheme. PM Matru Vandana Yojana (PMMVY). Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Old Age Pension. Differently-Abled Pension. Sukanya Samriddhi Scheme. Vettri Payanam (earlier Vidiyal Payanam). Dr. Muthulakshmi Reddy Maternity Assistance Scheme. Chief Minister's Girl Child Protection Scheme. Sathyavani Muthu Ammaiyar Memorial Free Sewing Machine Scheme"
+ },
+ {
+  "key": "en/a-bq20hhyxun",
+  "lang": "en",
+  "role": "a",
+  "text": "Widows, deserted wives, women from poor families and differently-abled persons can get a free sewing machine for self-employment.",
+  "tts": "Widows, deserted wives, women from poor families and differently-abled persons can get a free sewing machine for self-employment."
+ },
+ {
+  "key": "en/a-cd6d9k5uvu",
+  "lang": "en",
+  "role": "a",
+  "text": "Ask your college office how to apply.",
+  "tts": "Ask your college office how to apply."
+ },
+ {
+  "key": "en/a-cginqsfbko",
+  "lang": "en",
+  "role": "a",
+  "text": "Nearest Anganwadi centre.",
+  "tts": "Nearest Anganwadi centre."
+ },
+ {
+  "key": "en/a-dhi21vpaz",
+  "lang": "en",
+  "role": "a",
+  "text": "Monthly support for girls pursuing higher education.",
+  "tts": "Monthly support for girls pursuing higher education."
+ },
+ {
+  "key": "en/a-dnl9jycgos",
+  "lang": "en",
+  "role": "a",
+  "text": "Families with one or two girl children and no male child. An annual income limit applies. Confirm the rules at the office.",
+  "tts": "Families with one or two girl children and no male child. An annual income limit applies. Confirm the rules at the office."
+ },
+ {
+  "key": "en/a-g4lrwfiaq1",
+  "lang": "en",
+  "role": "a",
+  "text": "Family ration card. Aadhaar card. Bank passbook linked to Aadhaar, in your name. Mobile number",
+  "tts": "Family ration card. Aadhaar card. Bank passbook linked to Aadhaar, in your name. Mobile number"
+ },
+ {
+  "key": "en/a-hqru63nrrf",
+  "lang": "en",
+  "role": "a",
+  "text": "A free sewing machine for self-employment.",
+  "tts": "A free sewing machine for self-employment."
+ },
+ {
+  "key": "en/a-l8qdexaisz",
+  "lang": "en",
+  "role": "a",
+  "text": "Post office or bank.",
+  "tts": "Post office or bank."
+ },
+ {
+  "key": "en/a-le2gabn7hl",
+  "lang": "en",
+  "role": "a",
+  "text": "Rules differ for each scheme. Open a scheme and read the “Who may qualify?” section. Confirm final eligibility at the office.",
+  "tts": "Rules differ for each scheme. Open a scheme and read the “Who may qualify?” section. Confirm final eligibility at the office."
+ },
+ {
+  "key": "en/a-mjabo5nh3z",
+  "lang": "en",
+  "role": "a",
+  "text": "Family ration card. Aadhaar card. Husband's death certificate. Widow certificate (issued by the Tahsildar)",
+  "tts": "Family ration card. Aadhaar card. Husband's death certificate. Widow certificate (issued by the Tahsildar)"
+ },
+ {
+  "key": "en/a-ms00h3e25i",
+  "lang": "en",
+  "role": "a",
+  "text": "Pudhumai Penn Scheme. Chief Minister's Girl Child Protection Scheme",
+  "tts": "Pudhumai Penn Scheme. Chief Minister's Girl Child Protection Scheme"
+ },
+ {
+  "key": "en/a-n1qaqgyzz5",
+  "lang": "en",
+  "role": "a",
+  "text": "PM Matru Vandana Yojana (PMMVY). Dr. Muthulakshmi Reddy Maternity Assistance Scheme",
+  "tts": "PM Matru Vandana Yojana (PMMVY). Dr. Muthulakshmi Reddy Maternity Assistance Scheme"
+ },
+ {
+  "key": "en/a-o7ogqyzyzc",
+  "lang": "en",
+  "role": "a",
+  "text": "Women and transgender persons can travel free on notified government buses.",
+  "tts": "Women and transgender persons can travel free on notified government buses."
+ },
+ {
+  "key": "en/a-pm9xlh1g0d",
+  "lang": "en",
+  "role": "a",
+  "text": "Family ration card. Aadhaar card",
+  "tts": "Family ration card. Aadhaar card"
+ },
+ {
+  "key": "en/a-qdayacajg",
+  "lang": "en",
+  "role": "a",
+  "text": "Deserted or divorced women. Ask about the conditions at the office.",
+  "tts": "Deserted or divorced women. Ask about the conditions at the office."
+ },
+ {
+  "key": "en/a-qpempa0gb1",
+  "lang": "en",
+  "role": "a",
+  "text": "Poor unmarried older women. Ask about the age rule at the office.",
+  "tts": "Poor unmarried older women. Ask about the age rule at the office."
+ },
+ {
+  "key": "en/a-r7xa5y3upn",
+  "lang": "en",
+  "role": "a",
+  "text": "Birth certificate of the girl child. Identity proof of the parent or guardian (such as Aadhaar). Address proof of the parent or guardian. Passport-size photographs",
+  "tts": "Birth certificate of the girl child. Identity proof of the parent or guardian (such as Aadhaar). Address proof of the parent or guardian. Passport-size photographs"
+ },
+ {
+  "key": "en/a-r80jithrcs",
+  "lang": "en",
+  "role": "a",
+  "text": "Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Old Age Pension. Differently-Abled Pension",
+  "tts": "Destitute Widow Pension. Destitute / Deserted Women Pension. Unmarried Poor Women Pension. Old Age Pension. Differently-Abled Pension"
+ },
+ {
+  "key": "en/a-rqa2fv1371",
+  "lang": "en",
+  "role": "a",
+  "text": "Kalaignar Magalir Urimai Thittam. Vettri Payanam (earlier Vidiyal Payanam). Pudhumai Penn Scheme",
+  "tts": "Kalaignar Magalir Urimai Thittam. Vettri Payanam (earlier Vidiyal Payanam). Pudhumai Penn Scheme"
+ },
+ {
+  "key": "en/a-ruazr9q5ii",
+  "lang": "en",
+  "role": "a",
+  "text": "Girls who studied Classes 6 to 12 in government schools and joined higher education.",
+  "tts": "Girls who studied Classes 6 to 12 in government schools and joined higher education."
+ },
+ {
+  "key": "en/a-u7mz5oqf6y",
+  "lang": "en",
+  "role": "a",
+  "text": "Women heads of eligible families.",
+  "tts": "Women heads of eligible families."
+ },
+ {
+  "key": "en/a-unligvpy13",
+  "lang": "en",
+  "role": "a",
+  "text": "Pregnant women of Tamil Nadu. Confirm the eligibility rules at the health centre.",
+  "tts": "Pregnant women of Tamil Nadu. Confirm the eligibility rules at the health centre."
+ },
+ {
+  "key": "en/a-w84xmv54vl",
+  "lang": "en",
+  "role": "a",
+  "text": "Central government support for pregnant and nursing mothers.",
+  "tts": "Central government support for pregnant and nursing mothers."
+ },
+ {
+  "key": "en/a-wd6o62hxhs",
+  "lang": "en",
+  "role": "a",
+  "text": "Rs 18,000 in total: Rs 14,000 cash in instalments plus two nutrition kits worth Rs 4,000.",
+  "tts": "18000 rupees in total: 14000 rupees cash in instalments plus two nutrition kits worth 4000 rupees."
+ },
+ {
+  "key": "en/a-x8m3i1kc03",
+  "lang": "en",
+  "role": "a",
+  "text": "Welcome to Magalir Thunai. Tap the microphone and ask your question.",
+  "tts": "Welcome to Magalir Thunai. Tap the microphone and ask your question."
+ },
+ {
+  "key": "en/a-xdem7esfd5",
+  "lang": "en",
+  "role": "a",
+  "text": "PICME website, the nearest government health centre or the village health nurse.",
+  "tts": "PICME website, the nearest government health centre or the village health nurse."
+ },
+ {
+  "key": "en/a-zokilvdmq8",
+  "lang": "en",
+  "role": "a",
+  "text": "Each scheme page lists the documents. Confirm the final list at the e-Sevai centre or the office.",
+  "tts": "Each scheme page lists the documents. Confirm the final list at the e-Sevai centre or the office."
+ },
+ {
+  "key": "en/q-12arr9tswfw",
+  "lang": "en",
+  "role": "q",
+  "text": "Find government schemes available to you",
+  "tts": "Find government schemes available to you"
+ },
+ {
+  "key": "en/q-12fouihmrkk",
+  "lang": "en",
+  "role": "q",
+  "text": "Is there a fee?",
+  "tts": "Is there a fee?"
+ },
+ {
+  "key": "en/q-14txswbhox0",
+  "lang": "en",
+  "role": "q",
+  "text": "Popular schemes",
+  "tts": "Popular schemes"
+ },
+ {
+  "key": "en/q-15i8wuoyhbq",
+  "lang": "en",
+  "role": "q",
+  "text": "What should I do next?",
+  "tts": "What should I do next?"
+ },
+ {
+  "key": "en/q-1f1wu0r0yro",
+  "lang": "en",
+  "role": "q",
+  "text": "Your privacy",
+  "tts": "Your privacy"
+ },
+ {
+  "key": "en/q-1f4qiefwzny",
+  "lang": "en",
+  "role": "q",
+  "text": "Who is eligible for these schemes?",
+  "tts": "Who is eligible for these schemes?"
+ },
+ {
+  "key": "en/q-1ia2kj7s0kr",
+  "lang": "en",
+  "role": "q",
+  "text": "Who may qualify?",
+  "tts": "Who may qualify?"
+ },
+ {
+  "key": "en/q-1qrkz6dkv53",
+  "lang": "en",
+  "role": "q",
+  "text": "Pension",
+  "tts": "Pension"
+ },
+ {
+  "key": "en/q-1s6t5nrao2b",
+  "lang": "en",
+  "role": "q",
+  "text": "Where should I go?",
+  "tts": "Where should I go?"
+ },
+ {
+  "key": "en/q-1wg9o2a5b3",
+  "lang": "en",
+  "role": "q",
+  "text": "Women",
+  "tts": "Women"
+ },
+ {
+  "key": "en/q-22ag2vx7y4w",
+  "lang": "en",
+  "role": "q",
+  "text": "Can I apply online?",
+  "tts": "Can I apply online?"
+ },
+ {
+  "key": "en/q-25hnox4mlkv",
+  "lang": "en",
+  "role": "q",
+  "text": "What documents are required?",
+  "tts": "What documents are required?"
+ },
+ {
+  "key": "en/q-25nwjpbs95d",
+  "lang": "en",
+  "role": "q",
+  "text": "Are you pregnant?",
+  "tts": "Are you pregnant?"
+ },
+ {
+  "key": "en/q-27eyi54ycg7",
+  "lang": "en",
+  "role": "q",
+  "text": "Disability",
+  "tts": "Disability"
+ },
+ {
+  "key": "en/q-2a73nv44kgj",
+  "lang": "en",
+  "role": "q",
+  "text": "Potential schemes for you",
+  "tts": "Potential schemes for you"
+ },
+ {
+  "key": "en/q-2cbqgo5rnwa",
+  "lang": "en",
+  "role": "q",
+  "text": "Which documents are needed?",
+  "tts": "Which documents are needed?"
+ },
+ {
+  "key": "en/q-2fiorka7pfm",
+  "lang": "en",
+  "role": "q",
+  "text": "Are you studying?",
+  "tts": "Are you studying?"
+ },
+ {
+  "key": "en/q-3a0rdp66fb",
+  "lang": "en",
+  "role": "q",
+  "text": "What is this scheme?",
+  "tts": "What is this scheme?"
+ },
+ {
+  "key": "en/q-569zasjbp6",
+  "lang": "en",
+  "role": "q",
+  "text": "Topics",
+  "tts": "Topics"
+ },
+ {
+  "key": "en/q-5fa2c1edco",
+  "lang": "en",
+  "role": "q",
+  "text": "Education",
+  "tts": "Education"
+ },
+ {
+  "key": "en/q-gi36udluoi",
+  "lang": "en",
+  "role": "q",
+  "text": "All Government Schemes",
+  "tts": "All Government Schemes"
+ },
+ {
+  "key": "en/q-j1j5q7kja1",
+  "lang": "en",
+  "role": "q",
+  "text": "What is the benefit?",
+  "tts": "What is the benefit?"
+ },
+ {
+  "key": "en/q-l8p2t9ngcg",
+  "lang": "en",
+  "role": "q",
+  "text": "What help do you need?",
+  "tts": "What help do you need?"
+ },
+ {
+  "key": "en/q-qk5546cfh9",
+  "lang": "en",
+  "role": "q",
+  "text": "Financial Assistance",
+  "tts": "Financial Assistance"
+ },
+ {
+  "key": "en/q-rline3z8h7",
+  "lang": "en",
+  "role": "q",
+  "text": "Your age group?",
+  "tts": "Your age group?"
+ },
+ {
+  "key": "en/q-wrnm9mjqcb",
+  "lang": "en",
+  "role": "q",
+  "text": "Pregnancy & Children",
+  "tts": "Pregnancy & Children"
+ },
+ {
+  "key": "en/q-zjjckec6tg",
+  "lang": "en",
+  "role": "q",
+  "text": "About us",
+  "tts": "About us"
+ },
+ {
+  "key": "hi/a-10vntkobpie",
+  "lang": "hi",
+  "role": "a",
+  "text": "दिव्यांग पहचान पत्र (UDID) या दिव्यांगता प्रमाणपत्र. राशन कार्ड (परिवार कार्ड). आधार कार्ड",
+  "tts": "दिव्यांग पहचान पत्र (UDID) या दिव्यांगता प्रमाणपत्र. राशन कार्ड (परिवार कार्ड). आधार कार्ड"
+ },
+ {
+  "key": "hi/a-10yshp9enj9",
+  "lang": "hi",
+  "role": "a",
+  "text": "कुछ योजनाओं में ऑनलाइन सुविधा हो सकती है। योजना के पन्ने पर आधिकारिक जानकारी का बटन हो तो उसका उपयोग करें, या ई-सेवा केंद्र में पूछें।",
+  "tts": "कुछ योजनाओं में ऑनलाइन सुविधा हो सकती है। योजना के पन्ने पर आधिकारिक जानकारी का बटन हो तो उसका उपयोग करें, या ई-सेवा केंद्र में पूछें।"
+ },
+ {
+  "key": "hi/a-120jhounzli",
+  "lang": "hi",
+  "role": "a",
+  "text": "तमिलनाडु सरकार की सामाजिक सुरक्षा योजना।",
+  "tts": "तमिलनाडु सरकार की सामाजिक सुरक्षा योजना।"
+ },
+ {
+  "key": "hi/a-12o5jcchyof",
+  "lang": "hi",
+  "role": "a",
+  "text": "अपनी भाषा में बोलें या लिखें।",
+  "tts": "अपनी भाषा में बोलें या लिखें।"
+ },
+ {
+  "key": "hi/a-12ujcmbuhp3",
+  "lang": "hi",
+  "role": "a",
+  "text": "सरकारी बसों में मुफ़्त यात्रा। आय की कोई सीमा नहीं।",
+  "tts": "सरकारी बसों में मुफ़्त यात्रा। आय की कोई सीमा नहीं।"
+ },
+ {
+  "key": "hi/a-12vf7ercw4x",
+  "lang": "hi",
+  "role": "a",
+  "text": "मातृ वंदना योजना (PMMVY). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना",
+  "tts": "मातृ वंदना योजना (PMMVY). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना"
+ },
+ {
+  "key": "hi/a-13gkwzwvw4s",
+  "lang": "hi",
+  "role": "a",
+  "text": "दिव्यांगजनों के लिए सामाजिक सुरक्षा योजना।",
+  "tts": "दिव्यांगजनों के लिए सामाजिक सुरक्षा योजना।"
+ },
+ {
+  "key": "hi/a-13ll0a9ryyk",
+  "lang": "hi",
+  "role": "a",
+  "text": "हर योजना के नियम अलग होते हैं। योजना खोलकर “किसके लिए?” वाला भाग देखें। अंतिम पात्रता कार्यालय में पक्की कर लें।",
+  "tts": "हर योजना के नियम अलग होते हैं। योजना खोलकर “किसके लिए?” वाला भाग देखें। अंतिम पात्रता कार्यालय में पक्की कर लें।"
+ },
+ {
+  "key": "hi/a-14nw3fjsspj",
+  "lang": "hi",
+  "role": "a",
+  "text": "कलैगनार महिला उरिमै थोगई (KMUT). पुदुमै पेण योजना. मातृ वंदना योजना (PMMVY). निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. सुकन्या समृद्धि योजना. वेट्री पयणम (पहले विडियल पयणम). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना. मुख्यमंत्री बालिका संरक्षण योजना. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना",
+  "tts": "कलैगनार महिला उरिमै थोगई (KMUT). पुदुमै पेण योजना. मातृ वंदना योजना (PMMVY). निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. सुकन्या समृद्धि योजना. वेट्री पयणम (पहले विडियल पयणम). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना. मुख्यमंत्री बालिका संरक्षण योजना. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना"
+ },
+ {
+  "key": "hi/a-15fcenqxqyf",
+  "lang": "hi",
+  "role": "a",
+  "text": "स्वरोज़गार के लिए निःशुल्क सिलाई मशीन।",
+  "tts": "स्वरोज़गार के लिए निःशुल्क सिलाई मशीन।"
+ },
+ {
+  "key": "hi/a-17l133gz8i7",
+  "lang": "hi",
+  "role": "a",
+  "text": "अंतिम पात्रता सरकारी कार्यालय में पक्की कर लें।",
+  "tts": "अंतिम पात्रता सरकारी कार्यालय में पक्की कर लें।"
+ },
+ {
+  "key": "hi/a-18ufiv70vu3",
+  "lang": "hi",
+  "role": "a",
+  "text": "Magalir Thunai में आपका स्वागत है। माइक का बटन दबाकर अपना सवाल पूछें।",
+  "tts": "Magalir Thunai में आपका स्वागत है। माइक का बटन दबाकर अपना सवाल पूछें।"
+ },
+ {
+  "key": "hi/a-18w9sl3evx7",
+  "lang": "hi",
+  "role": "a",
+  "text": "पारिवारिक आय प्रमाणपत्र. आयु का प्रमाण. आपकी श्रेणी का प्रमाणपत्र (विधवा, परित्यक्ता या दिव्यांग), माँगे जाने पर",
+  "tts": "पारिवारिक आय प्रमाणपत्र. आयु का प्रमाण. आपकी श्रेणी का प्रमाणपत्र (विधवा, परित्यक्ता या दिव्यांग), माँगे जाने पर"
+ },
+ {
+  "key": "hi/a-1aa3mio4adr",
+  "lang": "hi",
+  "role": "a",
+  "text": "हाँ, नहीं",
+  "tts": "हाँ, नहीं"
+ },
+ {
+  "key": "hi/a-1bcdks5d0k",
+  "lang": "hi",
+  "role": "a",
+  "text": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. आधार से जुड़ी, आपके नाम की बैंक पासबुक. मोबाइल नंबर",
+  "tts": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. आधार से जुड़ी, आपके नाम की बैंक पासबुक. मोबाइल नंबर"
+ },
+ {
+  "key": "hi/a-1bv4e1x102",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका के भविष्य के लिए केंद्र सरकार की बचत योजना।",
+  "tts": "बालिका के भविष्य के लिए केंद्र सरकार की बचत योजना।"
+ },
+ {
+  "key": "hi/a-1c52js322rn",
+  "lang": "hi",
+  "role": "a",
+  "text": "निराश्रित विधवाओं के लिए। आयु और आय के नियम कार्यालय में पूछें।",
+  "tts": "निराश्रित विधवाओं के लिए। आयु और आय के नियम कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-1c5uet91ryo",
+  "lang": "hi",
+  "role": "a",
+  "text": "गर्भवती महिलाओं को प्रसव से पहले और बाद में किस्तों में सहायता मिलती है। इसमें पोषण किट भी शामिल हैं।",
+  "tts": "गर्भवती महिलाओं को प्रसव से पहले और बाद में किस्तों में सहायता मिलती है। इसमें पोषण किट भी शामिल हैं।"
+ },
+ {
+  "key": "hi/a-1ekzwskue00",
+  "lang": "hi",
+  "role": "a",
+  "text": "आधार कार्ड या कोई अन्य पहचान पत्र, कंडक्टर के माँगने पर",
+  "tts": "आधार कार्ड या कोई अन्य पहचान पत्र, कंडक्टर के माँगने पर"
+ },
+ {
+  "key": "hi/a-1f4ak7ih45v",
+  "lang": "hi",
+  "role": "a",
+  "text": "जिन छात्राओं ने कक्षा 6 से 12 तक सरकारी स्कूल में पढ़ाई की और उच्च शिक्षा में प्रवेश लिया।",
+  "tts": "जिन छात्राओं ने कक्षा 6 से 12 तक सरकारी स्कूल में पढ़ाई की और उच्च शिक्षा में प्रवेश लिया।"
+ },
+ {
+  "key": "hi/a-1hqytf4h9nb",
+  "lang": "hi",
+  "role": "a",
+  "text": "बच्चे के जन्म के बाद आवेदन की समय-सीमा होती है। अंतिम तारीख कार्यालय में पूछें।",
+  "tts": "बच्चे के जन्म के बाद आवेदन की समय-सीमा होती है। अंतिम तारीख कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-1j4dsga627v",
+  "lang": "hi",
+  "role": "a",
+  "text": "आधार कार्ड. आधार से जुड़ा बैंक या डाकघर खाता. मोबाइल नंबर. मदर-चाइल्ड प्रोटेक्शन कार्ड",
+  "tts": "आधार कार्ड. आधार से जुड़ा बैंक या डाकघर खाता. मोबाइल नंबर. मदर-चाइल्ड प्रोटेक्शन कार्ड"
+ },
+ {
+  "key": "hi/a-1jza14gwsae",
+  "lang": "hi",
+  "role": "a",
+  "text": "शुल्क के बारे में कार्यालय में पूछें। आवेदन में मदद के नाम पर कोई पैसे माँगे तो सावधान रहें।",
+  "tts": "शुल्क के बारे में कार्यालय में पूछें। आवेदन में मदद के नाम पर कोई पैसे माँगे तो सावधान रहें।"
+ },
+ {
+  "key": "hi/a-1k0ximwphuz",
+  "lang": "hi",
+  "role": "a",
+  "text": "दिव्यांग पेंशन. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना",
+  "tts": "दिव्यांग पेंशन. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना"
+ },
+ {
+  "key": "hi/a-1m3t2qrlrcr",
+  "lang": "hi",
+  "role": "a",
+  "text": "Magalir Thunai महिलाओं को सरल भाषा में, आवाज़ के ज़रिए सरकारी योजनाओं को समझने में मदद करता है। यह सरकारी वेबसाइट नहीं है।",
+  "tts": "Magalir Thunai महिलाओं को सरल भाषा में, आवाज़ के ज़रिए सरकारी योजनाओं को समझने में मदद करता है। यह सरकारी वेबसाइट नहीं है।"
+ },
+ {
+  "key": "hi/a-1mug92te3i5",
+  "lang": "hi",
+  "role": "a",
+  "text": "गर्भवती और स्तनपान कराने वाली माताओं के लिए केंद्र सरकार की सहायता।",
+  "tts": "गर्भवती और स्तनपान कराने वाली माताओं के लिए केंद्र सरकार की सहायता।"
+ },
+ {
+  "key": "hi/a-1naguzijbht",
+  "lang": "hi",
+  "role": "a",
+  "text": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. पति द्वारा छोड़े जाने या कानूनी अलगाव का प्रमाणपत्र",
+  "tts": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. पति द्वारा छोड़े जाने या कानूनी अलगाव का प्रमाणपत्र"
+ },
+ {
+  "key": "hi/a-1nrhfa5a9tr",
+  "lang": "hi",
+  "role": "a",
+  "text": "कॉलेज कार्यालय में आवेदन की प्रक्रिया पूछें।",
+  "tts": "कॉलेज कार्यालय में आवेदन की प्रक्रिया पूछें।"
+ },
+ {
+  "key": "hi/a-1otoabmczbr",
+  "lang": "hi",
+  "role": "a",
+  "text": "अपना Aadhaar नंबर, OTP, पासवर्ड या बैंक PIN न बोलें और न लिखें। यह ऐप इन्हें कभी नहीं माँगेगा। आवाज़ का उपयोग करने पर आपके ब्राउज़र की आवाज़ सेवा (जैसे Chrome में Google) आपकी आवाज़ को प्रोसेस कर सकती है। योजनाएँ सुझाने के लिए आपका सवाल किसी AI सेवा को भेजा जा सकता है। निजी जानकारी न डालें। लॉग इन करने या खाता बनाने की ज़रूरत नहीं है। आपकी भाषा की पसंद इस डिवाइस पर सहेजी जाती है। नक्शा या WhatsApp खोलने पर आप उन सेवाओं पर जाते हैं, जिनकी अपनी गोपनीयता नीतियाँ हैं।",
+  "tts": "अपना Aadhaar नंबर, OTP, पासवर्ड या बैंक PIN न बोलें और न लिखें। यह ऐप इन्हें कभी नहीं माँगेगा। आवाज़ का उपयोग करने पर आपके ब्राउज़र की आवाज़ सेवा (जैसे Chrome में Google) आपकी आवाज़ को प्रोसेस कर सकती है। योजनाएँ सुझाने के लिए आपका सवाल किसी AI सेवा को भेजा जा सकता है। निजी जानकारी न डालें। लॉग इन करने या खाता बनाने की ज़रूरत नहीं है। आपकी भाषा की पसंद इस डिवाइस पर सहेजी जाती है। नक्शा या WhatsApp खोलने पर आप उन सेवाओं पर जाते हैं, जिनकी अपनी गोपनीयता नीतियाँ हैं।"
+ },
+ {
+  "key": "hi/a-1pjvd0ldg4o",
+  "lang": "hi",
+  "role": "a",
+  "text": "हर योजना के पन्ने पर दस्तावेज़ों की सूची है। अंतिम सूची ई-सेवा केंद्र या कार्यालय में पक्की कर लें।",
+  "tts": "हर योजना के पन्ने पर दस्तावेज़ों की सूची है। अंतिम सूची ई-सेवा केंद्र या कार्यालय में पक्की कर लें।"
+ },
+ {
+  "key": "hi/a-1qwz82o3ayy",
+  "lang": "hi",
+  "role": "a",
+  "text": "तमिलनाडु की महिलाओं के लिए। आय की कोई शर्त नहीं। कौन-सी बसें शामिल हैं, यह परिवहन कार्यालय में पक्का कर लें।",
+  "tts": "तमिलनाडु की महिलाओं के लिए। आय की कोई शर्त नहीं। कौन-सी बसें शामिल हैं, यह परिवहन कार्यालय में पक्का कर लें।"
+ },
+ {
+  "key": "hi/a-1rs138rnpm",
+  "lang": "hi",
+  "role": "a",
+  "text": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. पति का मृत्यु प्रमाणपत्र. विधवा प्रमाणपत्र (तहसीलदार द्वारा जारी)",
+  "tts": "राशन कार्ड (परिवार कार्ड). आधार कार्ड. पति का मृत्यु प्रमाणपत्र. विधवा प्रमाणपत्र (तहसीलदार द्वारा जारी)"
+ },
+ {
+  "key": "hi/a-1sataw297t7",
+  "lang": "hi",
+  "role": "a",
+  "text": "कुल 18,000 रुपये: 14,000 रुपये नकद किस्तों में और 4,000 रुपये के दो पोषण किट।",
+  "tts": "कुल 18000 रुपये: 14000 रुपये नकद किस्तों में और 4000 रुपये के दो पोषण किट।"
+ },
+ {
+  "key": "hi/a-1sjd2cxkfc0",
+  "lang": "hi",
+  "role": "a",
+  "text": "गर्भावस्था का पंजीकरण जल्दी करवाएँ, बेहतर है 12 हफ़्तों के भीतर। जानकारी स्वास्थ्य केंद्र में पूछें।",
+  "tts": "गर्भावस्था का पंजीकरण जल्दी करवाएँ, बेहतर है 12 हफ़्तों के भीतर। जानकारी स्वास्थ्य केंद्र में पूछें।"
+ },
+ {
+  "key": "hi/a-1srvi6st10s",
+  "lang": "hi",
+  "role": "a",
+  "text": "परित्यक्ता या तलाकशुदा महिलाओं के लिए। शर्तें कार्यालय में पूछें।",
+  "tts": "परित्यक्ता या तलाकशुदा महिलाओं के लिए। शर्तें कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-1trlufbbpq9",
+  "lang": "hi",
+  "role": "a",
+  "text": "डाकघर या बैंक।",
+  "tts": "डाकघर या बैंक।"
+ },
+ {
+  "key": "hi/a-1u3kr5gx5u7",
+  "lang": "hi",
+  "role": "a",
+  "text": "गर्भवती या नई माताओं के लिए। पात्रता के नियम आंगनवाड़ी में पूछें।",
+  "tts": "गर्भवती या नई माताओं के लिए। पात्रता के नियम आंगनवाड़ी में पूछें।"
+ },
+ {
+  "key": "hi/a-1ybm6qmosb5",
+  "lang": "hi",
+  "role": "a",
+  "text": "PICME / RCH आईडी (गर्भावस्था पंजीकरण में मिलने वाला 12 अंकों का नंबर). कार्यालय या स्वास्थ्य केंद्र जो अन्य दस्तावेज़ माँगे",
+  "tts": "PICME / RCH आईडी (गर्भावस्था पंजीकरण में मिलने वाला 12 अंकों का नंबर). कार्यालय या स्वास्थ्य केंद्र जो अन्य दस्तावेज़ माँगे"
+ },
+ {
+  "key": "hi/a-1zub6zhuhys",
+  "lang": "hi",
+  "role": "a",
+  "text": "सहारे की ज़रूरत वाले बुज़ुर्गों के लिए। आयु और आय के नियम कार्यालय में पूछें।",
+  "tts": "सहारे की ज़रूरत वाले बुज़ुर्गों के लिए। आयु और आय के नियम कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-21ixk0u7sq9",
+  "lang": "hi",
+  "role": "a",
+  "text": "उच्च शिक्षा पढ़ रही छात्राओं के लिए मासिक सहायता।",
+  "tts": "उच्च शिक्षा पढ़ रही छात्राओं के लिए मासिक सहायता।"
+ },
+ {
+  "key": "hi/a-22py39dmhff",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका के माता-पिता या अभिभावक के लिए।",
+  "tts": "बालिका के माता-पिता या अभिभावक के लिए।"
+ },
+ {
+  "key": "hi/a-277krq9zsud",
+  "lang": "hi",
+  "role": "a",
+  "text": "सरकार बालिका के नाम पर जमा राशि रखती है। 18 साल की उम्र में राशि मिलती है और पढ़ाई में मदद करती है।",
+  "tts": "सरकार बालिका के नाम पर जमा राशि रखती है। 18 साल की उम्र में राशि मिलती है और पढ़ाई में मदद करती है।"
+ },
+ {
+  "key": "hi/a-27irjfc6hvs",
+  "lang": "hi",
+  "role": "a",
+  "text": "ई-सेवा केंद्र या नज़दीकी सरकारी कार्यालय।",
+  "tts": "ई-सेवा केंद्र या नज़दीकी सरकारी कार्यालय।"
+ },
+ {
+  "key": "hi/a-28a4jsn4vr8",
+  "lang": "hi",
+  "role": "a",
+  "text": "विधवाओं, परित्यक्ता पत्नियों, निर्धन परिवारों की महिलाओं और दिव्यांगजनों को स्वरोज़गार के लिए निःशुल्क सिलाई मशीन मिलती है।",
+  "tts": "विधवाओं, परित्यक्ता पत्नियों, निर्धन परिवारों की महिलाओं और दिव्यांगजनों को स्वरोज़गार के लिए निःशुल्क सिलाई मशीन मिलती है।"
+ },
+ {
+  "key": "hi/a-28jt2q18qsv",
+  "lang": "hi",
+  "role": "a",
+  "text": "पुदुमै पेण योजना. मुख्यमंत्री बालिका संरक्षण योजना",
+  "tts": "पुदुमै पेण योजना. मुख्यमंत्री बालिका संरक्षण योजना"
+ },
+ {
+  "key": "hi/a-28o2erg145f",
+  "lang": "hi",
+  "role": "a",
+  "text": "पहले बच्चे के लिए दो किस्तों में 5,000 रुपये।",
+  "tts": "पहले बच्चे के लिए दो किस्तों में 5000 रुपये।"
+ },
+ {
+  "key": "hi/a-291gp5q9yo9",
+  "lang": "hi",
+  "role": "a",
+  "text": "ब्याज दर और नियम वहीं पूछें।",
+  "tts": "ब्याज दर और नियम वहीं पूछें।"
+ },
+ {
+  "key": "hi/a-29gr8p22al1",
+  "lang": "hi",
+  "role": "a",
+  "text": "आवेदन के बारे में नज़दीकी आंगनवाड़ी में पूछें।",
+  "tts": "आवेदन के बारे में नज़दीकी आंगनवाड़ी में पूछें।"
+ },
+ {
+  "key": "hi/a-29i85k9iold",
+  "lang": "hi",
+  "role": "a",
+  "text": "तमिलनाडु की गर्भवती महिलाओं के लिए। पात्रता के नियम स्वास्थ्य केंद्र में पक्के कर लें।",
+  "tts": "तमिलनाडु की गर्भवती महिलाओं के लिए। पात्रता के नियम स्वास्थ्य केंद्र में पक्के कर लें।"
+ },
+ {
+  "key": "hi/a-2a1itl80nto",
+  "lang": "hi",
+  "role": "a",
+  "text": "तमिलनाडु सरकार की महिलाओं के लिए मासिक आर्थिक सहायता योजना।",
+  "tts": "तमिलनाडु सरकार की महिलाओं के लिए मासिक आर्थिक सहायता योजना।"
+ },
+ {
+  "key": "hi/a-2a66unbhm2j",
+  "lang": "hi",
+  "role": "a",
+  "text": "योजना में बदलाव चल रहा है। अभी राशि 1,000 रुपये है। ताज़ा नियम कार्यालय में पूछें।",
+  "tts": "योजना में बदलाव चल रहा है। अभी राशि 1000 रुपये है। ताज़ा नियम कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-2b5skiluk6s",
+  "lang": "hi",
+  "role": "a",
+  "text": "महिलाएँ और ट्रांसजेंडर व्यक्ति चुनी हुई सरकारी बसों में मुफ़्त यात्रा कर सकते हैं।",
+  "tts": "महिलाएँ और ट्रांसजेंडर व्यक्ति चुनी हुई सरकारी बसों में मुफ़्त यात्रा कर सकते हैं।"
+ },
+ {
+  "key": "hi/a-2cg14en7s0i",
+  "lang": "hi",
+  "role": "a",
+  "text": "हर महीने 1,000 रुपये बैंक खाते में।",
+  "tts": "हर महीने 1000 रुपये बैंक खाते में।"
+ },
+ {
+  "key": "hi/a-2e1jgpt0ay5",
+  "lang": "hi",
+  "role": "a",
+  "text": "निर्धन अविवाहित बुज़ुर्ग महिलाओं के लिए। आयु का नियम कार्यालय में पूछें।",
+  "tts": "निर्धन अविवाहित बुज़ुर्ग महिलाओं के लिए। आयु का नियम कार्यालय में पूछें।"
+ },
+ {
+  "key": "hi/a-2ghug9y1i0b",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका के नाम पर छोटी बचत खाता।",
+  "tts": "बालिका के नाम पर छोटी बचत खाता।"
+ },
+ {
+  "key": "hi/a-515p1zdtzg",
+  "lang": "hi",
+  "role": "a",
+  "text": "मासिक पेंशन। राशि कार्यालय में पक्की कर लें।",
+  "tts": "मासिक पेंशन। राशि कार्यालय में पक्की कर लें।"
+ },
+ {
+  "key": "hi/a-5d11r2kebj",
+  "lang": "hi",
+  "role": "a",
+  "text": "कक्षा 6 से 12 तक सरकारी स्कूल में पढ़ने का प्रमाणपत्र (टीसी). आधार कार्ड. आधार से जुड़ी, आपके नाम की बैंक पासबुक. कॉलेज में प्रवेश का प्रमाण या बोनाफाइड प्रमाणपत्र",
+  "tts": "कक्षा 6 से 12 तक सरकारी स्कूल में पढ़ने का प्रमाणपत्र (टीसी). आधार कार्ड. आधार से जुड़ी, आपके नाम की बैंक पासबुक. कॉलेज में प्रवेश का प्रमाण या बोनाफाइड प्रमाणपत्र"
+ },
+ {
+  "key": "hi/a-69qb0dwf86",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका का जन्म प्रमाणपत्र. माता-पिता या अभिभावक का पहचान प्रमाण (जैसे आधार). माता-पिता या अभिभावक का पते का प्रमाण. पासपोर्ट साइज़ फ़ोटो",
+  "tts": "बालिका का जन्म प्रमाणपत्र. माता-पिता या अभिभावक का पहचान प्रमाण (जैसे आधार). माता-पिता या अभिभावक का पते का प्रमाण. पासपोर्ट साइज़ फ़ोटो"
+ },
+ {
+  "key": "hi/a-7sdeedjdeu",
+  "lang": "hi",
+  "role": "a",
+  "text": "हर महीने 1,000 रुपये।",
+  "tts": "हर महीने 1000 रुपये।"
+ },
+ {
+  "key": "hi/a-8g2jk74z6g",
+  "lang": "hi",
+  "role": "a",
+  "text": "नज़दीकी आंगनवाड़ी केंद्र।",
+  "tts": "नज़दीकी आंगनवाड़ी केंद्र।"
+ },
+ {
+  "key": "hi/a-8i9jq1grqi",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका के नाम पर सरकारी सावधि जमा: एक बालिका के लिए 50,000 रुपये, दो बालिकाओं के लिए 25,000 रुपये प्रत्येक। 18 साल की उम्र में मिलती है।",
+  "tts": "बालिका के नाम पर सरकारी सावधि जमा: एक बालिका के लिए 50000 रुपये, दो बालिकाओं के लिए 25000 रुपये प्रत्येक। 18 साल की उम्र में मिलती है।"
+ },
+ {
+  "key": "hi/a-anp34gh0ez",
+  "lang": "hi",
+  "role": "a",
+  "text": "पात्र सरकारी (राज्य परिवहन) बसें।",
+  "tts": "पात्र सरकारी (राज्य परिवहन) बसें।"
+ },
+ {
+  "key": "hi/a-bkbu7ovi9x",
+  "lang": "hi",
+  "role": "a",
+  "text": "पैसे, शिक्षा, पेंशन, स्वास्थ्य",
+  "tts": "पैसे, शिक्षा, पेंशन, स्वास्थ्य"
+ },
+ {
+  "key": "hi/a-dmoycpudtm",
+  "lang": "hi",
+  "role": "a",
+  "text": "आपकी दी गई जानकारी के आधार पर यह योजना आपके लिए उपयोगी हो सकती है। कृपया आधिकारिक पात्रता की पुष्टि करें।",
+  "tts": "आपकी दी गई जानकारी के आधार पर यह योजना आपके लिए उपयोगी हो सकती है। कृपया आधिकारिक पात्रता की पुष्टि करें।"
+ },
+ {
+  "key": "hi/a-dxc7i8yu3q",
+  "lang": "hi",
+  "role": "a",
+  "text": "पात्र परिवारों की महिला मुखिया को।",
+  "tts": "पात्र परिवारों की महिला मुखिया को।"
+ },
+ {
+  "key": "hi/a-e5jalbqqw2",
+  "lang": "hi",
+  "role": "a",
+  "text": "निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. वृद्धावस्था पेंशन. दिव्यांग पेंशन",
+  "tts": "निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. वृद्धावस्था पेंशन. दिव्यांग पेंशन"
+ },
+ {
+  "key": "hi/a-e8sy43aqss",
+  "lang": "hi",
+  "role": "a",
+  "text": "आपके कॉलेज का कार्यालय।",
+  "tts": "आपके कॉलेज का कार्यालय।"
+ },
+ {
+  "key": "hi/a-enhpw9rt5q",
+  "lang": "hi",
+  "role": "a",
+  "text": "ऑनलाइन पंजीकरण ज़रूरी नहीं। पात्र सरकारी बस में चढ़ें और कंडक्टर से मुफ़्त टिकट माँगें।",
+  "tts": "ऑनलाइन पंजीकरण ज़रूरी नहीं। पात्र सरकारी बस में चढ़ें और कंडक्टर से मुफ़्त टिकट माँगें।"
+ },
+ {
+  "key": "hi/a-fj4xdef5gn",
+  "lang": "hi",
+  "role": "a",
+  "text": "पात्र दिव्यांगजनों के लिए।",
+  "tts": "पात्र दिव्यांगजनों के लिए।"
+ },
+ {
+  "key": "hi/a-jx38fp698o",
+  "lang": "hi",
+  "role": "a",
+  "text": "बालिका का जन्म प्रमाणपत्र. माता-पिता की आयु का प्रमाण (जन्म या स्कूल प्रमाणपत्र). आय प्रमाणपत्र. जाति प्रमाणपत्र. मूल निवास प्रमाणपत्र. नसबंदी प्रमाणपत्र. परिवार में कोई बेटा नहीं होने का प्रमाणपत्र",
+  "tts": "बालिका का जन्म प्रमाणपत्र. माता-पिता की आयु का प्रमाण (जन्म या स्कूल प्रमाणपत्र). आय प्रमाणपत्र. जाति प्रमाणपत्र. मूल निवास प्रमाणपत्र. नसबंदी प्रमाणपत्र. परिवार में कोई बेटा नहीं होने का प्रमाणपत्र"
+ },
+ {
+  "key": "hi/a-l2hvmslj5r",
+  "lang": "hi",
+  "role": "a",
+  "text": "विधवाओं, परित्यक्ता पत्नियों, निर्धन परिवारों की महिलाओं और दिव्यांगजनों के लिए। आयु और आय के नियम कार्यालय में पक्के कर लें।",
+  "tts": "विधवाओं, परित्यक्ता पत्नियों, निर्धन परिवारों की महिलाओं और दिव्यांगजनों के लिए। आयु और आय के नियम कार्यालय में पक्के कर लें।"
+ },
+ {
+  "key": "hi/a-odfaltic5q",
+  "lang": "hi",
+  "role": "a",
+  "text": "राशन कार्ड (परिवार कार्ड). आधार कार्ड",
+  "tts": "राशन कार्ड (परिवार कार्ड). आधार कार्ड"
+ },
+ {
+  "key": "hi/a-ph62li5kzo",
+  "lang": "hi",
+  "role": "a",
+  "text": "ऐसे परिवारों के लिए जिनमें एक या दो बेटियाँ हैं और कोई बेटा नहीं। वार्षिक आय की सीमा लागू है। नियम कार्यालय में पक्के कर लें।",
+  "tts": "ऐसे परिवारों के लिए जिनमें एक या दो बेटियाँ हैं और कोई बेटा नहीं। वार्षिक आय की सीमा लागू है। नियम कार्यालय में पक्के कर लें।"
+ },
+ {
+  "key": "hi/a-q8isp776mh",
+  "lang": "hi",
+  "role": "a",
+  "text": "PICME वेबसाइट, नज़दीकी सरकारी स्वास्थ्य केंद्र या ग्राम स्वास्थ्य नर्स।",
+  "tts": "PICME वेबसाइट, नज़दीकी सरकारी स्वास्थ्य केंद्र या ग्राम स्वास्थ्य नर्स।"
+ },
+ {
+  "key": "hi/a-t6uhy2sf93",
+  "lang": "hi",
+  "role": "a",
+  "text": "महिलाएँ, शिक्षा, गर्भावस्था और बच्चे, आर्थिक सहायता, पेंशन, दिव्यांग",
+  "tts": "महिलाएँ, शिक्षा, गर्भावस्था और बच्चे, आर्थिक सहायता, पेंशन, दिव्यांग"
+ },
+ {
+  "key": "hi/a-tyz11snejt",
+  "lang": "hi",
+  "role": "a",
+  "text": "कोई मिलती-जुलती योजना नहीं मिली। नीचे सभी योजनाएँ देखें।",
+  "tts": "कोई मिलती-जुलती योजना नहीं मिली। नीचे सभी योजनाएँ देखें।"
+ },
+ {
+  "key": "hi/a-uu8rrwq2ea",
+  "lang": "hi",
+  "role": "a",
+  "text": "कलैगनार महिला उरिमै थोगई (KMUT). पुदुमै पेण योजना. मातृ वंदना योजना (PMMVY). निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. वृद्धावस्था पेंशन. दिव्यांग पेंशन. सुकन्या समृद्धि योजना. वेट्री पयणम (पहले विडियल पयणम). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना. मुख्यमंत्री बालिका संरक्षण योजना. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना",
+  "tts": "कलैगनार महिला उरिमै थोगई (KMUT). पुदुमै पेण योजना. मातृ वंदना योजना (PMMVY). निराश्रित विधवा पेंशन. निराश्रित / परित्यक्ता महिला पेंशन. अविवाहित निर्धन महिला पेंशन. वृद्धावस्था पेंशन. दिव्यांग पेंशन. सुकन्या समृद्धि योजना. वेट्री पयणम (पहले विडियल पयणम). डॉ. मुथुलक्ष्मी रेड्डी मातृत्व सहायता योजना. मुख्यमंत्री बालिका संरक्षण योजना. सत्यवाणी मुत्तु अम्मैयार स्मृति निःशुल्क सिलाई मशीन योजना"
+ },
+ {
+  "key": "hi/a-z4abyi5xe7",
+  "lang": "hi",
+  "role": "a",
+  "text": "कलैगनार महिला उरिमै थोगई (KMUT). वेट्री पयणम (पहले विडियल पयणम). पुदुमै पेण योजना",
+  "tts": "कलैगनार महिला उरिमै थोगई (KMUT). वेट्री पयणम (पहले विडियल पयणम). पुदुमै पेण योजना"
+ },
+ {
+  "key": "hi/q-10c1w4vupb5",
+  "lang": "hi",
+  "role": "q",
+  "text": "हमारे बारे में",
+  "tts": "हमारे बारे में"
+ },
+ {
+  "key": "hi/q-17grmwwlco9",
+  "lang": "hi",
+  "role": "q",
+  "text": "पेंशन",
+  "tts": "पेंशन"
+ },
+ {
+  "key": "hi/q-1gtoujea6vu",
+  "lang": "hi",
+  "role": "q",
+  "text": "कौन से दस्तावेज़ चाहिए?",
+  "tts": "कौन से दस्तावेज़ चाहिए?"
+ },
+ {
+  "key": "hi/q-1m1jfdz8qoa",
+  "lang": "hi",
+  "role": "q",
+  "text": "महिलाएँ",
+  "tts": "महिलाएँ"
+ },
+ {
+  "key": "hi/q-1py3q1dyo5m",
+  "lang": "hi",
+  "role": "q",
+  "text": "इन योजनाओं के लिए कौन पात्र है?",
+  "tts": "इन योजनाओं के लिए कौन पात्र है?"
+ },
+ {
+  "key": "hi/q-1r5gf4k83zl",
+  "lang": "hi",
+  "role": "q",
+  "text": "क्या मदद मिलेगी?",
+  "tts": "क्या मदद मिलेगी?"
+ },
+ {
+  "key": "hi/q-1r9jtuza3ld",
+  "lang": "hi",
+  "role": "q",
+  "text": "आपकी गोपनीयता",
+  "tts": "आपकी गोपनीयता"
+ },
+ {
+  "key": "hi/q-1zesyt81un",
+  "lang": "hi",
+  "role": "q",
+  "text": "आपके लिए संभावित योजनाएँ",
+  "tts": "आपके लिए संभावित योजनाएँ"
+ },
+ {
+  "key": "hi/q-2055f5for3",
+  "lang": "hi",
+  "role": "q",
+  "text": "सभी सरकारी योजनाएँ",
+  "tts": "सभी सरकारी योजनाएँ"
+ },
+ {
+  "key": "hi/q-23ki59adl17",
+  "lang": "hi",
+  "role": "q",
+  "text": "गर्भावस्था और बच्चे",
+  "tts": "गर्भावस्था और बच्चे"
+ },
+ {
+  "key": "hi/q-2738s4nm63m",
+  "lang": "hi",
+  "role": "q",
+  "text": "आपकी उम्र क्या है?",
+  "tts": "आपकी उम्र क्या है?"
+ },
+ {
+  "key": "hi/q-2awufwgdj62",
+  "lang": "hi",
+  "role": "q",
+  "text": "क्या ऑनलाइन आवेदन कर सकते हैं?",
+  "tts": "क्या ऑनलाइन आवेदन कर सकते हैं?"
+ },
+ {
+  "key": "hi/q-49vosi5vc4",
+  "lang": "hi",
+  "role": "q",
+  "text": "विषय",
+  "tts": "विषय"
+ },
+ {
+  "key": "hi/q-4wn7on8cii",
+  "lang": "hi",
+  "role": "q",
+  "text": "कहाँ जाना है?",
+  "tts": "कहाँ जाना है?"
+ },
+ {
+  "key": "hi/q-5gewrd1n87",
+  "lang": "hi",
+  "role": "q",
+  "text": "आर्थिक सहायता",
+  "tts": "आर्थिक सहायता"
+ },
+ {
+  "key": "hi/q-7omcywa94a",
+  "lang": "hi",
+  "role": "q",
+  "text": "आगे क्या करना है?",
+  "tts": "आगे क्या करना है?"
+ },
+ {
+  "key": "hi/q-c6873hh973",
+  "lang": "hi",
+  "role": "q",
+  "text": "दिव्यांग",
+  "tts": "दिव्यांग"
+ },
+ {
+  "key": "hi/q-gvyza08j38",
+  "lang": "hi",
+  "role": "q",
+  "text": "शिक्षा",
+  "tts": "शिक्षा"
+ },
+ {
+  "key": "hi/q-jhn96ef7rf",
+  "lang": "hi",
+  "role": "q",
+  "text": "क्या शुल्क लगता है?",
+  "tts": "क्या शुल्क लगता है?"
+ },
+ {
+  "key": "hi/q-jqa83fwrmb",
+  "lang": "hi",
+  "role": "q",
+  "text": "यह योजना क्या है?",
+  "tts": "यह योजना क्या है?"
+ },
+ {
+  "key": "hi/q-l317bwxe7c",
+  "lang": "hi",
+  "role": "q",
+  "text": "क्या आप गर्भवती हैं?",
+  "tts": "क्या आप गर्भवती हैं?"
+ },
+ {
+  "key": "hi/q-m8h0sh8cq8",
+  "lang": "hi",
+  "role": "q",
+  "text": "आपको कौन-सी मदद चाहिए?",
+  "tts": "आपको कौन-सी मदद चाहिए?"
+ },
+ {
+  "key": "hi/q-ojf44sdgmw",
+  "lang": "hi",
+  "role": "q",
+  "text": "क्या आप पढ़ाई कर रही हैं?",
+  "tts": "क्या आप पढ़ाई कर रही हैं?"
+ },
+ {
+  "key": "hi/q-ui406sfevm",
+  "lang": "hi",
+  "role": "q",
+  "text": "लोकप्रिय योजनाएँ",
+  "tts": "लोकप्रिय योजनाएँ"
+ },
+ {
+  "key": "hi/q-w2lazvsnfa",
+  "lang": "hi",
+  "role": "q",
+  "text": "यह किसके लिए है?",
+  "tts": "यह किसके लिए है?"
+ },
+ {
+  "key": "hi/q-xyd8xlqim7",
+  "lang": "hi",
+  "role": "q",
+  "text": "आपके लिए उपलब्ध सरकारी योजनाएँ खोजें",
+  "tts": "आपके लिए उपलब्ध सरकारी योजनाएँ खोजें"
+ },
+ {
+  "key": "ta/a-14ppncgkkrd",
+  "lang": "ta",
+  "role": "a",
+  "text": "இறுதி தகுதியை அரசு அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "இறுதி தகுதியை அரசு அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-15g74xvebaz",
+  "lang": "ta",
+  "role": "a",
+  "text": "உங்கள் கல்லூரி அலுவலகம்.",
+  "tts": "உங்கள் கல்லூரி அலுவலகம்."
+ },
+ {
+  "key": "ta/a-17r1ksk0px4",
+  "lang": "ta",
+  "role": "a",
+  "text": "தமிழ்நாட்டு மகளிருக்கு. வருமான நிபந்தனை இல்லை. எந்தப் பேருந்துகள் உள்ளடங்கும் என்பதை போக்குவரத்துக் கழகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "தமிழ்நாட்டு மகளிருக்கு. வருமான நிபந்தனை இல்லை. எந்தப் பேருந்துகள் உள்ளடங்கும் என்பதை போக்குவரத்துக் கழகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-1b8reajlxey",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண்கள், கல்வி, கர்ப்பம் & குழந்தைகள், நிதி உதவி, ஓய்வூதியம், மாற்றுத்திறனாளிகள்",
+  "tts": "பெண்கள், கல்வி, கர்ப்பம் & குழந்தைகள், நிதி உதவி, ஓய்வூதியம், மாற்றுத்திறனாளிகள்"
+ },
+ {
+  "key": "ta/a-1blnukm16p9",
+  "lang": "ta",
+  "role": "a",
+  "text": "அருகிலுள்ள அங்கன்வாடி நிலையம்.",
+  "tts": "அருகிலுள்ள அங்கன்வாடி நிலையம்."
+ },
+ {
+  "key": "ta/a-1dlpx373wtm",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் எதிர்காலத்துக்கான மத்திய அரசு சேமிப்புத் திட்டம்.",
+  "tts": "பெண் குழந்தையின் எதிர்காலத்துக்கான மத்திய அரசு சேமிப்புத் திட்டம்."
+ },
+ {
+  "key": "ta/a-1eomv9j1utu",
+  "lang": "ta",
+  "role": "a",
+  "text": "உங்கள் மொழியில் பேசுங்கள் அல்லது எழுதுங்கள்.",
+  "tts": "உங்கள் மொழியில் பேசுங்கள் அல்லது எழுதுங்கள்."
+ },
+ {
+  "key": "ta/a-1h62l2xbnig",
+  "lang": "ta",
+  "role": "a",
+  "text": "சில திட்டங்களுக்கு ஆன்லைன் வசதி இருக்கலாம். திட்டத்தின் பக்கத்தில் அதிகாரப்பூர்வ தகவல் பொத்தான் இருந்தால் அதைப் பயன்படுத்துங்கள், அல்லது இ-சேவை மையத்தில் கேளுங்கள்.",
+  "tts": "சில திட்டங்களுக்கு ஆன்லைன் வசதி இருக்கலாம். திட்டத்தின் பக்கத்தில் அதிகாரப்பூர்வ தகவல் பொத்தான் இருந்தால் அதைப் பயன்படுத்துங்கள், அல்லது இ-சேவை மையத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-1hpugycuk3l",
+  "lang": "ta",
+  "role": "a",
+  "text": "மகளிர் மற்றும் மூன்றாம் பாலினத்தவர் தேர்ந்தெடுக்கப்பட்ட அரசுப் பேருந்துகளில் கட்டணமின்றிப் பயணம் செய்யலாம்.",
+  "tts": "மகளிர் மற்றும் மூன்றாம் பாலினத்தவர் தேர்ந்தெடுக்கப்பட்ட அரசுப் பேருந்துகளில் கட்டணமின்றிப் பயணம் செய்யலாம்."
+ },
+ {
+  "key": "ta/a-1hpxfvgd1vr",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஒவ்வொரு திட்டத்துக்கும் விதிகள் வேறுபடும். திட்டத்தைத் திறந்து “யாருக்கு?” பகுதியைப் பாருங்கள். இறுதி தகுதியை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "ஒவ்வொரு திட்டத்துக்கும் விதிகள் வேறுபடும். திட்டத்தைத் திறந்து “யாருக்கு?” பகுதியைப் பாருங்கள். இறுதி தகுதியை அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-1itlgsi44k",
+  "lang": "ta",
+  "role": "a",
+  "text": "அரசுப் பேருந்துகளில் இலவசப் பயணம். வருமான வரம்பு இல்லை.",
+  "tts": "அரசுப் பேருந்துகளில் இலவசப் பயணம். வருமான வரம்பு இல்லை."
+ },
+ {
+  "key": "ta/a-1iyd6wzio0f",
+  "lang": "ta",
+  "role": "a",
+  "text": "அஞ்சலகம் அல்லது வங்கி.",
+  "tts": "அஞ்சலகம் அல்லது வங்கி."
+ },
+ {
+  "key": "ta/a-1n1f72mcom4",
+  "lang": "ta",
+  "role": "a",
+  "text": "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு சுயதொழிலுக்காக இலவச தையல் இயந்திரம் கிடைக்கும்.",
+  "tts": "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு சுயதொழிலுக்காக இலவச தையல் இயந்திரம் கிடைக்கும்."
+ },
+ {
+  "key": "ta/a-1nc2yu2gqs9",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாற்றுத்திறனாளி அடையாள அட்டை (UDID) அல்லது மாற்றுத்திறனாளி சான்றிதழ். குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை",
+  "tts": "மாற்றுத்திறனாளி அடையாள அட்டை (UDID) அல்லது மாற்றுத்திறனாளி சான்றிதழ். குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை"
+ },
+ {
+  "key": "ta/a-1ng5ugfe7ti",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாதம் 1,000 ரூபாய் வங்கிக் கணக்கில்.",
+  "tts": "மாதம் 1000 ரூபாய் வங்கிக் கணக்கில்."
+ },
+ {
+  "key": "ta/a-1pr39ytkemw",
+  "lang": "ta",
+  "role": "a",
+  "text": "மொத்தம் 18,000 ரூபாய்: 14,000 ரூபாய் பணம் தவணைகளில், மற்றும் 4,000 ரூபாய் மதிப்புள்ள இரண்டு ஊட்டச்சத்துப் பெட்டகங்கள்.",
+  "tts": "மொத்தம் 18000 ரூபாய்: 14000 ரூபாய் பணம் தவணைகளில், மற்றும் 4000 ரூபாய் மதிப்புள்ள இரண்டு ஊட்டச்சத்துப் பெட்டகங்கள்."
+ },
+ {
+  "key": "ta/a-1ptfx1owsnv",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பெயரில் சிறு சேமிப்புக் கணக்கு.",
+  "tts": "பெண் குழந்தையின் பெயரில் சிறு சேமிப்புக் கணக்கு."
+ },
+ {
+  "key": "ta/a-1qh66ib5mz3",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை செலுத்தும். 18 வயதில் தொகை கிடைக்கும்; படிப்புக்கு உதவும்.",
+  "tts": "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை செலுத்தும். 18 வயதில் தொகை கிடைக்கும்; படிப்புக்கு உதவும்."
+ },
+ {
+  "key": "ta/a-1qwxup5ujv1",
+  "lang": "ta",
+  "role": "a",
+  "text": "கர்ப்பத்தை முன்கூட்டியே, 12 வாரங்களுக்குள் பதிவு செய்வது நல்லது. விவரங்களை சுகாதார நிலையத்தில் கேளுங்கள்.",
+  "tts": "கர்ப்பத்தை முன்கூட்டியே, 12 வாரங்களுக்குள் பதிவு செய்வது நல்லது. விவரங்களை சுகாதார நிலையத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-1t99vwqkqz7",
+  "lang": "ta",
+  "role": "a",
+  "text": "6 முதல் 12 வரை அரசுப் பள்ளியில் படித்ததற்கான சான்றிதழ் (மாற்றுச் சான்றிதழ்). ஆதார் அட்டை. ஆதாருடன் இணைந்த, உங்கள் பெயரில் உள்ள வங்கிக் கணக்குப் புத்தகம். கல்லூரி சேர்க்கை அட்டை அல்லது கல்லூரி சான்றிதழ்",
+  "tts": "6 முதல் 12 வரை அரசுப் பள்ளியில் படித்ததற்கான சான்றிதழ் (மாற்றுச் சான்றிதழ்). ஆதார் அட்டை. ஆதாருடன் இணைந்த, உங்கள் பெயரில் உள்ள வங்கிக் கணக்குப் புத்தகம். கல்லூரி சேர்க்கை அட்டை அல்லது கல்லூரி சான்றிதழ்"
+ },
+ {
+  "key": "ta/a-1wtuennj7bs",
+  "lang": "ta",
+  "role": "a",
+  "text": "நீங்கள் வழங்கிய தகவலின் அடிப்படையில் இந்த திட்டம் உங்களுக்கு பொருந்தக்கூடும். அதிகாரப்பூர்வ தகுதியை சரிபார்க்கவும்.",
+  "tts": "நீங்கள் வழங்கிய தகவலின் அடிப்படையில் இந்த திட்டம் உங்களுக்கு பொருந்தக்கூடும். அதிகாரப்பூர்வ தகுதியை சரிபார்க்கவும்."
+ },
+ {
+  "key": "ta/a-1yi1vo2m2co",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாதாந்திர ஓய்வூதியம். தொகையை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "மாதாந்திர ஓய்வூதியம். தொகையை அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-1z40aercft0",
+  "lang": "ta",
+  "role": "a",
+  "text": "கலைஞர் மகளிர் உரிமைத் தொகை. வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). புதுமைப் பெண் திட்டம்",
+  "tts": "கலைஞர் மகளிர் உரிமைத் தொகை. வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). புதுமைப் பெண் திட்டம்"
+ },
+ {
+  "key": "ta/a-212zvmloo90",
+  "lang": "ta",
+  "role": "a",
+  "text": "e-Sevai மையம் அல்லது அருகிலுள்ள அரசு அலுவலகம்.",
+  "tts": "e-Sevai மையம் அல்லது அருகிலுள்ள அரசு அலுவலகம்."
+ },
+ {
+  "key": "ta/a-218z06por5i",
+  "lang": "ta",
+  "role": "a",
+  "text": "தமிழ்நாடு அரசின் மாதாந்திர நிதி உதவித் திட்டம்.",
+  "tts": "தமிழ்நாடு அரசின் மாதாந்திர நிதி உதவித் திட்டம்."
+ },
+ {
+  "key": "ta/a-2198jfz600i",
+  "lang": "ta",
+  "role": "a",
+  "text": "கலைஞர் மகளிர் உரிமைத் தொகை. புதுமைப் பெண் திட்டம். மாத்ரு வந்தனா யோஜனா (PMMVY). ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். முதியோர் ஓய்வூதியம். மாற்றுத்திறனாளி ஓய்வூதியம். செல்வமகள் சேமிப்புத் திட்டம். வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்",
+  "tts": "கலைஞர் மகளிர் உரிமைத் தொகை. புதுமைப் பெண் திட்டம். மாத்ரு வந்தனா யோஜனா (PMMVY). ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். முதியோர் ஓய்வூதியம். மாற்றுத்திறனாளி ஓய்வூதியம். செல்வமகள் சேமிப்புத் திட்டம். வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்"
+ },
+ {
+  "key": "ta/a-22t9h08fx4w",
+  "lang": "ta",
+  "role": "a",
+  "text": "கர்ப்பிணிகளுக்கு பிரசவத்துக்கு முன்னும் பின்னும் தவணைகளில் உதவி கிடைக்கும். இதில் ஊட்டச்சத்துப் பெட்டகமும் அடங்கும்.",
+  "tts": "கர்ப்பிணிகளுக்கு பிரசவத்துக்கு முன்னும் பின்னும் தவணைகளில் உதவி கிடைக்கும். இதில் ஊட்டச்சத்துப் பெட்டகமும் அடங்கும்."
+ },
+ {
+  "key": "ta/a-23qvryjv1jc",
+  "lang": "ta",
+  "role": "a",
+  "text": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. கணவரின் இறப்புச் சான்றிதழ். விதவைச் சான்றிதழ் (தாசில்தார் வழங்குவது)",
+  "tts": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. கணவரின் இறப்புச் சான்றிதழ். விதவைச் சான்றிதழ் (தாசில்தார் வழங்குவது)"
+ },
+ {
+  "key": "ta/a-24z34z1ew7t",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பெற்றோர் அல்லது பாதுகாவலருக்கு.",
+  "tts": "பெண் குழந்தையின் பெற்றோர் அல்லது பாதுகாவலருக்கு."
+ },
+ {
+  "key": "ta/a-25srvdkzgp1",
+  "lang": "ta",
+  "role": "a",
+  "text": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. ஆதாருடன் இணைந்த, உங்கள் பெயரில் உள்ள வங்கிக் கணக்குப் புத்தகம். கைபேசி எண்",
+  "tts": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. ஆதாருடன் இணைந்த, உங்கள் பெயரில் உள்ள வங்கிக் கணக்குப் புத்தகம். கைபேசி எண்"
+ },
+ {
+  "key": "ta/a-26xmvs3r9k0",
+  "lang": "ta",
+  "role": "a",
+  "text": "குரல் சரிபார்ப்பைத் தொடங்குங்கள்.",
+  "tts": "குரல் சரிபார்ப்பைத் தொடங்குங்கள்."
+ },
+ {
+  "key": "ta/a-28lljdjvvqu",
+  "lang": "ta",
+  "role": "a",
+  "text": "வட்டி விகிதம், விதிகளை அங்கே கேளுங்கள்.",
+  "tts": "வட்டி விகிதம், விதிகளை அங்கே கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-28y6k2qzz9v",
+  "lang": "ta",
+  "role": "a",
+  "text": "அரசுப் பள்ளியில் 6 முதல் 12 வரை படித்து, உயர்கல்வியில் சேர்ந்த மாணவிகளுக்கு.",
+  "tts": "அரசுப் பள்ளியில் 6 முதல் 12 வரை படித்து, உயர்கல்வியில் சேர்ந்த மாணவிகளுக்கு."
+ },
+ {
+  "key": "ta/a-29cuiuflfnu",
+  "lang": "ta",
+  "role": "a",
+  "text": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. கணவர் கைவிட்டதற்கான அல்லது சட்டப்படி பிரிந்ததற்கான சான்றிதழ்",
+  "tts": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை. கணவர் கைவிட்டதற்கான அல்லது சட்டப்படி பிரிந்ததற்கான சான்றிதழ்"
+ },
+ {
+  "key": "ta/a-29hgeril9us",
+  "lang": "ta",
+  "role": "a",
+  "text": "உங்கள் Aadhaar எண், OTP, கடவுச்சொல் அல்லது வங்கி PIN-ஐ பேசவோ எழுதவோ வேண்டாம். இந்த செயலி அவற்றை ஒருபோதும் கேட்காது. குரலைப் பயன்படுத்தும்போது, உங்கள் உலாவியின் குரல் சேவை (எ.கா. Chrome-இல் Google) உங்கள் குரலைச் செயலாக்கலாம். திட்டங்களைப் பரிந்துரைக்க உங்கள் கேள்வி ஒரு AI சேவைக்கு அனுப்பப்படலாம். தனிப்பட்ட விவரங்களைச் சேர்க்காதீர்கள். நீங்கள் உள்நுழைய வேண்டியதில்லை, கணக்கு உருவாக்கவும் வேண்டியதில்லை. உங்கள் மொழித் தேர்வு இந்தச் சாதனத்தில் சேமிக்கப்படும். வரைபடம் அல்லது WhatsApp-ஐத் திறந்தால், அந்தச் சேவைகளின் தனியுரிமை விதிகள் பொருந்தும்.",
+  "tts": "உங்கள் Aadhaar எண், OTP, கடவுச்சொல் அல்லது வங்கி PIN-ஐ பேசவோ எழுதவோ வேண்டாம். இந்த செயலி அவற்றை ஒருபோதும் கேட்காது. குரலைப் பயன்படுத்தும்போது, உங்கள் உலாவியின் குரல் சேவை (எ.கா. Chrome-இல் Google) உங்கள் குரலைச் செயலாக்கலாம். திட்டங்களைப் பரிந்துரைக்க உங்கள் கேள்வி ஒரு AI சேவைக்கு அனுப்பப்படலாம். தனிப்பட்ட விவரங்களைச் சேர்க்காதீர்கள். நீங்கள் உள்நுழைய வேண்டியதில்லை, கணக்கு உருவாக்கவும் வேண்டியதில்லை. உங்கள் மொழித் தேர்வு இந்தச் சாதனத்தில் சேமிக்கப்படும். வரைபடம் அல்லது WhatsApp-ஐத் திறந்தால், அந்தச் சேவைகளின் தனியுரிமை விதிகள் பொருந்தும்."
+ },
+ {
+  "key": "ta/a-29s8mfi0pso",
+  "lang": "ta",
+  "role": "a",
+  "text": "குழந்தை பிறந்த பிறகு விண்ணப்பிக்க காலக்கெடு உண்டு. கடைசி தேதியை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "குழந்தை பிறந்த பிறகு விண்ணப்பிக்க காலக்கெடு உண்டு. கடைசி தேதியை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-2a3tavcu1y0",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை: ஒரு பெண் குழந்தைக்கு 50,000 ரூபாய், இரண்டு பெண் குழந்தைகளுக்கு தலா 25,000 ரூபாய். 18 வயதில் கிடைக்கும்.",
+  "tts": "பெண் குழந்தையின் பெயரில் அரசு வைப்புத் தொகை: ஒரு பெண் குழந்தைக்கு 50000 ரூபாய், இரண்டு பெண் குழந்தைகளுக்கு தலா 25000 ரூபாய். 18 வயதில் கிடைக்கும்."
+ },
+ {
+  "key": "ta/a-2ap7qc1lwqw",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பிறப்புச் சான்றிதழ். பெற்றோரின் வயதுச் சான்று (பிறப்பு அல்லது பள்ளிச் சான்றிதழ்). வருமானச் சான்றிதழ். சாதிச் சான்றிதழ். வசிப்பிடச் சான்றிதழ் (நேட்டிவிட்டி). கருத்தடைச் சான்றிதழ். ஆண் குழந்தை இல்லை என்பதற்கான சான்றிதழ்",
+  "tts": "பெண் குழந்தையின் பிறப்புச் சான்றிதழ். பெற்றோரின் வயதுச் சான்று (பிறப்பு அல்லது பள்ளிச் சான்றிதழ்). வருமானச் சான்றிதழ். சாதிச் சான்றிதழ். வசிப்பிடச் சான்றிதழ் (நேட்டிவிட்டி). கருத்தடைச் சான்றிதழ். ஆண் குழந்தை இல்லை என்பதற்கான சான்றிதழ்"
+ },
+ {
+  "key": "ta/a-2cq3cx2b4iq",
+  "lang": "ta",
+  "role": "a",
+  "text": "குரலில் உங்கள் தகுதியை சரிபார்க்கலாம்.",
+  "tts": "குரலில் உங்கள் தகுதியை சரிபார்க்கலாம்."
+ },
+ {
+  "key": "ta/a-2cql0x4j8d2",
+  "lang": "ta",
+  "role": "a",
+  "text": "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "விதவைகள், கைவிடப்பட்ட மனைவியர், ஏழைப் பெண்கள், மாற்றுத்திறனாளிகளுக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-2d0pv6zhyvc",
+  "lang": "ta",
+  "role": "a",
+  "text": "புதுமைப் பெண் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம்",
+  "tts": "புதுமைப் பெண் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம்"
+ },
+ {
+  "key": "ta/a-2e0o77ghuvj",
+  "lang": "ta",
+  "role": "a",
+  "text": "கட்டணம் குறித்து அலுவலகத்தில் உறுதி செய்யுங்கள். உதவுவதாகக் கூறி யாராவது பணம் கேட்டால் கவனமாக இருங்கள்.",
+  "tts": "கட்டணம் குறித்து அலுவலகத்தில் உறுதி செய்யுங்கள். உதவுவதாகக் கூறி யாராவது பணம் கேட்டால் கவனமாக இருங்கள்."
+ },
+ {
+  "key": "ta/a-2e49kkpp08a",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாற்றுத்திறனாளிகளுக்கான சமூகப் பாதுகாப்புத் திட்டம்.",
+  "tts": "மாற்றுத்திறனாளிகளுக்கான சமூகப் பாதுகாப்புத் திட்டம்."
+ },
+ {
+  "key": "ta/a-2fni1cghqxs",
+  "lang": "ta",
+  "role": "a",
+  "text": "இந்தத் திட்டத்தில் மாற்றங்கள் நடந்து வருகின்றன. இப்போதைய தொகை 1,000 ரூபாய். சமீபத்திய விதிகளை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "இந்தத் திட்டத்தில் மாற்றங்கள் நடந்து வருகின்றன. இப்போதைய தொகை 1000 ரூபாய். சமீபத்திய விதிகளை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-2gllhjqe273",
+  "lang": "ta",
+  "role": "a",
+  "text": "தமிழ்நாட்டுக் கர்ப்பிணிகளுக்கு. தகுதி விதிகளை சுகாதார நிலையத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "தமிழ்நாட்டுக் கர்ப்பிணிகளுக்கு. தகுதி விதிகளை சுகாதார நிலையத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-4xdipc2kci",
+  "lang": "ta",
+  "role": "a",
+  "text": "தமிழ்நாடு அரசின் சமூகப் பாதுகாப்புத் திட்டம்.",
+  "tts": "தமிழ்நாடு அரசின் சமூகப் பாதுகாப்புத் திட்டம்."
+ },
+ {
+  "key": "ta/a-582p9vpdq6",
+  "lang": "ta",
+  "role": "a",
+  "text": "உயர்கல்வி படிக்கும் மாணவிகளுக்கான உதவித்தொகை.",
+  "tts": "உயர்கல்வி படிக்கும் மாணவிகளுக்கான உதவித்தொகை."
+ },
+ {
+  "key": "ta/a-5s1mzbkmy1",
+  "lang": "ta",
+  "role": "a",
+  "text": "தகுதியுள்ள மாற்றுத்திறனாளிகளுக்கு.",
+  "tts": "தகுதியுள்ள மாற்றுத்திறனாளிகளுக்கு."
+ },
+ {
+  "key": "ta/a-5xc51nz1w3",
+  "lang": "ta",
+  "role": "a",
+  "text": "PICME / RCH எண் (கர்ப்பப் பதிவின்போது கிடைக்கும் 12 இலக்க எண்). அலுவலகம் அல்லது சுகாதார நிலையம் கேட்கும் பிற ஆவணங்கள்",
+  "tts": "PICME / RCH எண் (கர்ப்பப் பதிவின்போது கிடைக்கும் 12 இலக்க எண்). அலுவலகம் அல்லது சுகாதார நிலையம் கேட்கும் பிற ஆவணங்கள்"
+ },
+ {
+  "key": "ta/a-9wbtlp1gky",
+  "lang": "ta",
+  "role": "a",
+  "text": "நடத்துநர் கேட்டால் காட்ட ஆதார் அட்டை அல்லது வேறு அடையாள அட்டை",
+  "tts": "நடத்துநர் கேட்டால் காட்ட ஆதார் அட்டை அல்லது வேறு அடையாள அட்டை"
+ },
+ {
+  "key": "ta/a-9x0m0poyka",
+  "lang": "ta",
+  "role": "a",
+  "text": "பெண் குழந்தையின் பிறப்புச் சான்றிதழ். பெற்றோர் அல்லது பாதுகாவலரின் அடையாளச் சான்று (ஆதார் போன்றவை). பெற்றோர் அல்லது பாதுகாவலரின் முகவரிச் சான்று. பாஸ்போர்ட் அளவு புகைப்படங்கள்",
+  "tts": "பெண் குழந்தையின் பிறப்புச் சான்றிதழ். பெற்றோர் அல்லது பாதுகாவலரின் அடையாளச் சான்று (ஆதார் போன்றவை). பெற்றோர் அல்லது பாதுகாவலரின் முகவரிச் சான்று. பாஸ்போர்ட் அளவு புகைப்படங்கள்"
+ },
+ {
+  "key": "ta/a-b2hnq3n9wp",
+  "lang": "ta",
+  "role": "a",
+  "text": "கைவிடப்பட்ட அல்லது விவாகரத்தான பெண்களுக்கு. நிபந்தனைகளை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "கைவிடப்பட்ட அல்லது விவாகரத்தான பெண்களுக்கு. நிபந்தனைகளை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-betj6587o",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆதரவு தேவைப்படும் முதியோருக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "ஆதரவு தேவைப்படும் முதியோருக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-c9x9s5yexi",
+  "lang": "ta",
+  "role": "a",
+  "text": "கர்ப்பிணி மற்றும் பாலூட்டும் தாய்மார்களுக்கான மத்திய அரசு உதவி.",
+  "tts": "கர்ப்பிணி மற்றும் பாலூட்டும் தாய்மார்களுக்கான மத்திய அரசு உதவி."
+ },
+ {
+  "key": "ta/a-cpkxocppqn",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆதரவற்ற விதவைகளுக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "ஆதரவற்ற விதவைகளுக்கு. வயது, வருமான விதிகளை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-d7qj814gi1",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாற்றுத்திறனாளி ஓய்வூதியம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்",
+  "tts": "மாற்றுத்திறனாளி ஓய்வூதியம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்"
+ },
+ {
+  "key": "ta/a-ea6c73oxhn",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாத்ரு வந்தனா யோஜனா (PMMVY). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்",
+  "tts": "மாத்ரு வந்தனா யோஜனா (PMMVY). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்"
+ },
+ {
+  "key": "ta/a-ec1b8tnb0b",
+  "lang": "ta",
+  "role": "a",
+  "text": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை",
+  "tts": "குடும்ப அட்டை (ரேஷன் அட்டை). ஆதார் அட்டை"
+ },
+ {
+  "key": "ta/a-fk5lwlxc0y",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆம், இல்லை",
+  "tts": "ஆம், இல்லை"
+ },
+ {
+  "key": "ta/a-flnjobeoqk",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். முதியோர் ஓய்வூதியம். மாற்றுத்திறனாளி ஓய்வூதியம்",
+  "tts": "ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். முதியோர் ஓய்வூதியம். மாற்றுத்திறனாளி ஓய்வூதியம்"
+ },
+ {
+  "key": "ta/a-gie30aopy3",
+  "lang": "ta",
+  "role": "a",
+  "text": "பொருந்தும் திட்டம் இல்லை. கீழே உள்ள எல்லாத் திட்டங்களையும் பாருங்கள்.",
+  "tts": "பொருந்தும் திட்டம் இல்லை. கீழே உள்ள எல்லாத் திட்டங்களையும் பாருங்கள்."
+ },
+ {
+  "key": "ta/a-gm3pimle3s",
+  "lang": "ta",
+  "role": "a",
+  "text": "முதல் குழந்தைக்கு 5,000 ரூபாய் இரண்டு தவணையில்.",
+  "tts": "முதல் குழந்தைக்கு 5000 ரூபாய் இரண்டு தவணையில்."
+ },
+ {
+  "key": "ta/a-hryq6k8aey",
+  "lang": "ta",
+  "role": "a",
+  "text": "மகளிர் துணை, மகளிருக்கான அரசு திட்டங்களை எளிய தமிழில், குரல் மூலம் தெரிந்துகொள்ள உதவுகிறது. இது அரசு இணையதளம் அல்ல.",
+  "tts": "மகளிர் துணை, மகளிருக்கான அரசு திட்டங்களை எளிய தமிழில், குரல் மூலம் தெரிந்துகொள்ள உதவுகிறது. இது அரசு இணையதளம் அல்ல."
+ },
+ {
+  "key": "ta/a-jehv990tmr",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆன்லைன் பதிவு தேவையில்லை. தகுதியுள்ள அரசுப் பேருந்தில் ஏறி, நடத்துநரிடம் இலவசப் பயணச் சீட்டு கேளுங்கள்.",
+  "tts": "ஆன்லைன் பதிவு தேவையில்லை. தகுதியுள்ள அரசுப் பேருந்தில் ஏறி, நடத்துநரிடம் இலவசப் பயணச் சீட்டு கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-kpkks55xbd",
+  "lang": "ta",
+  "role": "a",
+  "text": "PICME இணையதளம், அருகிலுள்ள அரசு சுகாதார நிலையம் அல்லது கிராம சுகாதார செவிலியர்.",
+  "tts": "PICME இணையதளம், அருகிலுள்ள அரசு சுகாதார நிலையம் அல்லது கிராம சுகாதார செவிலியர்."
+ },
+ {
+  "key": "ta/a-kvrx3itugw",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஏழ்மையில் உள்ள திருமணமாகாத மூத்த பெண்களுக்கு. வயது விதியை அலுவலகத்தில் கேளுங்கள்.",
+  "tts": "ஏழ்மையில் உள்ள திருமணமாகாத மூத்த பெண்களுக்கு. வயது விதியை அலுவலகத்தில் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-leb0yif1ut",
+  "lang": "ta",
+  "role": "a",
+  "text": "குடும்ப வருமானச் சான்றிதழ். வயதுச் சான்று. உங்கள் பிரிவுக்கான சான்றிதழ் (விதவை, கைவிடப்பட்டவர், மாற்றுத்திறனாளி), கேட்டால்",
+  "tts": "குடும்ப வருமானச் சான்றிதழ். வயதுச் சான்று. உங்கள் பிரிவுக்கான சான்றிதழ் (விதவை, கைவிடப்பட்டவர், மாற்றுத்திறனாளி), கேட்டால்"
+ },
+ {
+  "key": "ta/a-lepfk8rto0",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆண் குழந்தை இல்லாத, ஒன்று அல்லது இரண்டு பெண் குழந்தைகள் உள்ள குடும்பங்களுக்கு. ஆண்டு வருமான வரம்பு உண்டு. விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "ஆண் குழந்தை இல்லாத, ஒன்று அல்லது இரண்டு பெண் குழந்தைகள் உள்ள குடும்பங்களுக்கு. ஆண்டு வருமான வரம்பு உண்டு. விதிகளை அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-loe8x742cq",
+  "lang": "ta",
+  "role": "a",
+  "text": "ஆதார் அட்டை. ஆதாருடன் இணைந்த வங்கி அல்லது அஞ்சலக கணக்கு. கைபேசி எண். தாய்-சேய் நல அட்டை",
+  "tts": "ஆதார் அட்டை. ஆதாருடன் இணைந்த வங்கி அல்லது அஞ்சலக கணக்கு. கைபேசி எண். தாய்-சேய் நல அட்டை"
+ },
+ {
+  "key": "ta/a-nb0junvazy",
+  "lang": "ta",
+  "role": "a",
+  "text": "திட்டத்தின் பக்கத்தில் ஆவணப் பட்டியல் இருக்கும். இறுதிப் பட்டியலை இ-சேவை மையத்தில் அல்லது அலுவலகத்தில் உறுதி செய்யுங்கள்.",
+  "tts": "திட்டத்தின் பக்கத்தில் ஆவணப் பட்டியல் இருக்கும். இறுதிப் பட்டியலை இ-சேவை மையத்தில் அல்லது அலுவலகத்தில் உறுதி செய்யுங்கள்."
+ },
+ {
+  "key": "ta/a-ofnt2pots4",
+  "lang": "ta",
+  "role": "a",
+  "text": "சுயதொழிலுக்கு இலவச தையல் இயந்திரம்.",
+  "tts": "சுயதொழிலுக்கு இலவச தையல் இயந்திரம்."
+ },
+ {
+  "key": "ta/a-opskqdwael",
+  "lang": "ta",
+  "role": "a",
+  "text": "தகுதியுள்ள குடும்பங்களின் பெண் தலைவிகளுக்கு.",
+  "tts": "தகுதியுள்ள குடும்பங்களின் பெண் தலைவிகளுக்கு."
+ },
+ {
+  "key": "ta/a-pibim21esy",
+  "lang": "ta",
+  "role": "a",
+  "text": "கலைஞர் மகளிர் உரிமைத் தொகை. புதுமைப் பெண் திட்டம். மாத்ரு வந்தனா யோஜனா (PMMVY). ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். செல்வமகள் சேமிப்புத் திட்டம். வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்",
+  "tts": "கலைஞர் மகளிர் உரிமைத் தொகை. புதுமைப் பெண் திட்டம். மாத்ரு வந்தனா யோஜனா (PMMVY). ஆதரவற்ற விதவை ஓய்வூதியம். ஆதரவற்ற / கைவிடப்பட்ட பெண்கள் ஓய்வூதியம். திருமணமாகாத ஏழைப் பெண்கள் ஓய்வூதியம். செல்வமகள் சேமிப்புத் திட்டம். வெற்றிப் பயணம் (முன்பு விடியல் பயணம்). டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம். முதலமைச்சரின் பெண் குழந்தை பாதுகாப்புத் திட்டம். சத்தியவாணிமுத்து அம்மையார் நினைவு இலவச தையல் இயந்திரத் திட்டம்"
+ },
+ {
+  "key": "ta/a-qr1rkwybx7",
+  "lang": "ta",
+  "role": "a",
+  "text": "மகளிர் துணைக்கு வரவேற்கிறோம். மைக் பொத்தானை அழுத்தி உங்கள் கேள்வியைக் கேளுங்கள்.",
+  "tts": "மகளிர் துணைக்கு வரவேற்கிறோம். மைக் பொத்தானை அழுத்தி உங்கள் கேள்வியைக் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-seoc0dfnuq",
+  "lang": "ta",
+  "role": "a",
+  "text": "கல்லூரி அலுவலகத்தில் விண்ணப்ப முறையைக் கேளுங்கள்.",
+  "tts": "கல்லூரி அலுவலகத்தில் விண்ணப்ப முறையைக் கேளுங்கள்."
+ },
+ {
+  "key": "ta/a-sl26kz0hd8",
+  "lang": "ta",
+  "role": "a",
+  "text": "தகுதியுள்ள அரசுப் போக்குவரத்துப் பேருந்துகள்.",
+  "tts": "தகுதியுள்ள அரசுப் போக்குவரத்துப் பேருந்துகள்."
+ },
+ {
+  "key": "ta/a-xwxin0e7ut",
+  "lang": "ta",
+  "role": "a",
+  "text": "பணம், கல்வி, ஓய்வூதியம், மருத்துவம்",
+  "tts": "பணம், கல்வி, ஓய்வூதியம், மருத்துவம்"
+ },
+ {
+  "key": "ta/a-ypls17l33z",
+  "lang": "ta",
+  "role": "a",
+  "text": "மாதம் 1,000 ரூபாய்.",
+  "tts": "மாதம் 1000 ரூபாய்."
+ },
+ {
+  "key": "ta/q-179nnbwyao2",
+  "lang": "ta",
+  "role": "q",
+  "text": "நீங்கள் கர்ப்பமாக இருக்கிறீர்களா?",
+  "tts": "நீங்கள் கர்ப்பமாக இருக்கிறீர்களா?"
+ },
+ {
+  "key": "ta/q-18wcsqqwxzt",
+  "lang": "ta",
+  "role": "q",
+  "text": "கிடைக்கும் உதவி என்ன?",
+  "tts": "கிடைக்கும் உதவி என்ன?"
+ },
+ {
+  "key": "ta/q-1akyoc7dms1",
+  "lang": "ta",
+  "role": "q",
+  "text": "அடுத்து என்ன செய்ய வேண்டும்?",
+  "tts": "அடுத்து என்ன செய்ய வேண்டும்?"
+ },
+ {
+  "key": "ta/q-1e6ykmszmls",
+  "lang": "ta",
+  "role": "q",
+  "text": "இந்த திட்டம் என்ன?",
+  "tts": "இந்த திட்டம் என்ன?"
+ },
+ {
+  "key": "ta/q-1g6nbk51r9w",
+  "lang": "ta",
+  "role": "q",
+  "text": "எங்கே செல்ல வேண்டும்?",
+  "tts": "எங்கே செல்ல வேண்டும்?"
+ },
+ {
+  "key": "ta/q-1o3a3bcw7tp",
+  "lang": "ta",
+  "role": "q",
+  "text": "கல்வி",
+  "tts": "கல்வி"
+ },
+ {
+  "key": "ta/q-1pzfwapo564",
+  "lang": "ta",
+  "role": "q",
+  "text": "நீங்கள் படிக்கிறீர்களா?",
+  "tts": "நீங்கள் படிக்கிறீர்களா?"
+ },
+ {
+  "key": "ta/q-1r3be91s14a",
+  "lang": "ta",
+  "role": "q",
+  "text": "தலைப்புகள்",
+  "tts": "தலைப்புகள்"
+ },
+ {
+  "key": "ta/q-1tp5jcol23q",
+  "lang": "ta",
+  "role": "q",
+  "text": "நிதி உதவி",
+  "tts": "நிதி உதவி"
+ },
+ {
+  "key": "ta/q-21uywvq0yso",
+  "lang": "ta",
+  "role": "q",
+  "text": "பெண்கள்",
+  "tts": "பெண்கள்"
+ },
+ {
+  "key": "ta/q-22jlr0xf9ud",
+  "lang": "ta",
+  "role": "q",
+  "text": "பிரபலமான திட்டங்கள்",
+  "tts": "பிரபலமான திட்டங்கள்"
+ },
+ {
+  "key": "ta/q-285b9lnvkfu",
+  "lang": "ta",
+  "role": "q",
+  "text": "மாற்றுத்திறனாளிகள்",
+  "tts": "மாற்றுத்திறனாளிகள்"
+ },
+ {
+  "key": "ta/q-2c6wxwj6mbh",
+  "lang": "ta",
+  "role": "q",
+  "text": "கட்டணம் உண்டா?",
+  "tts": "கட்டணம் உண்டா?"
+ },
+ {
+  "key": "ta/q-2fjfzdwno5a",
+  "lang": "ta",
+  "role": "q",
+  "text": "உங்களுக்கு கிடைக்கக்கூடிய அரசு திட்டங்களை கண்டுபிடிப்போம்",
+  "tts": "உங்களுக்கு கிடைக்கக்கூடிய அரசு திட்டங்களை கண்டுபிடிப்போம்"
+ },
+ {
+  "key": "ta/q-2ft7na14642",
+  "lang": "ta",
+  "role": "q",
+  "text": "கர்ப்பம் & குழந்தைகள்",
+  "tts": "கர்ப்பம் & குழந்தைகள்"
+ },
+ {
+  "key": "ta/q-2gm3p54559",
+  "lang": "ta",
+  "role": "q",
+  "text": "யாருக்கு இந்த திட்டம்?",
+  "tts": "யாருக்கு இந்த திட்டம்?"
+ },
+ {
+  "key": "ta/q-2u3p5qvy6l",
+  "lang": "ta",
+  "role": "q",
+  "text": "இந்த திட்டங்களுக்கு யார் தகுதியானவர்கள்?",
+  "tts": "இந்த திட்டங்களுக்கு யார் தகுதியானவர்கள்?"
+ },
+ {
+  "key": "ta/q-3h25snmvzm",
+  "lang": "ta",
+  "role": "q",
+  "text": "உங்கள் வயது?",
+  "tts": "உங்கள் வயது?"
+ },
+ {
+  "key": "ta/q-czgl4m8jmf",
+  "lang": "ta",
+  "role": "q",
+  "text": "ஓய்வூதியம்",
+  "tts": "ஓய்வூதியம்"
+ },
+ {
+  "key": "ta/q-dqxe8z501m",
+  "lang": "ta",
+  "role": "q",
+  "text": "ஆன்லைனில் விண்ணப்பிக்கலாமா?",
+  "tts": "ஆன்லைனில் விண்ணப்பிக்கலாமா?"
+ },
+ {
+  "key": "ta/q-i3d1jj6txn",
+  "lang": "ta",
+  "role": "q",
+  "text": "உங்கள் தனியுரிமை",
+  "tts": "உங்கள் தனியுரிமை"
+ },
+ {
+  "key": "ta/q-n1mqxbteuu",
+  "lang": "ta",
+  "role": "q",
+  "text": "எந்த ஆவணங்கள் தேவை?",
+  "tts": "எந்த ஆவணங்கள் தேவை?"
+ },
+ {
+  "key": "ta/q-nukmss262y",
+  "lang": "ta",
+  "role": "q",
+  "text": "உங்களுக்கு பொருந்தக்கூடிய திட்டங்கள்",
+  "tts": "உங்களுக்கு பொருந்தக்கூடிய திட்டங்கள்"
+ },
+ {
+  "key": "ta/q-r8wl9yck81",
+  "lang": "ta",
+  "role": "q",
+  "text": "அனைத்து அரசு திட்டங்கள்",
+  "tts": "அனைத்து அரசு திட்டங்கள்"
+ },
+ {
+  "key": "ta/q-xj28vsknyj",
+  "lang": "ta",
+  "role": "q",
+  "text": "எங்களைப் பற்றி",
+  "tts": "எங்களைப் பற்றி"
+ },
+ {
+  "key": "ta/q-zg2gkq47gg",
+  "lang": "ta",
+  "role": "q",
+  "text": "என்ன உதவி வேண்டும்?",
+  "tts": "என்ன உதவி வேண்டும்?"
+ },
+ {
+  "key": "ta/q-zk7q5rcg0j",
+  "lang": "ta",
+  "role": "q",
+  "text": "தேவையான ஆவணங்கள் என்ன?",
+  "tts": "தேவையான ஆவணங்கள் என்ன?"
+ },
+ {
+  "key": "te/a-13mogfrf3e5",
+  "lang": "te",
+  "role": "a",
+  "text": "ఉన్నత విద్య చదువుతున్న విద్యార్థినులకు నెలవారీ సహాయం.",
+  "tts": "ఉన్నత విద్య చదువుతున్న విద్యార్థినులకు నెలవారీ సహాయం."
+ },
+ {
+  "key": "te/a-14lxrr3d5dx",
+  "lang": "te",
+  "role": "a",
+  "text": "తుది అర్హతను ప్రభుత్వ కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "తుది అర్హతను ప్రభుత్వ కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-14sl42nkwt0",
+  "lang": "te",
+  "role": "a",
+  "text": "గర్భిణీలకు ప్రసవానికి ముందు మరియు తర్వాత విడతల్లో సహాయం లభిస్తుంది. ఇందులో పోషకాహార కిట్లు కూడా ఉంటాయి.",
+  "tts": "గర్భిణీలకు ప్రసవానికి ముందు మరియు తర్వాత విడతల్లో సహాయం లభిస్తుంది. ఇందులో పోషకాహార కిట్లు కూడా ఉంటాయి."
+ },
+ {
+  "key": "te/a-16g0y50v40m",
+  "lang": "te",
+  "role": "a",
+  "text": "స్వయం ఉపాధికి ఉచిత కుట్టు యంత్రం.",
+  "tts": "స్వయం ఉపాధికి ఉచిత కుట్టు యంత్రం."
+ },
+ {
+  "key": "te/a-17emi1pr4lx",
+  "lang": "te",
+  "role": "a",
+  "text": "నిరాధార వితంతువులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో అడగండి.",
+  "tts": "నిరాధార వితంతువులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-17nsi9xhia7",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల జనన ధృవీకరణ పత్రం. తల్లిదండ్రుల వయస్సు రుజువు (జనన లేదా పాఠశాల సర్టిఫికెట్). ఆదాయ ధృవీకరణ పత్రం. కుల ధృవీకరణ పత్రం. స్థానికత ధృవీకరణ పత్రం. కుటుంబ నియంత్రణ శస్త్రచికిత్స ధృవీకరణ పత్రం. కుటుంబంలో మగపిల్లవాడు లేడని ధృవీకరణ పత్రం",
+  "tts": "ఆడపిల్ల జనన ధృవీకరణ పత్రం. తల్లిదండ్రుల వయస్సు రుజువు (జనన లేదా పాఠశాల సర్టిఫికెట్). ఆదాయ ధృవీకరణ పత్రం. కుల ధృవీకరణ పత్రం. స్థానికత ధృవీకరణ పత్రం. కుటుంబ నియంత్రణ శస్త్రచికిత్స ధృవీకరణ పత్రం. కుటుంబంలో మగపిల్లవాడు లేడని ధృవీకరణ పత్రం"
+ },
+ {
+  "key": "te/a-18ginn1xhgc",
+  "lang": "te",
+  "role": "a",
+  "text": "మీ Aadhaar నంబర్, OTP, పాస్‌వర్డ్ లేదా బ్యాంకు PIN ను చెప్పకండి, రాయకండి. ఈ యాప్ వాటిని ఎప్పుడూ అడగదు. వాయిస్ వాడినప్పుడు, మీ బ్రౌజర్ వాయిస్ సేవ (ఉదా. Chrome లో Google) మీ ఆడియోను ప్రాసెస్ చేయవచ్చు. పథకాలను సూచించడానికి మీ ప్రశ్న ఒక AI సేవకు పంపబడవచ్చు. వ్యక్తిగత వివరాలు చేర్చకండి. లాగిన్ అవ్వాల్సిన లేదా ఖాతా తెరవాల్సిన అవసరం లేదు. మీ భాష ఎంపిక ఈ పరికరంలో సేవ్ అవుతుంది. మ్యాప్ లేదా WhatsApp తెరిస్తే, ఆ సేవల గోప్యతా నియమాలు వర్తిస్తాయి.",
+  "tts": "మీ Aadhaar నంబర్, OTP, పాస్‌వర్డ్ లేదా బ్యాంకు PIN ను చెప్పకండి, రాయకండి. ఈ యాప్ వాటిని ఎప్పుడూ అడగదు. వాయిస్ వాడినప్పుడు, మీ బ్రౌజర్ వాయిస్ సేవ (ఉదా. Chrome లో Google) మీ ఆడియోను ప్రాసెస్ చేయవచ్చు. పథకాలను సూచించడానికి మీ ప్రశ్న ఒక AI సేవకు పంపబడవచ్చు. వ్యక్తిగత వివరాలు చేర్చకండి. లాగిన్ అవ్వాల్సిన లేదా ఖాతా తెరవాల్సిన అవసరం లేదు. మీ భాష ఎంపిక ఈ పరికరంలో సేవ్ అవుతుంది. మ్యాప్ లేదా WhatsApp తెరిస్తే, ఆ సేవల గోప్యతా నియమాలు వర్తిస్తాయి."
+ },
+ {
+  "key": "te/a-18p97w0c0ns",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల జనన ధృవీకరణ పత్రం. తల్లిదండ్రులు లేదా సంరక్షకుల గుర్తింపు రుజువు (ఆధార్ వంటివి). తల్లిదండ్రులు లేదా సంరక్షకుల చిరునామా రుజువు. పాస్‌పోర్ట్ సైజు ఫోటోలు",
+  "tts": "ఆడపిల్ల జనన ధృవీకరణ పత్రం. తల్లిదండ్రులు లేదా సంరక్షకుల గుర్తింపు రుజువు (ఆధార్ వంటివి). తల్లిదండ్రులు లేదా సంరక్షకుల చిరునామా రుజువు. పాస్‌పోర్ట్ సైజు ఫోటోలు"
+ },
+ {
+  "key": "te/a-18qxtx0t4ai",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల భవిష్యత్తు కోసం కేంద్ర ప్రభుత్వ పొదుపు పథకం.",
+  "tts": "ఆడపిల్ల భవిష్యత్తు కోసం కేంద్ర ప్రభుత్వ పొదుపు పథకం."
+ },
+ {
+  "key": "te/a-18tj2fe2rxu",
+  "lang": "te",
+  "role": "a",
+  "text": "దివ్యాంగుల గుర్తింపు కార్డు (UDID) లేదా వైకల్య ధృవీకరణ పత్రం. రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు",
+  "tts": "దివ్యాంగుల గుర్తింపు కార్డు (UDID) లేదా వైకల్య ధృవీకరణ పత్రం. రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు"
+ },
+ {
+  "key": "te/a-1bg3nxfn7x8",
+  "lang": "te",
+  "role": "a",
+  "text": "మగపిల్లవాడు లేని, ఒకరు లేదా ఇద్దరు ఆడపిల్లలు ఉన్న కుటుంబాలకు. వార్షిక ఆదాయ పరిమితి ఉంది. నియమాలను కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "మగపిల్లవాడు లేని, ఒకరు లేదా ఇద్దరు ఆడపిల్లలు ఉన్న కుటుంబాలకు. వార్షిక ఆదాయ పరిమితి ఉంది. నియమాలను కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-1c71hq5wm9o",
+  "lang": "te",
+  "role": "a",
+  "text": "తమిళనాడు ప్రభుత్వ సామాజిక భద్రతా పథకం.",
+  "tts": "తమిళనాడు ప్రభుత్వ సామాజిక భద్రతా పథకం."
+ },
+ {
+  "key": "te/a-1eq1smiutu9",
+  "lang": "te",
+  "role": "a",
+  "text": "Magalir Thunai కి స్వాగతం. మైక్ బటన్ నొక్కి మీ ప్రశ్న అడగండి.",
+  "tts": "Magalir Thunai కి స్వాగతం. మైక్ బటన్ నొక్కి మీ ప్రశ్న అడగండి."
+ },
+ {
+  "key": "te/a-1ezgoohyo3f",
+  "lang": "te",
+  "role": "a",
+  "text": "తమిళనాడు గర్భిణీలకు. అర్హత నియమాలను ఆరోగ్య కేంద్రంలో నిర్ధారించుకోండి.",
+  "tts": "తమిళనాడు గర్భిణీలకు. అర్హత నియమాలను ఆరోగ్య కేంద్రంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-1fhagbqv92t",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల పేరుపై చిన్న పొదుపు ఖాతా.",
+  "tts": "ఆడపిల్ల పేరుపై చిన్న పొదుపు ఖాతా."
+ },
+ {
+  "key": "te/a-1fmf8zybbkh",
+  "lang": "te",
+  "role": "a",
+  "text": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). పుదుమై పెణ్ పథకం. మాతృ వందన యోజన (PMMVY). నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. సుకన్య సమృద్ధి పథకం. వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం",
+  "tts": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). పుదుమై పెణ్ పథకం. మాతృ వందన యోజన (PMMVY). నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. సుకన్య సమృద్ధి పథకం. వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం"
+ },
+ {
+  "key": "te/a-1ha6114460h",
+  "lang": "te",
+  "role": "a",
+  "text": "6 నుండి 12వ తరగతి వరకు ప్రభుత్వ పాఠశాలలో చదివి ఉన్నత విద్యలో చేరిన విద్యార్థినులకు.",
+  "tts": "6 నుండి 12వ తరగతి వరకు ప్రభుత్వ పాఠశాలలో చదివి ఉన్నత విద్యలో చేరిన విద్యార్థినులకు."
+ },
+ {
+  "key": "te/a-1j6xfhz3f83",
+  "lang": "te",
+  "role": "a",
+  "text": "నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. వృద్ధాప్య పింఛను. దివ్యాంగుల పింఛను",
+  "tts": "నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. వృద్ధాప్య పింఛను. దివ్యాంగుల పింఛను"
+ },
+ {
+  "key": "te/a-1j8y8qwcr7p",
+  "lang": "te",
+  "role": "a",
+  "text": "6 నుండి 12వ తరగతి వరకు ప్రభుత్వ పాఠశాలలో చదివినట్లు సర్టిఫికెట్ (టీసీ). ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన, మీ పేరుపై ఉన్న బ్యాంకు పాస్‌బుక్. కళాశాల ప్రవేశ రుజువు లేదా బోనఫైడ్ సర్టిఫికెట్",
+  "tts": "6 నుండి 12వ తరగతి వరకు ప్రభుత్వ పాఠశాలలో చదివినట్లు సర్టిఫికెట్ (టీసీ). ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన, మీ పేరుపై ఉన్న బ్యాంకు పాస్‌బుక్. కళాశాల ప్రవేశ రుజువు లేదా బోనఫైడ్ సర్టిఫికెట్"
+ },
+ {
+  "key": "te/a-1l56bazpfdy",
+  "lang": "te",
+  "role": "a",
+  "text": "మహిళలు మరియు ట్రాన్స్‌జెండర్ వ్యక్తులు ఎంపిక చేసిన ప్రభుత్వ బస్సుల్లో ఉచితంగా ప్రయాణించవచ్చు.",
+  "tts": "మహిళలు మరియు ట్రాన్స్‌జెండర్ వ్యక్తులు ఎంపిక చేసిన ప్రభుత్వ బస్సుల్లో ఉచితంగా ప్రయాణించవచ్చు."
+ },
+ {
+  "key": "te/a-1lkkp724l6l",
+  "lang": "te",
+  "role": "a",
+  "text": "వితంతువులు, భర్త విడిచిపెట్టిన మహిళలు, పేద కుటుంబాల మహిళలు, దివ్యాంగులు స్వయం ఉపాధి కోసం ఉచిత కుట్టు యంత్రం పొందవచ్చు.",
+  "tts": "వితంతువులు, భర్త విడిచిపెట్టిన మహిళలు, పేద కుటుంబాల మహిళలు, దివ్యాంగులు స్వయం ఉపాధి కోసం ఉచిత కుట్టు యంత్రం పొందవచ్చు."
+ },
+ {
+  "key": "te/a-1n18tmr8yin",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రతి నెల 1,000 రూపాయలు.",
+  "tts": "ప్రతి నెల 1000 రూపాయలు."
+ },
+ {
+  "key": "te/a-1nks3eho6aw",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల పేరుపై ప్రభుత్వ ఫిక్స్‌డ్ డిపాజిట్: ఒక ఆడపిల్లకు 50,000 రూపాయలు, ఇద్దరు ఆడపిల్లలకు ఒక్కొక్కరికి 25,000 రూపాయలు. 18 ఏళ్లకు లభిస్తుంది.",
+  "tts": "ఆడపిల్ల పేరుపై ప్రభుత్వ ఫిక్స్‌డ్ డిపాజిట్: ఒక ఆడపిల్లకు 50000 రూపాయలు, ఇద్దరు ఆడపిల్లలకు ఒక్కొక్కరికి 25000 రూపాయలు. 18 ఏళ్లకు లభిస్తుంది."
+ },
+ {
+  "key": "te/a-1nrnegywkk9",
+  "lang": "te",
+  "role": "a",
+  "text": "నెలవారీ పింఛను. మొత్తాన్ని కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "నెలవారీ పింఛను. మొత్తాన్ని కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-1o07gt31enm",
+  "lang": "te",
+  "role": "a",
+  "text": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు",
+  "tts": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు"
+ },
+ {
+  "key": "te/a-1oiyefp9l2q",
+  "lang": "te",
+  "role": "a",
+  "text": "పేదరికంలో ఉన్న పెళ్లికాని వృద్ధ మహిళలకు. వయస్సు నియమాన్ని కార్యాలయంలో అడగండి.",
+  "tts": "పేదరికంలో ఉన్న పెళ్లికాని వృద్ధ మహిళలకు. వయస్సు నియమాన్ని కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-1pq1ibri3ag",
+  "lang": "te",
+  "role": "a",
+  "text": "డబ్బు, విద్య, పింఛను, వైద్యం",
+  "tts": "డబ్బు, విద్య, పింఛను, వైద్యం"
+ },
+ {
+  "key": "te/a-1s0okzk2i1q",
+  "lang": "te",
+  "role": "a",
+  "text": "అర్హత గల కుటుంబాల్లోని మహిళా పెద్దకు.",
+  "tts": "అర్హత గల కుటుంబాల్లోని మహిళా పెద్దకు."
+ },
+ {
+  "key": "te/a-1s8ocdj1f5p",
+  "lang": "te",
+  "role": "a",
+  "text": "కొన్ని పథకాలకు ఆన్‌లైన్ సౌకర్యం ఉండవచ్చు. పథకం పేజీలో అధికారిక సమాచారం బటన్ ఉంటే వాడండి, లేదా e-Sevai కేంద్రంలో అడగండి.",
+  "tts": "కొన్ని పథకాలకు ఆన్‌లైన్ సౌకర్యం ఉండవచ్చు. పథకం పేజీలో అధికారిక సమాచారం బటన్ ఉంటే వాడండి, లేదా e-Sevai కేంద్రంలో అడగండి."
+ },
+ {
+  "key": "te/a-1s9kiwtwkx3",
+  "lang": "te",
+  "role": "a",
+  "text": "తమిళనాడు ప్రభుత్వం మహిళలకు ఇచ్చే నెలవారీ ఆర్థిక సహాయ పథకం.",
+  "tts": "తమిళనాడు ప్రభుత్వం మహిళలకు ఇచ్చే నెలవారీ ఆర్థిక సహాయ పథకం."
+ },
+ {
+  "key": "te/a-1t442ja6b1u",
+  "lang": "te",
+  "role": "a",
+  "text": "మొదటి బిడ్డకు రెండు విడతల్లో 5,000 రూపాయలు.",
+  "tts": "మొదటి బిడ్డకు రెండు విడతల్లో 5000 రూపాయలు."
+ },
+ {
+  "key": "te/a-1tbunqugra4",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన బ్యాంకు లేదా పోస్టాఫీసు ఖాతా. మొబైల్ నంబర్. మదర్-చైల్డ్ ప్రొటెక్షన్ కార్డు",
+  "tts": "ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన బ్యాంకు లేదా పోస్టాఫీసు ఖాతా. మొబైల్ నంబర్. మదర్-చైల్డ్ ప్రొటెక్షన్ కార్డు"
+ },
+ {
+  "key": "te/a-1tsy2a0bvc0",
+  "lang": "te",
+  "role": "a",
+  "text": "మహిళలు, విద్య, గర్భధారణ & పిల్లలు, ఆర్థిక సహాయం, పింఛను, దివ్యాంగులు",
+  "tts": "మహిళలు, విద్య, గర్భధారణ & పిల్లలు, ఆర్థిక సహాయం, పింఛను, దివ్యాంగులు"
+ },
+ {
+  "key": "te/a-1vdwsosbjab",
+  "lang": "te",
+  "role": "a",
+  "text": "కండక్టర్ అడిగితే చూపించడానికి ఆధార్ కార్డు లేదా ఇతర గుర్తింపు కార్డు",
+  "tts": "కండక్టర్ అడిగితే చూపించడానికి ఆధార్ కార్డు లేదా ఇతర గుర్తింపు కార్డు"
+ },
+ {
+  "key": "te/a-1w1zrfinggn",
+  "lang": "te",
+  "role": "a",
+  "text": "దివ్యాంగుల కోసం సామాజిక భద్రతా పథకం.",
+  "tts": "దివ్యాంగుల కోసం సామాజిక భద్రతా పథకం."
+ },
+ {
+  "key": "te/a-1wy801gfqug",
+  "lang": "te",
+  "role": "a",
+  "text": "గర్భిణీలు మరియు పాలిచ్చే తల్లులకు కేంద్ర ప్రభుత్వ సహాయం.",
+  "tts": "గర్భిణీలు మరియు పాలిచ్చే తల్లులకు కేంద్ర ప్రభుత్వ సహాయం."
+ },
+ {
+  "key": "te/a-1yiek33oswa",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రతి పథకానికి నియమాలు వేరుగా ఉంటాయి. పథకం తెరిచి “ఎవరికి?” భాగం చూడండి. తుది అర్హతను కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "ప్రతి పథకానికి నియమాలు వేరుగా ఉంటాయి. పథకం తెరిచి “ఎవరికి?” భాగం చూడండి. తుది అర్హతను కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-1yw1e6kry9s",
+  "lang": "te",
+  "role": "a",
+  "text": "బిడ్డ పుట్టిన తర్వాత దరఖాస్తుకు సమయ పరిమితి ఉంటుంది. చివరి తేదీని కార్యాలయంలో అడగండి.",
+  "tts": "బిడ్డ పుట్టిన తర్వాత దరఖాస్తుకు సమయ పరిమితి ఉంటుంది. చివరి తేదీని కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-1z881zdpfxw",
+  "lang": "te",
+  "role": "a",
+  "text": "దరఖాస్తు విధానం గురించి కళాశాల కార్యాలయంలో అడగండి.",
+  "tts": "దరఖాస్తు విధానం గురించి కళాశాల కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-1zh6wgxtuwm",
+  "lang": "te",
+  "role": "a",
+  "text": "మీ కళాశాల కార్యాలయం.",
+  "tts": "మీ కళాశాల కార్యాలయం."
+ },
+ {
+  "key": "te/a-207egoz5xym",
+  "lang": "te",
+  "role": "a",
+  "text": "వడ్డీ రేటు, నియమాల గురించి అక్కడే అడగండి.",
+  "tts": "వడ్డీ రేటు, నియమాల గురించి అక్కడే అడగండి."
+ },
+ {
+  "key": "te/a-24q2wzckmok",
+  "lang": "te",
+  "role": "a",
+  "text": "రుసుము గురించి కార్యాలయంలో నిర్ధారించుకోండి. దరఖాస్తులో సహాయం పేరుతో ఎవరైనా డబ్బు అడిగితే జాగ్రత్తగా ఉండండి.",
+  "tts": "రుసుము గురించి కార్యాలయంలో నిర్ధారించుకోండి. దరఖాస్తులో సహాయం పేరుతో ఎవరైనా డబ్బు అడిగితే జాగ్రత్తగా ఉండండి."
+ },
+ {
+  "key": "te/a-25z58bcpfgo",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రతి పథకం పేజీలో పత్రాల జాబితా ఉంది. తుది జాబితాను e-Sevai కేంద్రంలో లేదా కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "ప్రతి పథకం పేజీలో పత్రాల జాబితా ఉంది. తుది జాబితాను e-Sevai కేంద్రంలో లేదా కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-26pip399tid",
+  "lang": "te",
+  "role": "a",
+  "text": "సమీపంలోని అంగన్‌వాడీ కేంద్రం.",
+  "tts": "సమీపంలోని అంగన్‌వాడీ కేంద్రం."
+ },
+ {
+  "key": "te/a-26rrqnymdtx",
+  "lang": "te",
+  "role": "a",
+  "text": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. భర్త విడిచిపెట్టినట్లు లేదా చట్టబద్ధంగా విడిపోయినట్లు ధృవీకరణ పత్రం",
+  "tts": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. భర్త విడిచిపెట్టినట్లు లేదా చట్టబద్ధంగా విడిపోయినట్లు ధృవీకరణ పత్రం"
+ },
+ {
+  "key": "te/a-295yew7kuvp",
+  "lang": "te",
+  "role": "a",
+  "text": "తమిళనాడు మహిళలకు. ఆదాయ షరతు లేదు. ఏ బస్సులు వర్తిస్తాయో రవాణా కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "తమిళనాడు మహిళలకు. ఆదాయ షరతు లేదు. ఏ బస్సులు వర్తిస్తాయో రవాణా కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-2a15xnev59l",
+  "lang": "te",
+  "role": "a",
+  "text": "పోస్టాఫీసు లేదా బ్యాంకు.",
+  "tts": "పోస్టాఫీసు లేదా బ్యాంకు."
+ },
+ {
+  "key": "te/a-2bego0lp94j",
+  "lang": "te",
+  "role": "a",
+  "text": "వితంతువులు, భర్త విడిచిపెట్టిన మహిళలు, పేద కుటుంబాల మహిళలు, దివ్యాంగులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో నిర్ధారించుకోండి.",
+  "tts": "వితంతువులు, భర్త విడిచిపెట్టిన మహిళలు, పేద కుటుంబాల మహిళలు, దివ్యాంగులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-2earbvbjm31",
+  "lang": "te",
+  "role": "a",
+  "text": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). పుదుమై పెణ్ పథకం",
+  "tts": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). పుదుమై పెణ్ పథకం"
+ },
+ {
+  "key": "te/a-2gnsed1jiyr",
+  "lang": "te",
+  "role": "a",
+  "text": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). పుదుమై పెణ్ పథకం. మాతృ వందన యోజన (PMMVY). నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. వృద్ధాప్య పింఛను. దివ్యాంగుల పింఛను. సుకన్య సమృద్ధి పథకం. వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం",
+  "tts": "కలైంజర్ మహిళా ఉరిమై తొగై (KMUT). పుదుమై పెణ్ పథకం. మాతృ వందన యోజన (PMMVY). నిరాధార వితంతు పింఛను. నిరాధార / విడిచిపెట్టబడిన మహిళల పింఛను. పెళ్లికాని పేద మహిళల పింఛను. వృద్ధాప్య పింఛను. దివ్యాంగుల పింఛను. సుకన్య సమృద్ధి పథకం. వెట్రి పయనం (ఇంతకు ముందు విడియల్ పయనం). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం"
+ },
+ {
+  "key": "te/a-4n80ss419r",
+  "lang": "te",
+  "role": "a",
+  "text": "దరఖాస్తు గురించి సమీప అంగన్‌వాడీలో అడగండి.",
+  "tts": "దరఖాస్తు గురించి సమీప అంగన్‌వాడీలో అడగండి."
+ },
+ {
+  "key": "te/a-567r6pfazd",
+  "lang": "te",
+  "role": "a",
+  "text": "PICME వెబ్‌సైట్, సమీపంలోని ప్రభుత్వ ఆరోగ్య కేంద్రం లేదా గ్రామ ఆరోగ్య నర్సు.",
+  "tts": "PICME వెబ్‌సైట్, సమీపంలోని ప్రభుత్వ ఆరోగ్య కేంద్రం లేదా గ్రామ ఆరోగ్య నర్సు."
+ },
+ {
+  "key": "te/a-5kb40nz5xh",
+  "lang": "te",
+  "role": "a",
+  "text": "కుటుంబ ఆదాయ ధృవీకరణ పత్రం. వయస్సు రుజువు. మీ వర్గానికి చెందిన ధృవీకరణ పత్రం (వితంతు, విడిచిపెట్టబడిన, దివ్యాంగ), అడిగితే",
+  "tts": "కుటుంబ ఆదాయ ధృవీకరణ పత్రం. వయస్సు రుజువు. మీ వర్గానికి చెందిన ధృవీకరణ పత్రం (వితంతు, విడిచిపెట్టబడిన, దివ్యాంగ), అడిగితే"
+ },
+ {
+  "key": "te/a-6n10cfseat",
+  "lang": "te",
+  "role": "a",
+  "text": "గర్భిణీలు లేదా కొత్త తల్లులకు. అర్హత నియమాలను అంగన్‌వాడీలో అడగండి.",
+  "tts": "గర్భిణీలు లేదా కొత్త తల్లులకు. అర్హత నియమాలను అంగన్‌వాడీలో అడగండి."
+ },
+ {
+  "key": "te/a-898871642f",
+  "lang": "te",
+  "role": "a",
+  "text": "PICME / RCH ఐడీ (గర్భధారణ నమోదులో వచ్చే 12 అంకెల నంబర్). కార్యాలయం లేదా ఆరోగ్య కేంద్రం అడిగే ఇతర పత్రాలు",
+  "tts": "PICME / RCH ఐడీ (గర్భధారణ నమోదులో వచ్చే 12 అంకెల నంబర్). కార్యాలయం లేదా ఆరోగ్య కేంద్రం అడిగే ఇతర పత్రాలు"
+ },
+ {
+  "key": "te/a-8m1spysbzf",
+  "lang": "te",
+  "role": "a",
+  "text": "అర్హత గల ప్రభుత్వ (రాష్ట్ర రవాణా) బస్సులు.",
+  "tts": "అర్హత గల ప్రభుత్వ (రాష్ట్ర రవాణా) బస్సులు."
+ },
+ {
+  "key": "te/a-9jyvrog595",
+  "lang": "te",
+  "role": "a",
+  "text": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన, మీ పేరుపై ఉన్న బ్యాంకు పాస్‌బుక్. మొబైల్ నంబర్",
+  "tts": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. ఆధార్‌తో అనుసంధానమైన, మీ పేరుపై ఉన్న బ్యాంకు పాస్‌బుక్. మొబైల్ నంబర్"
+ },
+ {
+  "key": "te/a-b49ct97144",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆన్‌లైన్ నమోదు అవసరం లేదు. అర్హత గల ప్రభుత్వ బస్సు ఎక్కి, కండక్టర్‌ను ఉచిత టికెట్ అడగండి.",
+  "tts": "ఆన్‌లైన్ నమోదు అవసరం లేదు. అర్హత గల ప్రభుత్వ బస్సు ఎక్కి, కండక్టర్‌ను ఉచిత టికెట్ అడగండి."
+ },
+ {
+  "key": "te/a-be56jbyxxd",
+  "lang": "te",
+  "role": "a",
+  "text": "పథకంలో మార్పులు జరుగుతున్నాయి. ప్రస్తుత మొత్తం 1,000 రూపాయలు. తాజా నియమాలను కార్యాలయంలో అడగండి.",
+  "tts": "పథకంలో మార్పులు జరుగుతున్నాయి. ప్రస్తుత మొత్తం 1000 రూపాయలు. తాజా నియమాలను కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-c0yzk3gfqw",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రభుత్వం ఆడపిల్ల పేరుపై డిపాజిట్ చేస్తుంది. 18 ఏళ్లకు మొత్తం లభిస్తుంది; చదువుకు సహాయపడుతుంది.",
+  "tts": "ప్రభుత్వం ఆడపిల్ల పేరుపై డిపాజిట్ చేస్తుంది. 18 ఏళ్లకు మొత్తం లభిస్తుంది; చదువుకు సహాయపడుతుంది."
+ },
+ {
+  "key": "te/a-e4jgpbs32",
+  "lang": "te",
+  "role": "a",
+  "text": "పుదుమై పెణ్ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం",
+  "tts": "పుదుమై పెణ్ పథకం. ముఖ్యమంత్రి ఆడపిల్ల రక్షణ పథకం"
+ },
+ {
+  "key": "te/a-epob1sr8t3",
+  "lang": "te",
+  "role": "a",
+  "text": "భర్త విడిచిపెట్టిన లేదా విడాకులు తీసుకున్న మహిళలకు. షరతులను కార్యాలయంలో అడగండి.",
+  "tts": "భర్త విడిచిపెట్టిన లేదా విడాకులు తీసుకున్న మహిళలకు. షరతులను కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-fxom1c89qn",
+  "lang": "te",
+  "role": "a",
+  "text": "సరిపోలే పథకం లేదు. కింద ఉన్న అన్ని పథకాలను చూడండి.",
+  "tts": "సరిపోలే పథకం లేదు. కింద ఉన్న అన్ని పథకాలను చూడండి."
+ },
+ {
+  "key": "te/a-g5g0vkfscb",
+  "lang": "te",
+  "role": "a",
+  "text": "Magalir Thunai మహిళలు ప్రభుత్వ పథకాలను సులభమైన భాషలో, వాయిస్ ద్వారా తెలుసుకోవడానికి సహాయపడుతుంది. ఇది ప్రభుత్వ వెబ్‌సైట్ కాదు.",
+  "tts": "Magalir Thunai మహిళలు ప్రభుత్వ పథకాలను సులభమైన భాషలో, వాయిస్ ద్వారా తెలుసుకోవడానికి సహాయపడుతుంది. ఇది ప్రభుత్వ వెబ్‌సైట్ కాదు."
+ },
+ {
+  "key": "te/a-he2awqpkdp",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రభుత్వ బస్సుల్లో ఉచిత ప్రయాణం. ఆదాయ పరిమితి లేదు.",
+  "tts": "ప్రభుత్వ బస్సుల్లో ఉచిత ప్రయాణం. ఆదాయ పరిమితి లేదు."
+ },
+ {
+  "key": "te/a-ibgmvsh61k",
+  "lang": "te",
+  "role": "a",
+  "text": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. భర్త మరణ ధృవీకరణ పత్రం. వితంతు ధృవీకరణ పత్రం (తహసీల్దార్ జారీ చేసేది)",
+  "tts": "రేషన్ కార్డు (కుటుంబ కార్డు). ఆధార్ కార్డు. భర్త మరణ ధృవీకరణ పత్రం. వితంతు ధృవీకరణ పత్రం (తహసీల్దార్ జారీ చేసేది)"
+ },
+ {
+  "key": "te/a-k92u1fif61",
+  "lang": "te",
+  "role": "a",
+  "text": "e-Sevai కేంద్రం లేదా సమీపంలోని ప్రభుత్వ కార్యాలయం.",
+  "tts": "e-Sevai కేంద్రం లేదా సమీపంలోని ప్రభుత్వ కార్యాలయం."
+ },
+ {
+  "key": "te/a-ksebi6y427",
+  "lang": "te",
+  "role": "a",
+  "text": "గర్భధారణ నమోదును త్వరగా చేయించుకోండి, 12 వారాల్లోపు చేస్తే మంచిది. వివరాలను ఆరోగ్య కేంద్రంలో అడగండి.",
+  "tts": "గర్భధారణ నమోదును త్వరగా చేయించుకోండి, 12 వారాల్లోపు చేస్తే మంచిది. వివరాలను ఆరోగ్య కేంద్రంలో అడగండి."
+ },
+ {
+  "key": "te/a-ll9q5somt1",
+  "lang": "te",
+  "role": "a",
+  "text": "అర్హులైన దివ్యాంగులకు.",
+  "tts": "అర్హులైన దివ్యాంగులకు."
+ },
+ {
+  "key": "te/a-m9vp8igf8d",
+  "lang": "te",
+  "role": "a",
+  "text": "అవును, కాదు",
+  "tts": "అవును, కాదు"
+ },
+ {
+  "key": "te/a-of9nidqe2v",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆడపిల్ల తల్లిదండ్రులు లేదా సంరక్షకులకు.",
+  "tts": "ఆడపిల్ల తల్లిదండ్రులు లేదా సంరక్షకులకు."
+ },
+ {
+  "key": "te/a-ouehfoqg7q",
+  "lang": "te",
+  "role": "a",
+  "text": "మీరు ఇచ్చిన సమాచారం ఆధారంగా ఈ పథకం మీకు సరిపోవచ్చు. దయచేసి అధికారిక అర్హతను నిర్ధారించుకోండి.",
+  "tts": "మీరు ఇచ్చిన సమాచారం ఆధారంగా ఈ పథకం మీకు సరిపోవచ్చు. దయచేసి అధికారిక అర్హతను నిర్ధారించుకోండి."
+ },
+ {
+  "key": "te/a-u6vboxnrzf",
+  "lang": "te",
+  "role": "a",
+  "text": "మీ భాషలో మాట్లాడండి లేదా రాయండి.",
+  "tts": "మీ భాషలో మాట్లాడండి లేదా రాయండి."
+ },
+ {
+  "key": "te/a-wdfussssn2",
+  "lang": "te",
+  "role": "a",
+  "text": "మాతృ వందన యోజన (PMMVY). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం",
+  "tts": "మాతృ వందన యోజన (PMMVY). డాక్టర్ ముత్తులక్ష్మి రెడ్డి మాతృత్వ సహాయ పథకం"
+ },
+ {
+  "key": "te/a-xnn0bjfri2",
+  "lang": "te",
+  "role": "a",
+  "text": "ప్రతి నెల బ్యాంకు ఖాతాలో 1,000 రూపాయలు.",
+  "tts": "ప్రతి నెల బ్యాంకు ఖాతాలో 1000 రూపాయలు."
+ },
+ {
+  "key": "te/a-z08c3amlnj",
+  "lang": "te",
+  "role": "a",
+  "text": "ఆసరా అవసరమైన వృద్ధులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో అడగండి.",
+  "tts": "ఆసరా అవసరమైన వృద్ధులకు. వయస్సు, ఆదాయ నియమాలను కార్యాలయంలో అడగండి."
+ },
+ {
+  "key": "te/a-z7pzv4hf5p",
+  "lang": "te",
+  "role": "a",
+  "text": "దివ్యాంగుల పింఛను. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం",
+  "tts": "దివ్యాంగుల పింఛను. సత్యవాణి ముత్తు అమ్మైయార్ స్మారక ఉచిత కుట్టు యంత్ర పథకం"
+ },
+ {
+  "key": "te/a-zksxs541v9",
+  "lang": "te",
+  "role": "a",
+  "text": "మొత్తం 18,000 రూపాయలు: 14,000 రూపాయలు విడతల్లో నగదు, 4,000 రూపాయల విలువైన రెండు పోషకాహార కిట్లు.",
+  "tts": "మొత్తం 18000 రూపాయలు: 14000 రూపాయలు విడతల్లో నగదు, 4000 రూపాయల విలువైన రెండు పోషకాహార కిట్లు."
+ },
+ {
+  "key": "te/q-1543q7pd5gg",
+  "lang": "te",
+  "role": "q",
+  "text": "ఎవరికి ఈ పథకం?",
+  "tts": "ఎవరికి ఈ పథకం?"
+ },
+ {
+  "key": "te/q-15d9vviy7uk",
+  "lang": "te",
+  "role": "q",
+  "text": "అన్ని ప్రభుత్వ పథకాలు",
+  "tts": "అన్ని ప్రభుత్వ పథకాలు"
+ },
+ {
+  "key": "te/q-18xprv6fja4",
+  "lang": "te",
+  "role": "q",
+  "text": "మా గురించి",
+  "tts": "మా గురించి"
+ },
+ {
+  "key": "te/q-1ab8zulqf1x",
+  "lang": "te",
+  "role": "q",
+  "text": "ఎక్కడికి వెళ్లాలి?",
+  "tts": "ఎక్కడికి వెళ్లాలి?"
+ },
+ {
+  "key": "te/q-1aiywxti41g",
+  "lang": "te",
+  "role": "q",
+  "text": "ప్రజాదరణ పొందిన పథకాలు",
+  "tts": "ప్రజాదరణ పొందిన పథకాలు"
+ },
+ {
+  "key": "te/q-1f6nxgng44n",
+  "lang": "te",
+  "role": "q",
+  "text": "మీకు ఏ సహాయం కావాలి?",
+  "tts": "మీకు ఏ సహాయం కావాలి?"
+ },
+ {
+  "key": "te/q-1k8c2ru4ifu",
+  "lang": "te",
+  "role": "q",
+  "text": "మీకు సరిపోయే అవకాశం ఉన్న పథకాలు",
+  "tts": "మీకు సరిపోయే అవకాశం ఉన్న పథకాలు"
+ },
+ {
+  "key": "te/q-1n01yuw646g",
+  "lang": "te",
+  "role": "q",
+  "text": "రుసుము ఉందా?",
+  "tts": "రుసుము ఉందా?"
+ },
+ {
+  "key": "te/q-1qlj1bgrbfs",
+  "lang": "te",
+  "role": "q",
+  "text": "పింఛను",
+  "tts": "పింఛను"
+ },
+ {
+  "key": "te/q-1sg4pvyb3kd",
+  "lang": "te",
+  "role": "q",
+  "text": "ఈ పథకం ఏమిటి?",
+  "tts": "ఈ పథకం ఏమిటి?"
+ },
+ {
+  "key": "te/q-1teptt79y2b",
+  "lang": "te",
+  "role": "q",
+  "text": "మీ వయస్సు ఎంత?",
+  "tts": "మీ వయస్సు ఎంత?"
+ },
+ {
+  "key": "te/q-1u70msf0zci",
+  "lang": "te",
+  "role": "q",
+  "text": "విద్య",
+  "tts": "విద్య"
+ },
+ {
+  "key": "te/q-2b3lrzy194c",
+  "lang": "te",
+  "role": "q",
+  "text": "గర్భధారణ & పిల్లలు",
+  "tts": "గర్భధారణ & పిల్లలు"
+ },
+ {
+  "key": "te/q-2cs11iegf5n",
+  "lang": "te",
+  "role": "q",
+  "text": "అంశాలు",
+  "tts": "అంశాలు"
+ },
+ {
+  "key": "te/q-2f5jod89432",
+  "lang": "te",
+  "role": "q",
+  "text": "మీరు చదువుతున్నారా?",
+  "tts": "మీరు చదువుతున్నారా?"
+ },
+ {
+  "key": "te/q-3vj5od2lus",
+  "lang": "te",
+  "role": "q",
+  "text": "ఏ పత్రాలు కావాలి?",
+  "tts": "ఏ పత్రాలు కావాలి?"
+ },
+ {
+  "key": "te/q-5xcg8805lq",
+  "lang": "te",
+  "role": "q",
+  "text": "మహిళలు",
+  "tts": "మహిళలు"
+ },
+ {
+  "key": "te/q-9yglkqlgy9",
+  "lang": "te",
+  "role": "q",
+  "text": "ఆన్‌లైన్‌లో దరఖాస్తు చేయవచ్చా?",
+  "tts": "ఆన్‌లైన్‌లో దరఖాస్తు చేయవచ్చా?"
+ },
+ {
+  "key": "te/q-d5fe3j5zc9",
+  "lang": "te",
+  "role": "q",
+  "text": "మీకు అందుబాటులో ఉన్న ప్రభుత్వ పథకాలను కనుగొనండి",
+  "tts": "మీకు అందుబాటులో ఉన్న ప్రభుత్వ పథకాలను కనుగొనండి"
+ },
+ {
+  "key": "te/q-moqqxjn564",
+  "lang": "te",
+  "role": "q",
+  "text": "మీ గోప్యత",
+  "tts": "మీ గోప్యత"
+ },
+ {
+  "key": "te/q-ngiopvmvth",
+  "lang": "te",
+  "role": "q",
+  "text": "ఈ పథకాలకు ఎవరు అర్హులు?",
+  "tts": "ఈ పథకాలకు ఎవరు అర్హులు?"
+ },
+ {
+  "key": "te/q-onfqtu3ijw",
+  "lang": "te",
+  "role": "q",
+  "text": "ఆర్థిక సహాయం",
+  "tts": "ఆర్థిక సహాయం"
+ },
+ {
+  "key": "te/q-wvmjzsmwj0",
+  "lang": "te",
+  "role": "q",
+  "text": "తర్వాత ఏమి చేయాలి?",
+  "tts": "తర్వాత ఏమి చేయాలి?"
+ },
+ {
+  "key": "te/q-wvrtdsi7vu",
+  "lang": "te",
+  "role": "q",
+  "text": "మీరు గర్భవతా?",
+  "tts": "మీరు గర్భవతా?"
+ },
+ {
+  "key": "te/q-z0zwpcpf3j",
+  "lang": "te",
+  "role": "q",
+  "text": "దివ్యాంగులు",
+  "tts": "దివ్యాంగులు"
+ },
+ {
+  "key": "te/q-zty8ejdbue",
+  "lang": "te",
+  "role": "q",
+  "text": "ఏ సహాయం లభిస్తుంది?",
+  "tts": "ఏ సహాయం లభిస్తుంది?"
+ }
+]
