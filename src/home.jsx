@@ -27,12 +27,13 @@ const catName = (c, l) => c[l];
 const countLabel = (n, t) => `${n} ${n === 1 ? t.count1 : t.count}`;
 const altLang = (l) => (l === "en" ? "ta" : "en");
 
-// ?lang=hi&scheme=kmut — lets a shared link open the right scheme in the right language
+// /s/kmut?lang=hi  or  /?scheme=kmut&lang=hi — a shared link opens the right scheme in the right language
 function readUrl() {
   try {
     const p = new URLSearchParams(window.location.search);
     const lang = p.get("lang");
-    const scheme = p.get("scheme");
+    const scheme =
+      p.get("scheme") || (window.location.pathname.match(/^\/s\/([\w-]+)\/?$/) || [])[1];
     return {
       lang: LANGS.some((x) => x.id === lang) ? lang : null,
       scheme: scheme && getS(scheme) ? scheme : null,
@@ -54,7 +55,7 @@ function whatsappUrl(s, l, t) {
   lines.push(
     t.notOfficial,
     "",
-    `${BRAND[l]}: ${window.location.origin}/?scheme=${s.id}&lang=${l}`
+    `${BRAND[l]}: ${window.location.origin}/s/${s.id}?lang=${l}`
   );
   return `https://wa.me/?text=${encodeURIComponent(lines.join("\n"))}`;
 }
@@ -213,7 +214,7 @@ export function Home({ onStart }) {
   useEffect(() => {
     if (!initRef.current) {
       initRef.current = true;
-      window.history.replaceState({ name: "home" }, "", window.location.pathname);
+      window.history.replaceState({ name: "home" }, "", "/");
       if (urlInit.current.scheme) {
         window.history.pushState({ name: "scheme", id: urlInit.current.scheme }, "");
       }
